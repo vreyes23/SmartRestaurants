@@ -1,4 +1,4 @@
-package com.example.oscar.speechtotext;
+package com.example.oscar.texttospeech;
 
 import org.junit.Test;
 
