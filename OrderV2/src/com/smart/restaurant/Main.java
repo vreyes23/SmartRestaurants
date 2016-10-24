@@ -2,12 +2,14 @@ package com.smart.restaurant;
 
 import java.lang.reflect.Array;
 
+
+
 public class Main {
 
     public static void main(String[] args) {
 
         // Print the menu to the UI
-        Food food = new Food();
+        // Call the Food Class from here. 
         // Divide the Menu as the following:
         //  | Restaurant Name | Main Menu | Sub Menu | Drinks | Sides |
 
@@ -29,8 +31,10 @@ public class Main {
 
         // Call Watson and confirm if the order is correct //
         tts.speak("Is the order correct? " + order);
-        vts.listen(listener); //
+        vts.listen("Yes");
+        tts.speak("Your order is: " + order.getTotal() + "pay in cash or credit?");
+        vts.listen("Credit");
 
-        
+
     }
 }

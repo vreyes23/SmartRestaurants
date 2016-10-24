@@ -11,6 +11,7 @@ import java.util.Random;
 public class Order {
     private int orderNumber;
     private String time;
+    private String total;
 
     public Order(String customerOrder){
         Date date = new Date();
@@ -36,9 +37,14 @@ public class Order {
         System.out.println("Time " + time + "\n");
         System.out.println("orderNumber " + orderNumber + "\n");
         System.out.println("customerOrder " + customerOrder + "\n");
-
+        setTotal(customerOrder);
     }
 
+    public String getTotal() {
+        return total;
+    }
 
-
+    public void setTotal(String total) {
+        this.total = total;
+    }
 }
