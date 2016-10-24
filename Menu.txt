@@ -1,0 +1,43 @@
+Menu:
+1. Cheeseburger
+a. Toasted Buns
+b. Onion
+c. Cheese Slice
+d. Beef Patty
+e. Lettuce
+f. Tomato
+g. Spread
+2. Hamburger
+a. Toasted Buns
+b. Onion
+c. Beef Patty
+d. Lettuce
+e. Tomato
+f. Spread
+3. Double-Double
+a. Toasted Buns
+b. (2) Cheese Slice
+c. (2)Beef Patty
+d. Onion
+e. Lettuce
+f. Tomato
+g. Spread
+4. French Fries
+a. French Fries
+5. Shakes
+a. Flavor:
+i. Chocolate
+ii. Vanilla
+iii. Strawberry
+6. Beverages
+a. Flavor:
+i. Coca-Cola Classic
+ii. Diet Coke
+iii. 7UP
+iv. Dr. Pepper
+v. Root Beer
+vi. Lemonade
+vii. Minute Maid Light Lemonade
+viii. Iced Tea
+ix. Coffee
+
