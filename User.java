@@ -7,18 +7,30 @@ package com.example.reyesclan67.smartrestaurants;
 public class User {
     private String firstName;
     private String lastName;
+    private String userType;
 
-    public void User(String firstName, String lastName){
-        this.firstName=firstName;
-        this.lastName=lastName;
+    //Constructor Method to create User
+    public void User(String firstName, String lastName, String userType) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.userType = userType;
+
     }
 
-    public String getFirstName(){
+    public String getFirstName() {
         return firstName;
     }
 
-    public String getLastName(){
+    public String getLastName() {
         return lastName;
+    }
+
+    public String getUserType() {
+        return userType;
+    }
+
+    public void setUserType(String userType) {
+         this.userType = userType;
     }
 
     public String getFullName(){
@@ -27,6 +39,12 @@ public class User {
 
     public void printName(){
         System.out.println(firstName+" "+lastName);
+    }
+
+    @Override
+    public String toString(){
+        return "First Name: "+firstName+" Last Name: "+lastName+" User Type: "+userType+".";
+
     }
 
 
