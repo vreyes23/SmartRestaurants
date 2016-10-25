@@ -12,15 +12,21 @@ public class User {
     private String id;
     private String firstName;
     private String lastName;
-    private String userType;
+    private int userType;
+    private String[] categories={"Cook", "Manager", "Owner", "Administrator"};
+    private String username;
+    private String passcode;
 
 
     //Constructor Method to create User
-    public User(String firstName, String lastName, String userType) {
+    public User(String firstName, String lastName, int userType, String username, String passcode) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.userType = userType;
+        this.username=username;
+        this.passcode =passcode;
         this.id = UUID.randomUUID().toString();
+
 
     }
 
@@ -36,7 +42,7 @@ public class User {
 
     //This method returns the type of the User
     public String getUserType() {
-        return userType;
+        return categories[userType];
     }
 
     //This method returns the ID of the User
@@ -44,7 +50,7 @@ public class User {
         return id;
     }
     //This methods allows us to change the type of User the current user is
-    public void setUserType(String userType) {
+    public void setUserType(int userType) {
          this.userType = userType;
     }
 
@@ -61,7 +67,7 @@ public class User {
     //This method Overrides the toString method to return the data on the user
     @Override
     public String toString(){
-        return "First Name: "+firstName+" Last Name: "+lastName+" User Type: "+userType+" id: "+id+" ";
+        return "First Name: "+firstName+" Last Name: "+lastName+" User Type: "+categories[userType]+" id: "+id+" ";
 
     }
 
