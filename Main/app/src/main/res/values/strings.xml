@@ -24,4 +24,5 @@
     <string name="medium">Medium</string>
     <string name="mediumOn">Medium</string>
     <string name="place_order">Place Order</string>
+    <string name="your_order">Your Order</string>
 </resources>
