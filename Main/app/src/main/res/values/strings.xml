@@ -5,4 +5,23 @@
     <string name="start_recording">Start Recording</string>
     <string name="play_recorded_audio">Play Recorded Audio</string>
     <string name="call_speech_to_text_service">Call Speech to Text Service</string>
+    <string name="placed">Placed</string>
+    <string name="light_on">Light ON</string>
+    <string name="double_double">Double-Double</string>
+    <string name="placed_double_double">Placed Double Double</string>
+    <string name="double_double2">Double Double</string>
+    <string name="cheese_burger">cheese burger</string>
+    <string name="cheese_burgerOn">cheese burger</string>
+    <string name="hamburger">hamburger</string>
+    <string name="hamburgerOn">hamburger</string>
+    <string name="french_fries">French Fries</string>
+    <string name="french_friesOn">French Fries</string>
+    <string name="small">small</string>
+    <string name="Large" />
+    <string name="large">Large</string>
+    <string name="largeOn">Large</string>
+    <string name="X_LG">X-LG</string>
+    <string name="medium">Medium</string>
+    <string name="mediumOn">Medium</string>
+    <string name="place_order">Place Order</string>
 </resources>
