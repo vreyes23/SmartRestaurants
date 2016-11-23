@@ -20,6 +20,12 @@
     <string name="etHamburger">Hamburger</string>
     <string name="etFrench_fries">French Fries</string>
 
+    <!-- Top Bar, i.e Quantity, Price -->
+    <string name="etQuantity">Quantity </string>
+    <string name="quantity">Quantity</string>
+    <string name="etPrice">Price </string>
+    <string name="price">Price</string>
+
     <!-- Prices ID's -->
     <string name="price_2.95">2.95</string>
     <string name="price_1.95">1.95</string>

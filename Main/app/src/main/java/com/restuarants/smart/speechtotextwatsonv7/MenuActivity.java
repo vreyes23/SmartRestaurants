@@ -18,6 +18,7 @@ import org.w3c.dom.Text;
  * @version 1.0 November 23 2016
  */
 public class MenuActivity extends AppCompatActivity {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -60,6 +61,7 @@ public class MenuActivity extends AppCompatActivity {
 
         // Increment price double double when user presses button
         doubledouble_button.setOnClickListener(new View.OnClickListener() {
+
             double price = Double.parseDouble(("5.90"));
             @Override
             public void onClick(View view){

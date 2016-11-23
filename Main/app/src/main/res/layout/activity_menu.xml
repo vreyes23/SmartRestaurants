@@ -18,13 +18,58 @@
         android:layout_marginStart="15dp"
         android:layout_marginBottom="15dp" />
 
-    <TableLayout
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/etQuantity"
+                    android:text="@string/quantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal|bold"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="200dp" />
+
+                <TextView
+                    android:id="@+id/etPrice"
+                    android:text="@string/etPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal|bold"
+                    android:layout_marginLeft="80dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </TableLayout>
+
+        <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="15dp">
+        android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp">
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
             <ToggleButton
                 android:id="@+id/etDouble_double"
@@ -33,6 +78,7 @@
                 android:onClick="onToggleClicked"
                 android:textOn="@string/double_double_text"
                 android:textOff="@string/double_double_text" />
+
             <TextView
                 android:id="@+id/price_2.95"
                 android:text="@string/_2_95_text"
@@ -41,6 +87,16 @@
                 android:textAlignment="viewEnd"
                 android:textSize="20sp"
                 android:layout_marginStart="180dp"
+                android:textStyle="normal|bold" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:text="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="viewEnd"
+                android:textSize="20sp"
+                android:layout_marginStart="-140dp"
                 android:textStyle="normal|bold" />
         </TableRow>
 
