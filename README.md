@@ -16,9 +16,11 @@ We are using Android Studio to develop a mobile application that uses IBM's whic
    * Speech To Text
    * Push Notifications
    
-Screenshots 
-======  
-Coming very soon
+Screenshots
+======
+(https://github.com/vreyes23/SmartRestaurants/blob/master/Screenshots/Home.png "Home")
+
+(https://github.com/vreyes23/SmartRestaurants/blob/master/Screenshots/Order.png "Customers that do not want to use Speech To Text to order have to go through this Main Menu Activity")
 
 Video
 ======
