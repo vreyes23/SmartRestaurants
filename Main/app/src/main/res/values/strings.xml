@@ -1,28 +1,69 @@
 <resources>
     <string name="app_name">SpeechToTextWatsonV7</string>
+<!-- MainActivity -->
     <string name="view_menu">View menu</string>
     <string name="welcome">Welcome</string>
     <string name="start_recording">Start Recording</string>
     <string name="play_recorded_audio">Play Recorded Audio</string>
     <string name="call_speech_to_text_service">Call Speech to Text Service</string>
-    <string name="placed">Placed</string>
-    <string name="light_on">Light ON</string>
-    <string name="double_double">Double-Double</string>
-    <string name="placed_double_double">Placed Double Double</string>
-    <string name="double_double2">Double Double</string>
-    <string name="cheese_burger">cheese burger</string>
-    <string name="cheese_burgerOn">cheese burger</string>
-    <string name="hamburger">hamburger</string>
-    <string name="hamburgerOn">hamburger</string>
-    <string name="french_fries">French Fries</string>
-    <string name="french_friesOn">French Fries</string>
-    <string name="small">small</string>
-    <string name="Large" />
-    <string name="large">Large</string>
-    <string name="largeOn">Large</string>
-    <string name="X_LG">X-LG</string>
+
+<!-- Activity Menu -->
+    <!-- Header-->
+    <string name="menu_text">Menu</string>
+    <string name="drinks_text">Drinks</string>
+
+    <!-- Main menu ID's -->
+    <string name="etMenu">Menu</string>
+    <string name="etDrinks">Drinks</string>
+    <string name="etDouble_double">Double Double</string>
+    <string name="etCheese_burger">Cheese Burger</string>
+    <string name="etHamburger">Hamburger</string>
+    <string name="etFrench_fries">French Fries</string>
+
+    <!-- Prices ID's -->
+    <string name="price_2.95">2.95</string>
+    <string name="price_1.95">1.95</string>
+    <string name="price_1.65">1.65</string>
+    <string name="price_1.19">1.19</string>
+
+    <!-- Main menu Text -->
+    <string name="double_double_text">Double Double</string>
+    <string name="cheese_burger_text">Cheese Burger</string>
+    <string name="hamburger_text">Hamburger</string>
+    <string name="french_fries_text">French Fries</string>
+
+    <!-- Menu Prices Text -->
+    <string name="_2_95_text">2.95</string>
+    <string name="_1_95_text">1.95</string>
+    <string name="_1_65_text">1.65</string>
+    <string name="_1_19_text">1.19</string>
+
+    <!-- Drinks ID's -->
+    <string name="small">Small</string>
     <string name="medium">Medium</string>
-    <string name="mediumOn">Medium</string>
+    <string name="large">Large</string>
+    <string name="x_large">X-Large</string>
+
+    <!-- Drinks Text-->
+    <string name="_small_text">Small</string>
+    <string name="_medium_text">Medium</string>
+    <string name="_large_text">Large</string>
+    <string name="_x_large_text">X-Large</string>
+
+    <!-- Drink Prices ID's -->
+    <string name="price_1.15">1.15</string>
+    <string name="price_1.25">1.25</string>
+    <string name="price_1.45">1.45</string>
+    <string name="price_1.65_2">1.45</string>
+
+    <!-- Drinks Prices Text -->
+    <string name="_1_15_text">1.15</string>
+    <string name="_1_25_text">1.25</string>
+    <string name="_1_45_text">1.45</string>
+    <string name="_1_65_text_2">1.65</string>
+
+    <!-- Place Order ID -->
+    <string name="etPlaceOrder">Place Order</string>
+    <!-- Place Order Text -->
     <string name="place_order">Place Order</string>
-    <string name="your_order">Your Order</string>
 </resources>

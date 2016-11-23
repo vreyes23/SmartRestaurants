@@ -1,90 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:layout_marginTop="20dp">
-
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
     <TextView
-        android:text="Menu"
+        android:id="@+id/etMenu"
+        android:text="@string/menu_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textView"
         android:fontFamily="serif"
         android:textSize="36sp"
         android:textAlignment="viewStart"
         android:textStyle="normal|bold"
-        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
         android:layout_marginBottom="15dp" />
 
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="15dp">
-
+        android:layout_marginStart="15dp">
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent" >
 
             <ToggleButton
-                android:id="@+id/flashlightButton"
+                android:id="@+id/etDouble_double"
+                android:text="@string/double_double_text"
                 android:layout_marginBottom="20dp"
                 android:onClick="onToggleClicked"
-                android:text="@string/placed"
-                android:textOn="@string/double_double2"
-                android:textOff="@string/double_double" />
+                android:textOn="@string/double_double_text"
+                android:textOff="@string/double_double_text" />
             <TextView
-                android:text="2.95"
+                android:id="@+id/price_2.95"
+                android:text="@string/_2_95_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/textView6"
                 android:textAlignment="viewEnd"
-                android:textSize="20dp"
-                android:layout_marginLeft="180dp"
-                android:textStyle="normal|bold" />
-
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" >
-
-            <ToggleButton
-                android:layout_marginBottom="20dp"
-                android:onClick="onToggleClicked"
-                android:text="@string/placed"
-                android:textOn="@string/cheese_burger"
-                android:textOff="@string/cheese_burger" />
-
-            <TextView
-                android:text="1.95"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView7"
-                android:textSize="20dp"
-                android:textStyle="normal|bold"
-                android:layout_marginLeft="180dp" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" >
-            <ToggleButton
-                android:layout_marginBottom="20dp"
-                android:onClick="onToggleClicked"
-                android:text="@string/placed"
-                android:textOn="@string/hamburgerOn"
-                android:textOff="@string/hamburger" />
-
-            <TextView
-                android:text="1.65"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView8"
-                android:layout_marginLeft="180dp"
-                android:textSize="20dp"
+                android:textSize="20sp"
+                android:layout_marginStart="180dp"
                 android:textStyle="normal|bold" />
         </TableRow>
 
@@ -92,138 +48,169 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent" >
             <ToggleButton
+                android:id="@+id/etCheese_burger"
+                android:text="@string/cheese_burger_text"
                 android:layout_marginBottom="20dp"
                 android:onClick="onToggleClicked"
-                android:text="@string/placed"
-                android:textOn="@string/french_friesOn"
-                android:textOff="@string/french_fries" />
+                android:textOn="@string/cheese_burger_text"
+                android:textOff="@string/cheese_burger_text"/>
 
             <TextView
-                android:text="1.19"
+                android:id="@+id/price_1.95"
+                android:text="@string/_1_95_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/textView9"
-                android:layout_marginLeft="180dp"
+                android:textSize="20sp"
                 android:textStyle="normal|bold"
-                android:textSize="20dp" />
+                android:layout_marginStart="180dp" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <ToggleButton
+                android:id="@+id/etHamburger"
+                android:text="@string/hamburger_text"
+                android:layout_marginBottom="20dp"
+                android:onClick="onToggleClicked"
+                android:textOn="@string/hamburger_text"
+                android:textOff="@string/hamburger_text" />
+            <TextView
+                android:id="@+id/price_1.65"
+                android:text="@string/_1_65_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="180dp"
+                android:textSize="20sp"
+                android:textStyle="normal|bold" />
+        </TableRow>
 
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <ToggleButton
+                android:id="@+id/etFrench_fries"
+                android:text="@string/french_fries_text"
+                android:layout_marginBottom="20dp"
+                android:onClick="onToggleClicked"
+                android:textOn="@string/french_fries_text"
+                android:textOff="@string/french_fries_text" />
+            <TextView
+                android:id="@+id/price_1.19"
+                android:text="@string/_1_19_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="180dp"
+                android:textStyle="normal|bold"
+                android:textSize="20sp" />
         </TableRow>
     </TableLayout>
 
     <TextView
-        android:text="Drinks"
+        android:id="@+id/etDrinks"
+        android:text="@string/drinks_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textView3"
         android:textSize="36sp"
         android:fontFamily="serif"
         android:textStyle="normal|bold"
-        android:layout_marginLeft="15dp" />
+        android:layout_marginStart="15dp" />
 
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginLeft="15dp">
-
+        android:layout_marginStart="15dp">
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent" >
-
             <ToggleButton
+                android:id="@+id/small"
+                android:text="@string/_small_text"
+                android:textOn="@string/_small_text"
+                android:textOff="@string/_small_text"
                 android:layout_marginBottom="20dp"
-                android:onClick="onToggleClicked"
-                android:text="@string/placed"
-                android:textOn="@string/small"
-                android:textOff="@string/small" />
-
+                android:onClick="onToggleClicked" />
             <TextView
-                android:text="1.15"
+                android:id="@+id/price_1.15"
+                android:text="@string/_1_15_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/textView10"
-                android:layout_marginLeft="222dp"
-                android:textSize="20dp"
+                android:layout_marginStart="222dp"
+                android:textSize="20sp"
                 android:textStyle="normal|bold" />
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent" >
-
             <ToggleButton
+                android:id="@+id/medium"
+                android:text="@string/_medium_text"
+                android:textOn="@string/_medium_text"
+                android:textOff="@string/_medium_text"
                 android:layout_marginBottom="20dp"
-                android:onClick="onToggleClicked"
-                android:text="@string/placed"
-                android:textOn="@string/mediumOn"
-                android:textOff="@string/medium" />
-
+                android:onClick="onToggleClicked" />
             <TextView
-                android:text="1.25"
+                android:id="@+id/price_1.25"
+                android:text="@string/_1_25_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/textView11"
-                android:elevation="15dp"
-                android:textSize="20dp"
-                android:textStyle="normal|bold"
-                android:layout_marginLeft="222dp" />
+                android:layout_marginStart="222dp"
+                android:textSize="20sp"
+                android:textStyle="normal|bold" />
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent" >
-
             <ToggleButton
+                android:id="@+id/large"
+                android:text="@string/_large_text"
+                android:textOn="@string/_large_text"
+                android:textOff="@string/_large_text"
                 android:layout_marginBottom="20dp"
-                android:onClick="onToggleClicked"
-                android:text="@string/placed"
-                android:textOn="@string/largeOn"
-                android:textOff="@string/large" />
-
+                android:onClick="onToggleClicked" />
             <TextView
-                android:text="1.45"
+                android:id="@+id/price_1.45"
+                android:text="@string/_1_45_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/textView12"
-                android:textSize="20dp"
-                android:textStyle="normal|bold"
-                android:layout_marginLeft="222dp" />
+                android:layout_marginStart="222dp"
+                android:textSize="20sp"
+                android:textStyle="normal|bold" />
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent" >
-
             <ToggleButton
+                android:id="@+id/x_large"
+                android:text="@string/_x_large_text"
+                android:textOn="@string/_x_large_text"
+                android:textOff="@string/_x_large_text"
                 android:layout_marginBottom="20dp"
-                android:onClick="onToggleClicked"
-                android:text="@string/placed"
-                android:textOn="@string/X_LG"
-                android:textOff="@string/X_LG" />
-
+                android:onClick="onToggleClicked" />
             <TextView
-                android:text="1.65"
+                android:id="@+id/price_1.65_2"
+                android:text="@string/_1_65_text_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/textView13"
-                android:textStyle="normal|bold"
-                android:textSize="20dp"
-                android:layout_marginLeft="222dp" />
-
+                android:layout_marginStart="222dp"
+                android:textSize="20sp"
+                android:textStyle="normal|bold" />
         </TableRow>
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:paddingLeft="270dp">
-
             <Button
+                android:id="@+id/etPlaceOrder"
                 android:text="@string/place_order"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@android:color/holo_red_dark"
-                android:id="@+id/etPlaceOrder"
                 android:elevation="0dp"
                 android:textSize="10sp" />
-
         </TableRow>
     </TableLayout>
-</LinearLayout>
+    </LinearLayout>
+</ScrollView>
