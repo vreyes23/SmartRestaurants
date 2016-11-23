@@ -72,7 +72,7 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
-                <ToggleButton
+                <Button
                     android:id="@+id/etDouble_double"
                     android:text="@string/double_double_text"
                     android:layout_marginBottom="20dp"
@@ -104,7 +104,7 @@
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" >
-                <ToggleButton
+                <Button
                     android:id="@+id/etCheese_burger"
                     android:text="@string/cheese_burger_text"
                     android:layout_marginBottom="20dp"
@@ -133,7 +133,7 @@
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" >
-                <ToggleButton
+                <Button
                     android:id="@+id/etHamburger"
                     android:text="@string/hamburger_text"
                     android:layout_marginBottom="20dp"
@@ -162,7 +162,7 @@
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" >
-                <ToggleButton
+                <Button
                     android:id="@+id/etFrench_fries"
                     android:text="@string/french_fries_text"
                     android:layout_marginBottom="20dp"
@@ -208,7 +208,7 @@
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" >
-                <ToggleButton
+                <Button
                     android:id="@+id/small"
                     android:text="@string/_small_text"
                     android:textOn="@string/_small_text"
@@ -237,7 +237,7 @@
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" >
-                <ToggleButton
+                <Button
                     android:id="@+id/medium"
                     android:text="@string/_medium_text"
                     android:textOn="@string/_medium_text"
@@ -266,7 +266,7 @@
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" >
-                <ToggleButton
+                <Button
                     android:id="@+id/large"
                     android:text="@string/_large_text"
                     android:textOn="@string/_large_text"
@@ -295,7 +295,7 @@
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" >
-                <ToggleButton
+                <Button
                     android:id="@+id/x_large"
                     android:text="@string/_x_large_text"
                     android:textOn="@string/_x_large_text"
