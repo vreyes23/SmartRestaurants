@@ -26,9 +26,3 @@ Video
 ======
 Coming very soon
 
-Contributors 
-======
-   * Victor Reyes
-   * Oscar Ricaud
-   * Pooja
-   * Ramya
