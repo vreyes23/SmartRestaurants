@@ -1,5 +1,4 @@
 package com.restuarants.smart.speechtotextwatsonv7;
-
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.AsyncTask;
@@ -16,7 +15,15 @@ import com.ibm.watson.developer_cloud.speech_to_text.v1.model.SpeechResults;
 
 import java.io.File;
 import java.io.IOException;
-
+/**
+ * This is the first activity that gets launched when you run this program.
+ * MainActivity will be split into two different sections.
+ * First section is for customers that do not wish to use the feature of Speech to Text aka Order
+ * by speaking. Therefore the user's must navigate through the menu @see MenuActivity and order
+ * through there.
+ * @author Oscar I. Ricaud
+ * @version 1.0 November 23 2017
+ */
 public class MainActivity extends AppCompatActivity {
 
     private static final String LOG_TAG = "StT";
