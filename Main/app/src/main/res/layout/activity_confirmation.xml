@@ -29,7 +29,6 @@
                 android:id="@+id/etDouble_double"
                 android:text="@string/double_double_text"
                 android:layout_marginBottom="20dp"
-                android:onClick="onToggleClicked"
                 android:textOn="@string/double_double_text"
                 android:textOff="@string/double_double_text" />
             <TextView
@@ -51,7 +50,6 @@
                 android:id="@+id/etCheese_burger"
                 android:text="@string/cheese_burger_text"
                 android:layout_marginBottom="20dp"
-                android:onClick="onToggleClicked"
                 android:textOn="@string/cheese_burger_text"
                 android:textOff="@string/cheese_burger_text"/>
 
@@ -72,7 +70,6 @@
                 android:id="@+id/etHamburger"
                 android:text="@string/hamburger_text"
                 android:layout_marginBottom="20dp"
-                android:onClick="onToggleClicked"
                 android:textOn="@string/hamburger_text"
                 android:textOff="@string/hamburger_text" />
             <TextView
@@ -93,7 +90,6 @@
                 android:id="@+id/etFrench_fries"
                 android:text="@string/french_fries_text"
                 android:layout_marginBottom="20dp"
-                android:onClick="onToggleClicked"
                 android:textOn="@string/french_fries_text"
                 android:textOff="@string/french_fries_text" />
             <TextView
@@ -131,8 +127,7 @@
                 android:text="@string/_small_text"
                 android:textOn="@string/_small_text"
                 android:textOff="@string/_small_text"
-                android:layout_marginBottom="20dp"
-                android:onClick="onToggleClicked" />
+                android:layout_marginBottom="20dp" />
             <TextView
                 android:id="@+id/price_1.15"
                 android:text="@string/_1_15_text"

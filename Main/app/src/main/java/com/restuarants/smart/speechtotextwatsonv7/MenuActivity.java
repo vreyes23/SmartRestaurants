@@ -23,7 +23,11 @@ public class MenuActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
+        displayContent();
 
+    }
+
+    private void displayContent() {
         // Double Double
         final TextView doubledouble_price = (TextView) findViewById(R.id.price_2_95);
         final TextView qtyDouble = (TextView) findViewById(R.id.etQtyDouble);
@@ -67,23 +71,26 @@ public class MenuActivity extends AppCompatActivity {
         // Place Order
         Button placeOrderButton = (Button) findViewById(R.id.etPlaceOrder);
 
+        final CustomerOrder order = new CustomerOrder();
         // Increment price double double when user presses button
         doubledouble_button.setOnClickListener(new View.OnClickListener() {
             int qty = Integer.parseInt(("1"));
-            double price = Double.parseDouble(("2.95"));
+            double price = Double.parseDouble(("5.90"));
             @Override
             public void onClick(View view){
                 doubledouble_price.setText("" + price);
                 qtyDouble.setText("" + qty);
                 qty = qty + 1;
-                price = price + 2.95;
+                price = price + 2.950;
+
             }
+
         });
 
         // Increment price cheese burger when user presses button
         cheeseburger_button.setOnClickListener(new View.OnClickListener() {
-            int qty = Integer.parseInt(("1"));
-            double price = Double.parseDouble(("1.95"));
+            int qty = Integer.parseInt(("2"));
+            double price = Double.parseDouble(("3.90"));
             @Override
             public void onClick(View view){
                 cheeseburger_price.setText("" + price);
@@ -95,8 +102,8 @@ public class MenuActivity extends AppCompatActivity {
 
         // Increment price hamburger when user presses button
         hamburger_button.setOnClickListener(new View.OnClickListener() {
-            int qty = Integer.parseInt(("1"));
-            double price = Double.parseDouble(("1.65"));
+            int qty = Integer.parseInt(("2"));
+            double price = Double.parseDouble(("3.30"));
             @Override
             public void onClick(View view){
                 hamburger_price.setText("" + price);
@@ -108,8 +115,8 @@ public class MenuActivity extends AppCompatActivity {
 
         // Increment price fries when user presses button
         fries_button.setOnClickListener(new View.OnClickListener() {
-            int qty = Integer.parseInt(("1"));
-            double price = Double.parseDouble(("1.19"));
+            int qty = Integer.parseInt(("2"));
+            double price = Double.parseDouble(("2.38"));
             @Override
             public void onClick(View view){
                 fries_price.setText("" + price);
@@ -121,8 +128,8 @@ public class MenuActivity extends AppCompatActivity {
 
         // Increment price small drinks when user presses button
         small_button.setOnClickListener(new View.OnClickListener() {
-            int qty = Integer.parseInt(("1"));
-            double price = Double.parseDouble(("1.15"));
+            int qty = Integer.parseInt(("2"));
+            double price = Double.parseDouble(("2.30"));
             @Override
             public void onClick(View view){
                 small_price.setText("" + price);
@@ -134,8 +141,8 @@ public class MenuActivity extends AppCompatActivity {
 
         // Increment price medium drinks when user presses button
         medium_button.setOnClickListener(new View.OnClickListener() {
-            int qty = Integer.parseInt(("1"));
-            double price = Double.parseDouble(("1.25"));
+            int qty = Integer.parseInt(("2"));
+            double price = Double.parseDouble(("2.50"));
             @Override
             public void onClick(View view){
                 medium_price.setText("" + price);
@@ -147,8 +154,8 @@ public class MenuActivity extends AppCompatActivity {
 
         // Increment price large drinks when user presses button
         large_button.setOnClickListener(new View.OnClickListener() {
-            int qty = Integer.parseInt(("1"));
-            double price = Double.parseDouble(("1.45"));
+            int qty = Integer.parseInt(("2"));
+            double price = Double.parseDouble(("2.90"));
             @Override
             public void onClick(View view){
                 large_price.setText("$" + price);
@@ -160,8 +167,8 @@ public class MenuActivity extends AppCompatActivity {
 
         // Increment price for big-boy drinks when user presses button
         xl_button.setOnClickListener(new View.OnClickListener() {
-            int qty = Integer.parseInt(("1"));
-            double price = Double.parseDouble(("1.65"));
+            int qty = Integer.parseInt(("2"));
+            double price = Double.parseDouble(("3.30"));
             @Override
             public void onClick(View view){
                 xl_price.setText("" + price);
@@ -181,7 +188,6 @@ public class MenuActivity extends AppCompatActivity {
         });
 
     }
-
     public void onToggleClicked(View view) {
     }
 }

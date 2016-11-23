@@ -72,11 +72,13 @@
     <string name="etPlaceOrder">Place Order</string>
     <!-- Place Order Text -->
     <string name="place_order">Place Order</string>
-    <string name="_1XLG">1</string>
-    <string name="_1Large">1</string>
-    <string name="_1Medium">1</string>
-    <string name="_1Small">1</string>
-    <string name="_1French">1</string>
-    <string name="_1Ham">1</string>
-    <string name="_1Double">1</string>
+    <string name="_1XLG">0</string>
+    <string name="_1Large">0</string>
+    <string name="_1Medium">0</string>
+    <string name="_1Small">0</string>
+    <string name="_1French">0</string>
+    <string name="_1Ham">0</string>
+    <string name="_1Double">0</string>
+    <string name="_0_text">0</string>
+    <string name="_0">0</string>
 </resources>
