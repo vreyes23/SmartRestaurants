@@ -26,34 +26,42 @@ public class MenuActivity extends AppCompatActivity {
 
         // Double Double
         final TextView doubledouble_price = (TextView) findViewById(R.id.price_2_95);
+        final TextView qtyDouble = (TextView) findViewById(R.id.etQtyDouble);
         final Button doubledouble_button = (Button) findViewById(R.id.etDouble_double);
 
         // Cheese Burger
         final TextView cheeseburger_price = (TextView) findViewById(R.id.price_1_95);
+        final TextView qtyCheese = (TextView) findViewById(R.id.etQtyCheese);
         final Button cheeseburger_button = (Button) findViewById(R.id.etCheese_burger);
 
         // Hamburger
         final TextView hamburger_price = (TextView) findViewById(R.id.price_1_65);
+        final TextView qtyHam = (TextView) findViewById(R.id.etQtyHam);
         final Button hamburger_button = (Button) findViewById(R.id.etHamburger);
 
-        // Hamburger
+        // Fries
         final TextView fries_price = (TextView) findViewById(R.id.price_1_19);
+        final TextView qtyFrie = (TextView) findViewById(R.id.etQtyFrench);
         final Button fries_button = (Button) findViewById(R.id.etFrench_fries);
 
         // Small Drinks
         final TextView small_price = (TextView) findViewById(R.id.price_1_15);
+        final TextView qtySmall = (TextView) findViewById(R.id.etQtySmall);
         final Button small_button = (Button) findViewById(R.id.small);
 
         // Medium Drinks
         final TextView medium_price = (TextView) findViewById(R.id.price_1_25);
+        final TextView qtyMedium = (TextView) findViewById(R.id.etQtyMedium);
         final Button medium_button = (Button) findViewById(R.id.medium);
 
         // Large Drinks
         final TextView large_price = (TextView) findViewById(R.id.price_1_45);
+        final TextView qtyLarge = (TextView) findViewById(R.id.etQtyLarge);
         final Button large_button = (Button) findViewById(R.id.large);
 
         // Big Boy Drinks
         final TextView xl_price = (TextView) findViewById(R.id.price_1_65_2);
+        final TextView qtyXLarge = (TextView) findViewById(R.id.etQtyXLG);
         final Button xl_button = (Button) findViewById(R.id.x_large);
 
         // Place Order
@@ -61,82 +69,105 @@ public class MenuActivity extends AppCompatActivity {
 
         // Increment price double double when user presses button
         doubledouble_button.setOnClickListener(new View.OnClickListener() {
-
-            double price = Double.parseDouble(("5.90"));
+            int qty = Integer.parseInt(("1"));
+            double price = Double.parseDouble(("2.95"));
             @Override
             public void onClick(View view){
-                doubledouble_price.setText("$" + price);
-                price = price + price;
+                doubledouble_price.setText("" + price);
+                qtyDouble.setText("" + qty);
+                qty = qty + 1;
+                price = price + 2.95;
             }
         });
 
         // Increment price cheese burger when user presses button
         cheeseburger_button.setOnClickListener(new View.OnClickListener() {
-            double price = Double.parseDouble(("3.90"));
+            int qty = Integer.parseInt(("1"));
+            double price = Double.parseDouble(("1.95"));
             @Override
             public void onClick(View view){
-                cheeseburger_price.setText("$" + price);
-                price = price + price;
+                cheeseburger_price.setText("" + price);
+                qtyCheese.setText("" + qty);
+                qty = qty + 1;
+                price = price + 1.95;
             }
         });
 
         // Increment price hamburger when user presses button
         hamburger_button.setOnClickListener(new View.OnClickListener() {
-            double price = Double.parseDouble(("3.30"));
+            int qty = Integer.parseInt(("1"));
+            double price = Double.parseDouble(("1.65"));
             @Override
             public void onClick(View view){
-                hamburger_price.setText("$" + price);
-                price = price + price;
+                hamburger_price.setText("" + price);
+                qtyHam.setText("" + qty);
+                qty = qty + 1;
+                price = price + 1.65;
             }
         });
 
         // Increment price fries when user presses button
         fries_button.setOnClickListener(new View.OnClickListener() {
-            double price = Double.parseDouble(("2.38"));
+            int qty = Integer.parseInt(("1"));
+            double price = Double.parseDouble(("1.19"));
             @Override
             public void onClick(View view){
-                fries_price.setText("$" + price);
-                price = price + price;
+                fries_price.setText("" + price);
+                qtyFrie.setText("" + qty);
+                qty = qty + 1;
+                price = price + 1.19;
             }
         });
 
         // Increment price small drinks when user presses button
         small_button.setOnClickListener(new View.OnClickListener() {
-            double price = Double.parseDouble(("2.30"));
+            int qty = Integer.parseInt(("1"));
+            double price = Double.parseDouble(("1.15"));
             @Override
             public void onClick(View view){
-                small_price.setText("$" + price);
-                price = price + price;
+                small_price.setText("" + price);
+                qtySmall.setText("" + qty);
+                qty = qty + 1;
+                price = price + 1.15;
             }
         });
 
         // Increment price medium drinks when user presses button
         medium_button.setOnClickListener(new View.OnClickListener() {
-            double price = Double.parseDouble(("2.50"));
+            int qty = Integer.parseInt(("1"));
+            double price = Double.parseDouble(("1.25"));
             @Override
             public void onClick(View view){
-                medium_price.setText("$" + price);
-                price = price + price;
+                medium_price.setText("" + price);
+                qtyMedium.setText("" + qty);
+                qty = qty + 1;
+                price = price + 1.25;
             }
         });
 
         // Increment price large drinks when user presses button
         large_button.setOnClickListener(new View.OnClickListener() {
-            double price = Double.parseDouble(("2.90"));
+            int qty = Integer.parseInt(("1"));
+            double price = Double.parseDouble(("1.45"));
             @Override
             public void onClick(View view){
                 large_price.setText("$" + price);
-                price = price + price;
+                qtyLarge.setText("" + qty);
+                qty = qty + 1;
+                price = price + 1.45;
             }
         });
 
         // Increment price for big-boy drinks when user presses button
         xl_button.setOnClickListener(new View.OnClickListener() {
-            double price = Double.parseDouble(("3.30"));
+            int qty = Integer.parseInt(("1"));
+            double price = Double.parseDouble(("1.65"));
             @Override
             public void onClick(View view){
-                xl_price.setText("$" + price);
-                price = price + price;
+                xl_price.setText("" + price);
+                qtyXLarge.setText("" + qty);
+                qty = qty + 1;
+                price = price + 1.65;
             }
         });
 

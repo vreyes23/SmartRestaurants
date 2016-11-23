@@ -91,8 +91,8 @@
                     android:textStyle="normal|bold" />
 
                 <TextView
-                    android:id="@+id/textView6"
-                    android:text="1"
+                    android:id="@+id/etQtyDouble"
+                    android:text="@string/_1Double"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAlignment="viewEnd"
@@ -120,6 +120,15 @@
                     android:textSize="20sp"
                     android:textStyle="normal|bold"
                     android:layout_marginStart="180dp" />
+                <TextView
+                    android:id="@+id/etQtyCheese"
+                    android:text="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="viewEnd"
+                    android:textSize="20sp"
+                    android:layout_marginStart="-140dp"
+                    android:textStyle="normal|bold" />
             </TableRow>
             <TableRow
                 android:layout_width="match_parent"
@@ -138,6 +147,15 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="180dp"
                     android:textSize="20sp"
+                    android:textStyle="normal|bold" />
+                <TextView
+                    android:id="@+id/etQtyHam"
+                    android:text="@string/_1Ham"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="viewEnd"
+                    android:textSize="20sp"
+                    android:layout_marginStart="-140dp"
                     android:textStyle="normal|bold" />
             </TableRow>
 
@@ -159,6 +177,15 @@
                     android:layout_marginStart="180dp"
                     android:textStyle="normal|bold"
                     android:textSize="20sp" />
+                <TextView
+                    android:id="@+id/etQtyFrench"
+                    android:text="@string/_1French"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="viewEnd"
+                    android:textSize="20sp"
+                    android:layout_marginStart="-140dp"
+                    android:textStyle="normal|bold" />
             </TableRow>
         </TableLayout>
 
@@ -196,6 +223,15 @@
                     android:layout_marginStart="222dp"
                     android:textSize="20sp"
                     android:textStyle="normal|bold" />
+                <TextView
+                    android:id="@+id/etQtySmall"
+                    android:text="@string/_1Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="viewEnd"
+                    android:textSize="20sp"
+                    android:layout_marginStart="-140dp"
+                    android:textStyle="normal|bold" />
             </TableRow>
 
             <TableRow
@@ -215,6 +251,15 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="222dp"
                     android:textSize="20sp"
+                    android:textStyle="normal|bold" />
+                <TextView
+                    android:id="@+id/etQtyMedium"
+                    android:text="@string/_1Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="viewEnd"
+                    android:textSize="20sp"
+                    android:layout_marginStart="-140dp"
                     android:textStyle="normal|bold" />
             </TableRow>
 
@@ -236,6 +281,15 @@
                     android:layout_marginStart="222dp"
                     android:textSize="20sp"
                     android:textStyle="normal|bold" />
+                <TextView
+                    android:id="@+id/etQtyLarge"
+                    android:text="@string/_1Large"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="viewEnd"
+                    android:textSize="20sp"
+                    android:layout_marginStart="-140dp"
+                    android:textStyle="normal|bold" />
             </TableRow>
 
             <TableRow
@@ -255,6 +309,15 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="222dp"
                     android:textSize="20sp"
+                    android:textStyle="normal|bold" />
+                <TextView
+                    android:id="@+id/etQtyXLG"
+                    android:text="@string/_1XLG"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="viewEnd"
+                    android:textSize="20sp"
+                    android:layout_marginStart="-140dp"
                     android:textStyle="normal|bold" />
             </TableRow>
             <TableRow

@@ -3,8 +3,12 @@ package com.restuarants.smart.speechtotextwatsonv7;
 import java.util.ArrayList;
 
 /**
- * Created by oscarricaud on 11/23/16.
+ * Created by Oscar Ricaud
+ * updated by Victor Reyes on 10/26/2016.
+ * Smart Restaurants Application
+ * For CS465 Applied Cognitive Computing
  */
+
 public class Order {
 
     private String name;
