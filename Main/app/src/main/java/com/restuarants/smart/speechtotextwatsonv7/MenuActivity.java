@@ -1,13 +1,18 @@
 package com.restuarants.smart.speechtotextwatsonv7;
 
 import android.content.Intent;
+import android.icu.text.NumberFormat;
+import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
 import org.w3c.dom.Text;
+
+import java.text.DecimalFormat;
 
 /**
  * The purpose of the MenuActivity is to allow users that do not wish to speak to watson to order
@@ -17,6 +22,7 @@ import org.w3c.dom.Text;
  * @author Oscar I. Ricaud
  * @version 1.0 November 23 2016
  */
+
 public class MenuActivity extends AppCompatActivity {
 
     @Override
@@ -24,10 +30,9 @@ public class MenuActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
         displayContent();
-
     }
-
     private void displayContent() {
+        final  DecimalFormat form = new DecimalFormat("0.00");
         // Double Double
         final TextView doubledouble_price = (TextView) findViewById(R.id.price_2_95);
         final TextView qtyDouble = (TextView) findViewById(R.id.etQtyDouble);
@@ -68,21 +73,27 @@ public class MenuActivity extends AppCompatActivity {
         final TextView qtyXLarge = (TextView) findViewById(R.id.etQtyXLG);
         final Button xl_button = (Button) findViewById(R.id.x_large);
 
+        // Obtain textview id
+        final TextView placeholder = (TextView) findViewById(R.id.totalPricePlaceholder);
+
         // Place Order
         Button placeOrderButton = (Button) findViewById(R.id.etPlaceOrder);
 
         final CustomerOrder order = new CustomerOrder();
+
+
         // Increment price double double when user presses button
         doubledouble_button.setOnClickListener(new View.OnClickListener() {
-            int qty = Integer.parseInt(("1"));
-            double price = Double.parseDouble(("5.90"));
+            int qty = 1;
+            double price = 5.90; // Change the price to this when the user presses the button
             @Override
             public void onClick(View view){
-                doubledouble_price.setText("" + price);
-                qtyDouble.setText("" + qty);
+                doubledouble_price.setText(form.format(price));
+                qtyDouble.setText(String.valueOf(qty));
                 order.setQty_from_main_menu(qty);
-                qty = qty + 1;
-                price = price + 2.950;
+                placeholder.setText(form.format(price)); // For total value on the bottom right.
+                qty++;
+                price = price + 2.95;
             }
         });
 

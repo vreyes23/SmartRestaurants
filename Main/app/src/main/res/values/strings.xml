@@ -81,4 +81,11 @@
     <string name="_1Double">0</string>
     <string name="_0_text">0</string>
     <string name="_0">0</string>
+    <!-- Text View for Total & Total Price -->
+    <string name="total">Total</string>
+    <string name="pricegoeshere">"$0.00"</string>
+
+    <!-- Total Price place holder, not sure if I need this -->
+    <string name="totalPricePlaceholder">""</string>
+
 </resources>

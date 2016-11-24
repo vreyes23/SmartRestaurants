@@ -1,218 +1,378 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
-
-    <TextView
-        android:id="@+id/etMenu"
-        android:text="@string/menu_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="serif"
-        android:textSize="36sp"
-        android:textAlignment="viewStart"
-        android:textStyle="normal|bold"
-        android:layout_marginStart="15dp"
-        android:layout_marginBottom="15dp"
-        android:scrollbars = "vertical" />
-
-    <TableLayout
+    android:layout_height="match_parent">
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="15dp">
-        <TableRow
+        android:orientation="vertical" >
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/progress"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:max="100"
+            android:progress="45"/>
+        <TextView
+            android:id="@+id/etMenu"
+            android:text="@string/menu_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:textSize="36sp"
+            android:textAlignment="viewStart"
+            android:textStyle="normal|bold"
+            android:layout_marginStart="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="10dp" />
+
+        <TableLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="match_parent">
 
-            <ToggleButton
-                android:id="@+id/etDouble_double"
-                android:text="@string/double_double_text"
-                android:layout_marginBottom="20dp"
-                android:textOn="@string/double_double_text"
-                android:textOff="@string/double_double_text" />
-            <TextView
-                android:id="@+id/price_2.95"
-                android:text="@string/_2_95_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAlignment="viewEnd"
-                android:textSize="20sp"
-                android:layout_marginStart="180dp"
-                android:textStyle="normal|bold"
-                android:scrollbars = "vertical"/>
-        </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
 
-        <TableRow
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/etQuantity"
+                    android:text="@string/quantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal|bold"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="200dp" />
+
+                <TextView
+                    android:id="@+id/etPrice"
+                    android:text="@string/etPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal|bold"
+                    android:layout_marginLeft="80dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </TableLayout>
+
+        <TableLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
-            <ToggleButton
-                android:id="@+id/etCheese_burger"
-                android:text="@string/cheese_burger_text"
-                android:layout_marginBottom="20dp"
-                android:textOn="@string/cheese_burger_text"
-                android:textOff="@string/cheese_burger_text"/>
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp">
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/price_1.95"
-                android:text="@string/_1_95_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="20sp"
-                android:textStyle="normal|bold"
-                android:layout_marginStart="180dp"
-                android:scrollbars = "vertical"/>
-        </TableRow>
-        <TableRow
+                <Button
+                    android:id="@+id/etDouble_double"
+                    android:text="@string/double_double_text"
+                    android:layout_marginBottom="20dp"
+                    android:textOn="@string/double_double_text"
+                    android:textOff="@string/double_double_text" />
+
+                <TextView
+                    android:id="@+id/price_2.95"
+                    android:text="@string/_2_95_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="viewEnd"
+                    android:textSize="20sp"
+                    android:layout_marginStart="180dp"
+                    android:textStyle="normal|bold" />
+
+                <TextView
+                    android:id="@+id/etQtyDouble"
+                    android:text="@string/_1Double"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="viewEnd"
+                    android:textSize="20sp"
+                    android:layout_marginStart="-140dp"
+                    android:textStyle="normal|bold" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                <Button
+                    android:id="@+id/etCheese_burger"
+                    android:text="@string/cheese_burger_text"
+                    android:layout_marginBottom="20dp"
+                    android:textOn="@string/cheese_burger_text"
+                    android:textOff="@string/cheese_burger_text"/>
+
+                <TextView
+                    android:id="@+id/price_1.95"
+                    android:text="@string/_1_95_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textStyle="normal|bold"
+                    android:layout_marginStart="180dp" />
+                <TextView
+                    android:id="@+id/etQtyCheese"
+                    android:text="@string/_0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="viewEnd"
+                    android:textSize="20sp"
+                    android:layout_marginStart="-140dp"
+                    android:textStyle="normal|bold" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                <Button
+                    android:id="@+id/etHamburger"
+                    android:text="@string/hamburger_text"
+                    android:layout_marginBottom="20dp"
+                    android:textOn="@string/hamburger_text"
+                    android:textOff="@string/hamburger_text" />
+                <TextView
+                    android:id="@+id/price_1.65"
+                    android:text="@string/_1_65_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:textSize="20sp"
+                    android:textStyle="normal|bold" />
+                <TextView
+                    android:id="@+id/etQtyHam"
+                    android:text="@string/_1Ham"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="viewEnd"
+                    android:textSize="20sp"
+                    android:layout_marginStart="-140dp"
+                    android:textStyle="normal|bold" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                <Button
+                    android:id="@+id/etFrench_fries"
+                    android:text="@string/french_fries_text"
+                    android:layout_marginBottom="20dp"
+                    android:onClick="onToggleClicked"
+                    android:textOn="@string/french_fries_text"
+                    android:textOff="@string/french_fries_text" />
+                <TextView
+                    android:id="@+id/price_1.19"
+                    android:text="@string/_1_19_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:textStyle="normal|bold"
+                    android:textSize="20sp" />
+                <TextView
+                    android:id="@+id/etQtyFrench"
+                    android:text="@string/_1French"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="viewEnd"
+                    android:textSize="20sp"
+                    android:layout_marginStart="-140dp"
+                    android:textStyle="normal|bold" />
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/etDrinks"
+            android:text="@string/drinks_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="36sp"
+            android:fontFamily="serif"
+            android:textStyle="normal|bold"
+            android:layout_marginStart="15dp"
+            android:layout_marginBottom="25dp"
+            android:layout_marginTop="5dp" />
+
+        <TableLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
-            <ToggleButton
-                android:id="@+id/etHamburger"
-                android:text="@string/hamburger_text"
-                android:layout_marginBottom="20dp"
-                android:textOn="@string/hamburger_text"
-                android:textOff="@string/hamburger_text" />
-            <TextView
-                android:id="@+id/price_1.65"
-                android:text="@string/_1_65_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="180dp"
-                android:textSize="20sp"
-                android:textStyle="normal|bold"
-                android:scrollbars = "vertical"/>
-        </TableRow>
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp">
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                <Button
+                    android:id="@+id/small"
+                    android:text="@string/_small_text"
+                    android:textOn="@string/_small_text"
+                    android:textOff="@string/_small_text"
+                    android:layout_marginBottom="20dp"
+                    android:onClick="onToggleClicked" />
+                <TextView
+                    android:id="@+id/price_1.15"
+                    android:text="@string/_1_15_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="222dp"
+                    android:textSize="20sp"
+                    android:textStyle="normal|bold" />
+                <TextView
+                    android:id="@+id/etQtySmall"
+                    android:text="@string/_1Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="viewEnd"
+                    android:textSize="20sp"
+                    android:layout_marginStart="-140dp"
+                    android:textStyle="normal|bold" />
+            </TableRow>
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" >
-            <ToggleButton
-                android:id="@+id/etFrench_fries"
-                android:text="@string/french_fries_text"
-                android:layout_marginBottom="20dp"
-                android:textOn="@string/french_fries_text"
-                android:textOff="@string/french_fries_text" />
-            <TextView
-                android:id="@+id/price_1.19"
-                android:text="@string/_1_19_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="180dp"
-                android:textStyle="normal|bold"
-                android:textSize="20sp"
-                android:scrollbars = "vertical"/>
-        </TableRow>
-    </TableLayout>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                <Button
+                    android:id="@+id/medium"
+                    android:text="@string/_medium_text"
+                    android:textOn="@string/_medium_text"
+                    android:textOff="@string/_medium_text"
+                    android:layout_marginBottom="20dp"
+                    android:onClick="onToggleClicked" />
+                <TextView
+                    android:id="@+id/price_1.25"
+                    android:text="@string/_1_25_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="222dp"
+                    android:textSize="20sp"
+                    android:textStyle="normal|bold" />
+                <TextView
+                    android:id="@+id/etQtyMedium"
+                    android:text="@string/_1Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="viewEnd"
+                    android:textSize="20sp"
+                    android:layout_marginStart="-140dp"
+                    android:textStyle="normal|bold" />
+            </TableRow>
 
-    <TextView
-        android:id="@+id/etDrinks"
-        android:text="@string/drinks_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="36sp"
-        android:fontFamily="serif"
-        android:textStyle="normal|bold"
-        android:layout_marginStart="15dp"
-        android:scrollbars = "vertical"/>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                <Button
+                    android:id="@+id/large"
+                    android:text="@string/_large_text"
+                    android:textOn="@string/_large_text"
+                    android:textOff="@string/_large_text"
+                    android:layout_marginBottom="20dp"
+                    android:onClick="onToggleClicked" />
+                <TextView
+                    android:id="@+id/price_1.45"
+                    android:text="@string/_1_45_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="222dp"
+                    android:textSize="20sp"
+                    android:textStyle="normal|bold" />
+                <TextView
+                    android:id="@+id/etQtyLarge"
+                    android:text="@string/_1Large"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="viewEnd"
+                    android:textSize="20sp"
+                    android:layout_marginStart="-140dp"
+                    android:textStyle="normal|bold" />
+            </TableRow>
 
-    <TableLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginStart="15dp">
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" >
-            <ToggleButton
-                android:id="@+id/small"
-                android:text="@string/_small_text"
-                android:textOn="@string/_small_text"
-                android:textOff="@string/_small_text"
-                android:layout_marginBottom="20dp" />
-            <TextView
-                android:id="@+id/price_1.15"
-                android:text="@string/_1_15_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="222dp"
-                android:textSize="20sp"
-                android:textStyle="normal|bold"
-                android:scrollbars = "vertical"/>
-        </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                <Button
+                    android:id="@+id/x_large"
+                    android:text="@string/_x_large_text"
+                    android:textOn="@string/_x_large_text"
+                    android:textOff="@string/_x_large_text"
+                    android:layout_marginBottom="20dp"
+                    android:onClick="onToggleClicked" />
+                <TextView
+                    android:id="@+id/price_1.65_2"
+                    android:text="@string/_1_65_text_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="222dp"
+                    android:textSize="20sp"
+                    android:textStyle="normal|bold" />
+                <TextView
+                    android:id="@+id/etQtyXLG"
+                    android:text="@string/_1XLG"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="viewEnd"
+                    android:textSize="20sp"
+                    android:layout_marginStart="-140dp"
+                    android:textStyle="normal|bold" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="270dp">
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" >
-            <ToggleButton
-                android:id="@+id/medium"
-                android:text="@string/_medium_text"
-                android:textOn="@string/_medium_text"
-                android:textOff="@string/_medium_text"
-                android:layout_marginBottom="20dp"
-                android:onClick="onToggleClicked" />
-            <TextView
-                android:id="@+id/price_1.25"
-                android:text="@string/_1_25_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="222dp"
-                android:textSize="20sp"
-                android:textStyle="normal|bold"
-                android:scrollbars = "vertical"/>
-        </TableRow>
+                <Button
+                    android:id="@+id/etPlaceOrder"
+                    android:text="@string/place_order"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/holo_red_light"
+                    android:elevation="0dp"
+                    android:textSize="10sp" />
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" >
-            <ToggleButton
-                android:id="@+id/large"
-                android:text="@string/_large_text"
-                android:textOn="@string/_large_text"
-                android:textOff="@string/_large_text"
-                android:layout_marginBottom="20dp"
-                android:onClick="onToggleClicked" />
-            <TextView
-                android:id="@+id/price_1.45"
-                android:text="@string/_1_45_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="222dp"
-                android:textSize="20sp"
-                android:textStyle="normal|bold"
-                android:scrollbars = "vertical"/>
-        </TableRow>
+            </TableRow>
+        </TableLayout>
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" >
-            <ToggleButton
-                android:id="@+id/x_large"
-                android:text="@string/_x_large_text"
-                android:textOn="@string/_x_large_text"
-                android:textOff="@string/_x_large_text"
-                android:layout_marginBottom="20dp"
-                android:onClick="onToggleClicked" />
-            <TextView
-                android:id="@+id/price_1.65_2"
-                android:text="@string/_1_65_text_2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="222dp"
-                android:textSize="20sp"
-                android:textStyle="normal|bold"
-                android:scrollbars = "vertical"/>
-        </TableRow>
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:paddingStart="270dp">
-            <Button
-                android:id="@+id/etPlaceOrder"
-                android:text="@string/place_order"
+            android:layout_marginBottom="0dp">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:text="@string/total"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@android:color/holo_red_dark"
-                android:elevation="0dp"
-                android:textSize="12sp" />
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                android:textStyle="normal|bold"
+                android:textSize="20sp"
+                android:layout_marginTop="15dp" />
+
+            <TextView
+                android:id="@+id/totalPricePlaceholder"
+                android:text="@string/pricegoeshere"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="normal|bold"
+                android:textSize="20sp"
+                android:layout_marginBottom="20dp"
+                android:textAlignment="textEnd"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp" />
+
         </TableRow>
-    </TableLayout>
-</LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
