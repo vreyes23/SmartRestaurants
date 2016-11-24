@@ -78,112 +78,134 @@ public class MenuActivity extends AppCompatActivity {
 
         // Place Order
         Button placeOrderButton = (Button) findViewById(R.id.etPlaceOrder);
-
         final CustomerOrder order = new CustomerOrder();
-
+        double basketPrice = 0;
         // Increment price double double when user presses button
         doubledouble_button.setOnClickListener(new View.OnClickListener() {
             int qty = 1;
-            double price = 5.90; // Change the price to this when the user presses the button
+            double incrementor_price = 2.95; // Change the price to this when the user presses the button
+            double price_final = 2.95; // this variable is sent to the @see CustomerOrder
             @Override
             public void onClick(View view){
-                doubledouble_price.setText(form.format(price));
+                doubledouble_price.setText(form.format(incrementor_price));
                 qtyDouble.setText(String.valueOf(qty));
                 order.setQty_from_main_menu(qty);
-                placeholder.setText(form.format(price)); // For total value on the bottom right.
+                double temp = order.setItem_from_main_menu(price_final);
+                placeholder.setText(form.format(temp)); // For total value on the bottom right.
                 qty++;
-                price = price + 2.95;
+                incrementor_price = incrementor_price + 2.95;
             }
         });
 
         // Increment price cheese burger when user presses button
         cheeseburger_button.setOnClickListener(new View.OnClickListener() {
             int qty = 1;
-            double price = 3.90; // Change the price to this when the user presses the button
+            double incrementor_price = 1.95; // Change the price to this when the user presses the button
+            double price_final = 1.95; // this variable is sent to the @see CustomerOrder
             @Override
             public void onClick(View view){
-                cheeseburger_price.setText(form.format(price));
+                cheeseburger_price.setText(form.format(incrementor_price));
                 qtyCheese.setText(String.valueOf(qty));
+                double temp = order.setItem_from_main_menu(price_final);
+                placeholder.setText(form.format(temp)); // For total value on the bottom right.
                 qty++;
-                price = price + 1.95;
+                incrementor_price = incrementor_price + 1.95;
             }
         });
 
         // Increment price hamburger when user presses button
         hamburger_button.setOnClickListener(new View.OnClickListener() {
             int qty = 1;
-            double price = 3.30; // Change the price to this when the user presses the button
+            double incrementor_price = 1.65; // Change the price to this when the user presses the button
+            double price_final = 1.65; // this variable is sent to the @see CustomerOrder
             @Override
             public void onClick(View view){
-                hamburger_price.setText(form.format(price));
+                hamburger_price.setText(form.format(incrementor_price));
                 qtyHam.setText(String.valueOf(qty));
+                double temp = order.setItem_from_main_menu(price_final);
+                placeholder.setText(form.format(temp)); // For total value on the bottom right.
                 qty++;
-                price = price + 1.65;
+                incrementor_price = incrementor_price + 1.65;
             }
         });
 
         // Increment price fries when user presses button
         fries_button.setOnClickListener(new View.OnClickListener() {
             int qty = 1;
-            double price = 2.38; // Change the price to this when the user presses the button
+            double incrementor_price = 1.19; // Change the price to this when the user presses the button
+            double price_final = 1.19; // this variable is sent to the @see CustomerOrder
             @Override
             public void onClick(View view){
-                fries_price.setText(form.format(price));
+                fries_price.setText(form.format(incrementor_price));
                 qtyFrie.setText(String.valueOf(qty));
+                double temp = order.setItem_from_main_menu(price_final);
+                placeholder.setText(form.format(temp)); // For total value on the bottom right.
                 qty++;
-                price = price + 1.19;
+                incrementor_price = incrementor_price + 1.19;
             }
         });
 
         // Increment price small drinks when user presses button
         small_button.setOnClickListener(new View.OnClickListener() {
             int qty = 1;
-            double price = 2.30; // Change the price to this when the user presses the button
+            double incrementor_price = 1.15; // Change the price to this when the user presses the button
+            double price_final = 1.15; // this variable is sent to the @see CustomerOrder
             @Override
             public void onClick(View view){
-                small_price.setText(form.format(price));
+                small_price.setText(form.format(incrementor_price));
                 qtySmall.setText(String.valueOf(qty));
+                double temp = order.setItem_from_main_menu(price_final);
+                placeholder.setText(form.format(temp)); // For total value on the bottom right.
                 qty++;
-                price = price + 1.15;
+                incrementor_price = incrementor_price + 1.15;
             }
         });
 
         // Increment price medium drinks when user presses button
         medium_button.setOnClickListener(new View.OnClickListener() {
             int qty = 1;
-            double price = 2.50; // Change the price to this when the user presses the button
+            double incrementor_price = 1.25; // Change the price to this when the user presses the button
+            double price_final = 1.25; // this variable is sent to the @see CustomerOrder
             @Override
             public void onClick(View view){
-                medium_price.setText(form.format(price));
+                medium_price.setText(form.format(incrementor_price));
                 qtyMedium.setText(String.valueOf(qty));
+                double temp = order.setItem_from_main_menu(price_final);
+                placeholder.setText(form.format(temp)); // For total value on the bottom right.
                 qty++;
-                price = price + 1.25;
+                incrementor_price = incrementor_price + 1.25;
             }
         });
 
         // Increment price large drinks when user presses button
         large_button.setOnClickListener(new View.OnClickListener() {
             int qty = 1;
-            double price = 2.90; // Change the price to this when the user presses the button
+            double incrementor_price = 1.45; // Change the price to this when the user presses the button
+            double price_final = 1.55; // this variable is sent to the @see CustomerOrder
             @Override
             public void onClick(View view){
-                large_price.setText(form.format(price));
+                large_price.setText(form.format(incrementor_price));
                 qtyLarge.setText(String.valueOf(qty));
+                double temp = order.setItem_from_main_menu(price_final);
+                placeholder.setText(form.format(temp)); // For total value on the bottom right.
                 qty++;
-                price = price + 1.45;
+                incrementor_price = incrementor_price + 1.45;
             }
         });
 
         // Increment price for big-boy drinks when user presses button
         xl_button.setOnClickListener(new View.OnClickListener() {
             int qty = 1;
-            double price = 3.30; // Change the price to this when the user presses the button
+            double incrementor_price = 1.65; // Change the price to this when the user presses the button
+            double price_final = 1.65; // this variable is sent to the @see CustomerOrder
             @Override
             public void onClick(View view){
-                xl_price.setText(form.format(price));
+                xl_price.setText(form.format(incrementor_price));
                 qtyXLarge.setText(String.valueOf(qty));
+                double temp = order.setItem_from_main_menu(price_final);
+                placeholder.setText(form.format(temp)); // For total value on the bottom right.
                 qty++;
-                price = price + 1.65;
+                incrementor_price = incrementor_price + 1.65;
             }
         });
 
@@ -195,8 +217,5 @@ public class MenuActivity extends AppCompatActivity {
                 MenuActivity.this.startActivity(intent);
             }
         });
-
-    }
-    public void onToggleClicked(View view) {
     }
 }

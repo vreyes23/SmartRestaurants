@@ -17,7 +17,8 @@ public class CustomerOrder {
     }
 
     private int qty_from_main_menu = 0;
-
+    private double item_from_main_menu = 0;
+    private double holder = 0.0;
 
     public int getQty_from_main_menu() {
         return qty_from_main_menu;
@@ -25,5 +26,15 @@ public class CustomerOrder {
 
     public void setQty_from_main_menu(int qty_from_main_menu) {
         this.qty_from_main_menu = qty_from_main_menu;
+    }
+
+    public double getItem_from_main_menu() {
+        return item_from_main_menu;
+    }
+    // Gets the prices of the items the user/customer orders from. This method acts as
+    // a way to store data.
+    public double setItem_from_main_menu(double currPrice) {
+        holder = holder + currPrice;
+        return holder;
     }
 }
