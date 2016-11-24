@@ -1,5 +1,6 @@
 package com.restuarants.smart.speechtotextwatsonv7;
 
+import java.io.Serializable;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 
@@ -11,7 +12,7 @@ import java.util.ArrayList;
  * @author Oscar Ricaud
  * @version 1.0 November 23 2016
  */
-public class CustomerOrder {
+public class CustomerOrder  implements Serializable{
 
     public CustomerOrder() {
     }
@@ -29,7 +30,7 @@ public class CustomerOrder {
     }
 
     public double getItem_from_main_menu() {
-        return item_from_main_menu;
+        return 2.0;
     }
     // Gets the prices of the items the user/customer orders from. This method acts as
     // a way to store data.

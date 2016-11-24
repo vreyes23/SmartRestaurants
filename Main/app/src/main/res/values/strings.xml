@@ -91,4 +91,7 @@
     <string name="confirmation">Confirmation</string>
     <string name="itemplaceholder">Item Placeholder</string>
 
+    <!-- Confirmation -->
+    <string name="etTotalConfirmation">Total</string>
+    <string name="totalConfirmation">Total</string>
 </resources>

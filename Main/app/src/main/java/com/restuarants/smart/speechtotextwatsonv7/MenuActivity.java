@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.icu.text.NumberFormat;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -73,13 +74,13 @@ public class MenuActivity extends AppCompatActivity {
         final TextView qtyXLarge = (TextView) findViewById(R.id.etQtyXLG);
         final Button xl_button = (Button) findViewById(R.id.x_large);
 
-        // Obtain textview id
+        // Obtain Textview id
         final TextView placeholder = (TextView) findViewById(R.id.totalPricePlaceholder);
 
-        // Place Order
+        // Place Order Button
         Button placeOrderButton = (Button) findViewById(R.id.etPlaceOrder);
         final CustomerOrder order = new CustomerOrder();
-        double basketPrice = 0;
+
         // Increment price double double when user presses button
         doubledouble_button.setOnClickListener(new View.OnClickListener() {
             int qty = 1;
@@ -214,7 +215,10 @@ public class MenuActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MenuActivity.this, ConfirmationActivity.class);
-                MenuActivity.this.startActivity(intent);
+                double message = order.getItem_from_main_menu();
+                String receipt = String.valueOf(order.getItem_from_main_menu());
+                intent.putExtra("receipt", receipt); // YOUR key, variable you are passing
+                startActivity(intent);
             }
         });
     }

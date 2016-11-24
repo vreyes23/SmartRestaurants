@@ -120,17 +120,19 @@
         </TableLayout>
 
         <TextView
-            android:id="@+id/etDrinks"
-            android:text="Total"
+            android:id="@+id/etTotalConfirmation"
+            android:text="@string/totalConfirmation"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:textSize="36sp"
             android:fontFamily="serif"
             android:textStyle="normal|bold"
             android:layout_weight="7.29"
-            android:gravity="bottom|right"
+            android:gravity="bottom"
             android:height="350dp"
-            android:layout_marginRight="15dp" />
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="15dp" />
 
         <TableLayout
             android:layout_width="match_parent"
@@ -142,13 +144,7 @@
                 android:layout_marginLeft="15dp">
 
                 <Button
-                    android:text="Back"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/button2" />
-
-                <Button
-                    android:text="Payment"
+                    android:text="Confirm"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/button" />
