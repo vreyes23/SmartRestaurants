@@ -80,11 +80,10 @@ public class MenuActivity extends AppCompatActivity {
             public void onClick(View view){
                 doubledouble_price.setText("" + price);
                 qtyDouble.setText("" + qty);
+                order.setQty_from_main_menu(qty);
                 qty = qty + 1;
                 price = price + 2.950;
-
             }
-
         });
 
         // Increment price cheese burger when user presses button

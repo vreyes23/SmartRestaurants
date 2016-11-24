@@ -6,6 +6,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical" >
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/progress"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:max="100"
+            android:progress="45"/>
         <TextView
             android:id="@+id/etMenu"
             android:text="@string/menu_text"
@@ -324,6 +334,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:paddingLeft="270dp">
+
                 <Button
                     android:id="@+id/etPlaceOrder"
                     android:text="@string/place_order"
