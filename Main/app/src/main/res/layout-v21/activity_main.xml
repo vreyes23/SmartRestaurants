@@ -8,25 +8,24 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical">
-    
+
     <Button
+        android:id="@+id/etMenu"
         android:text="@string/view_menu"
         android:layout_width="wrap_content"
         android:layout_height="34dp"
-        android:id="@+id/etMenu"
-        android:background="@android:drawable/toast_frame"
-        android:textSize="10sp" />
+        android:textSize="10sp"/>
 
     <TextView
-        android:text="Welcome to IN-N-OUT"
+        android:text="SMART Restuarant"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:id="@+id/textView4"
         android:layout_weight="1"
-        android:textColor="@android:color/background_light"
         android:gravity="center"
-        android:textSize="30dp"
-        android:fontFamily="casual" />
+        android:fontFamily="serif"
+        android:textSize="31sp"
+        android:textStyle="normal|bold" />
 
     <LinearLayout
         android:layout_width="match_parent"

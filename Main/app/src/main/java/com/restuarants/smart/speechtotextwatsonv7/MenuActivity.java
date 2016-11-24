@@ -81,7 +81,6 @@ public class MenuActivity extends AppCompatActivity {
 
         final CustomerOrder order = new CustomerOrder();
 
-
         // Increment price double double when user presses button
         doubledouble_button.setOnClickListener(new View.OnClickListener() {
             int qty = 1;
@@ -99,91 +98,91 @@ public class MenuActivity extends AppCompatActivity {
 
         // Increment price cheese burger when user presses button
         cheeseburger_button.setOnClickListener(new View.OnClickListener() {
-            int qty = Integer.parseInt(("2"));
-            double price = Double.parseDouble(("3.90"));
+            int qty = 1;
+            double price = 3.90; // Change the price to this when the user presses the button
             @Override
             public void onClick(View view){
-                cheeseburger_price.setText("" + price);
-                qtyCheese.setText("" + qty);
-                qty = qty + 1;
+                cheeseburger_price.setText(form.format(price));
+                qtyCheese.setText(String.valueOf(qty));
+                qty++;
                 price = price + 1.95;
             }
         });
 
         // Increment price hamburger when user presses button
         hamburger_button.setOnClickListener(new View.OnClickListener() {
-            int qty = Integer.parseInt(("2"));
-            double price = Double.parseDouble(("3.30"));
+            int qty = 1;
+            double price = 3.30; // Change the price to this when the user presses the button
             @Override
             public void onClick(View view){
-                hamburger_price.setText("" + price);
-                qtyHam.setText("" + qty);
-                qty = qty + 1;
+                hamburger_price.setText(form.format(price));
+                qtyHam.setText(String.valueOf(qty));
+                qty++;
                 price = price + 1.65;
             }
         });
 
         // Increment price fries when user presses button
         fries_button.setOnClickListener(new View.OnClickListener() {
-            int qty = Integer.parseInt(("2"));
-            double price = Double.parseDouble(("2.38"));
+            int qty = 1;
+            double price = 2.38; // Change the price to this when the user presses the button
             @Override
             public void onClick(View view){
-                fries_price.setText("" + price);
-                qtyFrie.setText("" + qty);
-                qty = qty + 1;
+                fries_price.setText(form.format(price));
+                qtyFrie.setText(String.valueOf(qty));
+                qty++;
                 price = price + 1.19;
             }
         });
 
         // Increment price small drinks when user presses button
         small_button.setOnClickListener(new View.OnClickListener() {
-            int qty = Integer.parseInt(("2"));
-            double price = Double.parseDouble(("2.30"));
+            int qty = 1;
+            double price = 2.30; // Change the price to this when the user presses the button
             @Override
             public void onClick(View view){
-                small_price.setText("" + price);
-                qtySmall.setText("" + qty);
-                qty = qty + 1;
+                small_price.setText(form.format(price));
+                qtySmall.setText(String.valueOf(qty));
+                qty++;
                 price = price + 1.15;
             }
         });
 
         // Increment price medium drinks when user presses button
         medium_button.setOnClickListener(new View.OnClickListener() {
-            int qty = Integer.parseInt(("2"));
-            double price = Double.parseDouble(("2.50"));
+            int qty = 1;
+            double price = 2.50; // Change the price to this when the user presses the button
             @Override
             public void onClick(View view){
-                medium_price.setText("" + price);
-                qtyMedium.setText("" + qty);
-                qty = qty + 1;
+                medium_price.setText(form.format(price));
+                qtyMedium.setText(String.valueOf(qty));
+                qty++;
                 price = price + 1.25;
             }
         });
 
         // Increment price large drinks when user presses button
         large_button.setOnClickListener(new View.OnClickListener() {
-            int qty = Integer.parseInt(("2"));
-            double price = Double.parseDouble(("2.90"));
+            int qty = 1;
+            double price = 2.90; // Change the price to this when the user presses the button
             @Override
             public void onClick(View view){
-                large_price.setText("$" + price);
-                qtyLarge.setText("" + qty);
-                qty = qty + 1;
+                large_price.setText(form.format(price));
+                qtyLarge.setText(String.valueOf(qty));
+                qty++;
                 price = price + 1.45;
             }
         });
 
         // Increment price for big-boy drinks when user presses button
         xl_button.setOnClickListener(new View.OnClickListener() {
-            int qty = Integer.parseInt(("2"));
-            double price = Double.parseDouble(("3.30"));
+            int qty = 1;
+            double price = 3.30; // Change the price to this when the user presses the button
             @Override
             public void onClick(View view){
-                xl_price.setText("" + price);
-                qtyXLarge.setText("" + qty);
-                qty = qty + 1;
+                xl_price.setText(form.format(price));
+                qtyXLarge.setText(String.valueOf(qty));
+                qty++;
                 price = price + 1.65;
             }
         });

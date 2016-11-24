@@ -8,9 +8,11 @@ public class ConfirmationActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_confirmation);
+      /*
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
             String value = extras.getString("my_variable");
         }
+        */
     }
 }
