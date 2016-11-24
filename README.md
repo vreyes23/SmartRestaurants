@@ -22,6 +22,8 @@ Screenshots
 
 (https://github.com/vreyes23/SmartRestaurants/blob/master/Screenshots/Order.png "Customers that do not want to use Speech To Text to order have to go through this Main Menu Activity")
 
+(https://github.com/vreyes23/SmartRestaurants/blob/master/Screenshots/Total.png "Total")
+
 Video
 ======
 Coming very soon
