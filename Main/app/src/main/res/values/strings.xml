@@ -87,5 +87,8 @@
 
     <!-- Total Price place holder, not sure if I need this -->
     <string name="totalPricePlaceholder">""</string>
+    <string name="etreceipt">Receipt</string>
+    <string name="confirmation">Confirmation</string>
+    <string name="itemplaceholder">Item Placeholder</string>
 
 </resources>
