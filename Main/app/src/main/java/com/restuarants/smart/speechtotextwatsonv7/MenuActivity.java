@@ -102,6 +102,7 @@ public class MenuActivity extends AppCompatActivity {
             public void onClick(View view){
                 cheeseburger_price.setText(form.format(incrementor_price));
                 qtyCheese.setText(String.valueOf(qty));
+                order.store_food_item("cheese-burger");
                 double temp = order.setItem_from_main_menu(price_final);
                 placeholder.setText(form.format(temp)); // For total value on the bottom right.
                 qty++;
@@ -118,6 +119,7 @@ public class MenuActivity extends AppCompatActivity {
             public void onClick(View view){
                 hamburger_price.setText(form.format(incrementor_price));
                 qtyHam.setText(String.valueOf(qty));
+                order.store_food_item("ham-burger");
                 double temp = order.setItem_from_main_menu(price_final);
                 placeholder.setText(form.format(temp)); // For total value on the bottom right.
                 qty++;
@@ -134,6 +136,7 @@ public class MenuActivity extends AppCompatActivity {
             public void onClick(View view){
                 fries_price.setText(form.format(incrementor_price));
                 qtyFrie.setText(String.valueOf(qty));
+                order.store_food_item("fries");
                 double temp = order.setItem_from_main_menu(price_final);
                 placeholder.setText(form.format(temp)); // For total value on the bottom right.
                 qty++;
@@ -150,6 +153,7 @@ public class MenuActivity extends AppCompatActivity {
             public void onClick(View view){
                 small_price.setText(form.format(incrementor_price));
                 qtySmall.setText(String.valueOf(qty));
+                order.store_food_item("Small Drink");
                 double temp = order.setItem_from_main_menu(price_final);
                 placeholder.setText(form.format(temp)); // For total value on the bottom right.
                 qty++;
@@ -166,6 +170,7 @@ public class MenuActivity extends AppCompatActivity {
             public void onClick(View view){
                 medium_price.setText(form.format(incrementor_price));
                 qtyMedium.setText(String.valueOf(qty));
+                order.store_food_item("Medium Drink");
                 double temp = order.setItem_from_main_menu(price_final);
                 placeholder.setText(form.format(temp)); // For total value on the bottom right.
                 qty++;
@@ -182,6 +187,7 @@ public class MenuActivity extends AppCompatActivity {
             public void onClick(View view){
                 large_price.setText(form.format(incrementor_price));
                 qtyLarge.setText(String.valueOf(qty));
+                order.store_food_item("Large Drink");
                 double temp = order.setItem_from_main_menu(price_final);
                 placeholder.setText(form.format(temp)); // For total value on the bottom right.
                 qty++;
@@ -198,6 +204,7 @@ public class MenuActivity extends AppCompatActivity {
             public void onClick(View view){
                 xl_price.setText(form.format(incrementor_price));
                 qtyXLarge.setText(String.valueOf(qty));
+                order.store_food_item("X-LG Drink");
                 double temp = order.setItem_from_main_menu(price_final);
                 placeholder.setText(form.format(temp)); // For total value on the bottom right.
                 qty++;
