@@ -30,7 +30,7 @@ public class CustomerOrder  implements Serializable{
     }
 
     public double getItem_from_main_menu() {
-        return 2.0;
+        return holder;
     }
     // Gets the prices of the items the user/customer orders from. This method acts as
     // a way to store data.

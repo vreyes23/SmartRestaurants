@@ -16,7 +16,7 @@ public class ConfirmationActivity extends AppCompatActivity {
 
         // Receiving data from @see MenuActivity
         Bundle extras = getIntent().getExtras();
-        String message1 = extras.getString("receipt"); // Look for YOUR KEY, variable you're receiving
-        totalPlaceholder.setText(message1);
+        String receiptTotal = extras.getString("receipt"); // Look for YOUR KEY, variable you're receiving
+        totalPlaceholder.setText(receiptTotal);
     }
 }

@@ -94,4 +94,7 @@
     <!-- Confirmation -->
     <string name="etTotalConfirmation">Total</string>
     <string name="totalConfirmation">Total</string>
+    <string name="etPlaceHolderConfirmation">Place Holder </string>
+    <string name="placeholder_order_items">placeholder_order_items</string>
+    <string name="confirmButton">Confirm</string>
 </resources>

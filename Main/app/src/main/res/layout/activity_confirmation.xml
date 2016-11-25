@@ -9,16 +9,14 @@
         android:weightSum="1">
 
         <ProgressBar
+            android:id="@+id/progress"
             style="?android:attr/progressBarStyleHorizontal"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/progress"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
             android:max="100"
             android:progress="75"/>
         <TextView
-            android:id="@+id/etMenu"
+            android:id="@+id/etConfirmation"
             android:text="@string/confirmation"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -33,13 +31,6 @@
         <TableLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" >
-
-            </TableRow>
-
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" >
@@ -62,15 +53,6 @@
                     android:layout_marginLeft="80dp" />
             </TableRow>
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" >
-
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
         </TableLayout>
 
         <TableLayout
@@ -83,40 +65,12 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
-                <Button
-                    android:id="@+id/etDouble_double"
-                    android:text="@string/itemplaceholder"
-                    android:layout_marginBottom="20dp"
-                    android:textOn="@string/double_double_text"
-                    android:textOff="@string/double_double_text" />
-
                 <TextView
-                    android:id="@+id/price_2.95"
-                    android:text="null"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAlignment="viewEnd"
-                    android:textSize="20sp"
-                    android:layout_marginStart="160dp"
-                    android:textStyle="normal|bold" />
-
-                <TextView
-                    android:id="@+id/etQtyDouble"
-                    android:text="@string/_1Double"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAlignment="viewEnd"
-                    android:textSize="20sp"
-                    android:layout_marginStart="-140dp"
-                    android:textStyle="normal|bold" />
+                    android:id="@+id/etPlaceHolderConfirmation"
+                    android:text="@string/placeholder_order_items"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
             </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" >
-
-            </TableRow>
-
         </TableLayout>
 
         <TextView
@@ -138,32 +92,12 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="15dp">
-
                 <Button
-                    android:text="Confirm"
+                    android:id="@+id/button"
+                    android:text="@string/confirmButton"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/button" />
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" >
-
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                    android:gravity="bottom|center_vertical|center_horizontal" />
         </TableLayout>
-
     </LinearLayout>
 </ScrollView>

@@ -1,18 +1,12 @@
 package com.restuarants.smart.speechtotextwatsonv7;
 
 import android.content.Intent;
-import android.icu.text.NumberFormat;
-import android.os.Build;
+
 import android.os.Bundle;
-import android.os.Parcelable;
-import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-
-import org.w3c.dom.Text;
-
 import java.text.DecimalFormat;
 
 /**
@@ -216,6 +210,7 @@ public class MenuActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MenuActivity.this, ConfirmationActivity.class);
                 double message = order.getItem_from_main_menu();
+
                 String receipt = String.valueOf(order.getItem_from_main_menu());
                 intent.putExtra("receipt", receipt); // YOUR key, variable you are passing
                 startActivity(intent);
