@@ -31,6 +31,13 @@
         <TableLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+            </TableRow>
+
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" >
@@ -53,45 +60,49 @@
                     android:layout_marginLeft="80dp" />
             </TableRow>
 
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
         </TableLayout>
 
         <TableLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="247dp"
             android:layout_marginStart="15dp"
             android:layout_marginTop="20dp">
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
+            <!-- Item -->
+            <TextView
+            android:id="@+id/etPlaceHolderConfirmation"
+            android:text="@string/placeholder_order_items"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="260dp" />
 
-                <TextView
-                    android:id="@+id/etPlaceHolderConfirmation"
-                    android:text="@string/placeholder_order_items"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
-            </TableRow>
         </TableLayout>
 
         <TextView
             android:id="@+id/etTotalConfirmation"
             android:text="@string/totalConfirmation"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="0dp"
             android:textSize="36sp"
             android:fontFamily="serif"
             android:textStyle="normal|bold"
-            android:layout_weight="7.29"
-            android:gravity="bottom"
+            android:layout_weight="3.97"
             android:height="350dp"
             android:layout_marginRight="15dp"
             android:layout_marginLeft="15dp"
-            android:layout_marginBottom="15dp" />
+            android:gravity="bottom" />
 
         <TableLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-
                 <Button
                     android:id="@+id/button"
                     android:text="@string/confirmButton"

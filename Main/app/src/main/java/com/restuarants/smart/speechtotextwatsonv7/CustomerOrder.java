@@ -3,6 +3,7 @@ package com.restuarants.smart.speechtotextwatsonv7;
 import java.io.Serializable;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.LinkedList;
 
 /**
  * This class gets called from @see MenuActivity, in other words this will be used as a pre-confirmation
@@ -20,6 +21,7 @@ public class CustomerOrder  implements Serializable{
     private int qty_from_main_menu = 0;
     private double item_from_main_menu = 0;
     private double holder = 0.0;
+    private LinkedList<String> food_items = new LinkedList<String>();
 
     public int getQty_from_main_menu() {
         return qty_from_main_menu;
@@ -29,6 +31,7 @@ public class CustomerOrder  implements Serializable{
         this.qty_from_main_menu = qty_from_main_menu;
     }
 
+    // Gets the total prices of the items and sends it to the @see Confirmation activity
     public double getItem_from_main_menu() {
         return holder;
     }
@@ -37,5 +40,11 @@ public class CustomerOrder  implements Serializable{
     public double setItem_from_main_menu(double currPrice) {
         holder = holder + currPrice;
         return holder;
+    }
+    public void store_food_item(String currItem){
+        food_items.add(currItem);
+    }
+    public String get_list_items(){
+        return food_items.toString();
     }
 }

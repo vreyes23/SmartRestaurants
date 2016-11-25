@@ -85,6 +85,7 @@ public class MenuActivity extends AppCompatActivity {
                 doubledouble_price.setText(form.format(incrementor_price));
                 qtyDouble.setText(String.valueOf(qty));
                 order.setQty_from_main_menu(qty);
+                order.store_food_item("double-double");
                 double temp = order.setItem_from_main_menu(price_final);
                 placeholder.setText(form.format(temp)); // For total value on the bottom right.
                 qty++;
@@ -208,11 +209,14 @@ public class MenuActivity extends AppCompatActivity {
         placeOrderButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                // Prints price bottom right corner on the next activity
                 Intent intent = new Intent(MenuActivity.this, ConfirmationActivity.class);
-                double message = order.getItem_from_main_menu();
+                String receipt_price = String.valueOf(order.getItem_from_main_menu());
+                intent.putExtra("receipt_price", receipt_price); // YOUR key, variable you are passing
 
-                String receipt = String.valueOf(order.getItem_from_main_menu());
-                intent.putExtra("receipt", receipt); // YOUR key, variable you are passing
+                // Prints item in the center of the next activity
+                String receipt_item = String.valueOf(order.get_list_items());
+                intent.putExtra("receipt_item", receipt_item);
                 startActivity(intent);
             }
         });
