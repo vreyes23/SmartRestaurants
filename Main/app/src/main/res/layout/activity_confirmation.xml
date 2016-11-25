@@ -73,17 +73,84 @@
 
         <TableLayout
             android:layout_width="match_parent"
-            android:layout_height="247dp"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="20dp">
-            <!-- Item -->
-            <TextView
-            android:id="@+id/etPlaceHolderConfirmation"
-            android:text="@string/placeholder_order_items"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginRight="260dp" />
+            android:layout_height="match_parent">
 
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/editText"
+                    android:hint="First Name" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:text="Ticket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView7" />
+
+                <TextView
+                    android:id="@+id/etticketID"
+                    android:hint="@string/ticket_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:text="Customers Order"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView5" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                android:id="@+id/etPlaceHolderConfirmation"
+                android:text="@string/placeholder_order_items"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="260dp"
+                    android:hint="Customer's Order" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
         </TableLayout>
 
         <TextView

@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import java.text.DecimalFormat;
+import java.util.Random;
 
 /**
  * The purpose of the MenuActivity is to allow users that do not wish to speak to watson to order

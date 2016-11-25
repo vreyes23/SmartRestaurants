@@ -54,11 +54,11 @@ public class DatabaseConnector extends AppCompatActivity {
             String id = idEditText.getText().toString();
             new ReadAsyncTask().execute(id);
         }
-        class WriteAsyncTask extends AsyncTask<Void, Void, User>
+        class WriteAsyncTask extends AsyncTask<Void, Void, CustomerDB>
         {
             @Override
-            protected User doInBackground(Void... arg0) {
-                User user = null;
+            protected CustomerDB doInBackground(Void... arg0) {
+                CustomerDB user = null;
                 try {
                     // Create a new CloudantClient instance for account endpoint <ACCOUNT>.cloudant.com
                     CloudantClient client = ClientBuilder.account(ACCOUNT)
@@ -67,7 +67,7 @@ public class DatabaseConnector extends AppCompatActivity {
                             .build();
                     // Get a Database instance to interact with. Do not create it if it doesn't already exist
                     Database db = client.database(DB_NAME, false);
-                    user = new User("Oscar", "Ricaud", new Date(), 18);
+                    user = new CustomerDB("Oscar", "Ricaud", new Date(), 18);
                     db.save(user);
                 } catch (Exception e)
                 {
@@ -76,17 +76,17 @@ public class DatabaseConnector extends AppCompatActivity {
                 return user;
             }
             @Override
-            protected void onPostExecute(User user) {
+            protected void onPostExecute(CustomerDB user) {
                 super.onPostExecute(user);
                 EditText responseEditText = (EditText) findViewById(R.id.responseEditText);
-                responseEditText.setText("User created:\nID:" + user.getId());
+                responseEditText.setText("CustomerDB created:\nID:" + user.getId());
             }
         }
-        class ReadAsyncTask extends AsyncTask<String, Void, User>
+        class ReadAsyncTask extends AsyncTask<String, Void, CustomerDB>
         {
             @Override
-            protected User doInBackground(String... arg0) {
-                User user = null;
+            protected CustomerDB doInBackground(String... arg0) {
+                CustomerDB user = null;
                 try {
                     String id = arg0[0];
                     // Create a new CloudantClient instance for account endpoint <ACCOUNT>.cloudant.com
@@ -97,14 +97,14 @@ public class DatabaseConnector extends AppCompatActivity {
                     // Get a Database instance to interact with. Do not create it if it doesn't already exist
                     Database db = client.database(DB_NAME, false);
                     // Get an ExampleDocument out of the database and deserialize the JSON into a Java type
-                    user = db.find(User.class, id);
+                    user = db.find(CustomerDB.class, id);
                 } catch (Exception e){
                     e.printStackTrace();
                 }
                 return user;
             }
             @Override
-            protected void onPostExecute(User user) {
+            protected void onPostExecute(CustomerDB user) {
                 super.onPostExecute(user);
                 EditText responseEditText = (EditText) findViewById(R.id.responseEditText);
                 if (user != null) {
@@ -118,7 +118,7 @@ public class DatabaseConnector extends AppCompatActivity {
                 }
                 else
                 {
-                    responseEditText.setText("User not found");
+                    responseEditText.setText("CustomerDB not found");
                 }
             }
         }

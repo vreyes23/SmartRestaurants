@@ -6,6 +6,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.util.Random;
+
 public class ConfirmationActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,12 +24,19 @@ public class ConfirmationActivity extends AppCompatActivity {
         // Receiving items from @see MenuActivity
         String receiptItem = extras.getString("receipt_item"); // Look for YOUR KEY, variable you're receiving
         receiptItems.setText(receiptItem); // Prints the items the user order on the Confirmation Activity
+        // Set ticket number
+        Random rand = new Random();
+        int  n = rand.nextInt(500) + 1;
+        final TextView ticketID = (TextView) findViewById(R.id.etticketID);
+        ticketID.setText(String.valueOf(n));
 
         // Send data to the database.
         confirm_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                CustomerDB ticket_order = new CustomerDB();
 
+                ticket_order.setFirstName("");
             }
         });
     }
