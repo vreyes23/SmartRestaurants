@@ -13,13 +13,10 @@ import java.util.LinkedList;
  * @author Oscar Ricaud
  * @version 1.0 November 23 2016
  */
-public class CustomerOrder  implements Serializable{
+class CustomerOrder  implements Serializable{
 
-    public CustomerOrder() {
-    }
-
+    CustomerOrder() {}
     private int qty_from_main_menu = 0;
-    private double item_from_main_menu = 0;
     private double holder = 0.0;
     private LinkedList<String> food_items = new LinkedList<String>();
 
@@ -27,24 +24,25 @@ public class CustomerOrder  implements Serializable{
         return qty_from_main_menu;
     }
 
-    public void setQty_from_main_menu(int qty_from_main_menu) {
+    void setQty_from_main_menu(int qty_from_main_menu) {
         this.qty_from_main_menu = qty_from_main_menu;
     }
 
     // Gets the total prices of the items and sends it to the @see Confirmation activity
-    public double getItem_from_main_menu() {
+    double getItem_from_main_menu() {
         return holder;
     }
+
     // Gets the prices of the items the user/customer orders from. This method acts as
     // a way to store data.
-    public double setItem_from_main_menu(double currPrice) {
+    double setItem_from_main_menu(double currPrice) {
         holder = holder + currPrice;
         return holder;
     }
-    public void store_food_item(String currItem){
+    void store_food_item(String currItem){
         food_items.add(currItem);
     }
-    public String get_list_items(){
+    String get_list_items(){
         return food_items.toString();
     }
 }

@@ -97,4 +97,5 @@
     <string name="etPlaceHolderConfirmation">Place Holder </string>
     <string name="placeholder_order_items">null</string>
     <string name="confirmButton">Confirm</string>
+    <string name="etConfirmButton">Confirm</string>
 </resources>
