@@ -24,4 +24,7 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:25.0.0'
     compile 'com.ibm.watson.developer_cloud:java-sdk:2.10.0'
+    compile group: 'com.squareup.okhttp', name: 'okhttp-urlconnection', version: '2.7.5'
+    compile group: 'com.cloudant', name: 'cloudant-client', version: '2.6.0'
+    compile 'com.google.code.gson:gson:2.2.4'
 }

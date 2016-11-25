@@ -126,7 +126,7 @@ public class MenuActivity extends AppCompatActivity {
             }
         });
 
-        // Increment price fries when user presses button
+        // Increment price of fries when user presses button
         fries_button.setOnClickListener(new View.OnClickListener() {
             int qty = 1;
             double incrementor_price = 1.19; // Change the price to this when the user presses the button
@@ -143,7 +143,7 @@ public class MenuActivity extends AppCompatActivity {
             }
         });
 
-        // Increment price small drinks when user presses button
+        // Increment price of small drinks when user presses button
         small_button.setOnClickListener(new View.OnClickListener() {
             int qty = 1;
             double incrementor_price = 1.15; // Change the price to this when the user presses the button
@@ -160,7 +160,7 @@ public class MenuActivity extends AppCompatActivity {
             }
         });
 
-        // Increment price medium drinks when user presses button
+        // Increment price of medium drinks when user presses button
         medium_button.setOnClickListener(new View.OnClickListener() {
             int qty = 1;
             double incrementor_price = 1.25; // Change the price to this when the user presses the button
