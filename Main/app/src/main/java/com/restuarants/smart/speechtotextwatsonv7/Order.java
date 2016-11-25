@@ -3,10 +3,8 @@ package com.restuarants.smart.speechtotextwatsonv7;
 import java.util.ArrayList;
 
 /**
- * Created by Oscar Ricaud
- * updated by Victor Reyes on 10/26/2016.
- * Smart Restaurants Application
- * For CS465 Applied Cognitive Computing
+ * I don't think we need this, it was a good to use as a reference but for now let's keep it simple
+ * and assume the user could only order items from the menu, in the future we can implement this.
  */
 
 public class Order {

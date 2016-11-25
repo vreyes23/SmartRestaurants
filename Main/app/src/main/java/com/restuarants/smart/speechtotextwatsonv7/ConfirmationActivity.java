@@ -8,6 +8,13 @@ import android.widget.TextView;
 
 import java.util.Random;
 
+/**
+ * This activity is the last activity before we send the data to the database, it is important to verify
+ * the customers order and make sure the details are correct.
+ * I created a random ticket ID which displays a random number of the order
+ * I also created a place holder for the user to enter the name and last and not least I included
+ * the customers order in a linked list.
+ */
 public class ConfirmationActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
