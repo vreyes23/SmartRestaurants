@@ -42,22 +42,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" >
 
-                <TextView
-                    android:id="@+id/etQuantity"
-                    android:text="@string/quantity"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textStyle="normal|bold"
-                    android:textSize="14sp"
-                    android:layout_marginLeft="200dp" />
-
-                <TextView
-                    android:id="@+id/etPrice"
-                    android:text="@string/etPrice"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textStyle="normal|bold"
-                    android:layout_marginLeft="80dp" />
             </TableRow>
 
             <TableRow
@@ -84,7 +68,7 @@
                     android:layout_height="wrap_content"
                     android:inputType="textPersonName"
                     android:ems="10"
-                    android:id="@+id/editText"
+                    android:id="@+id/firstname"
                     android:hint="First Name" />
             </TableRow>
 

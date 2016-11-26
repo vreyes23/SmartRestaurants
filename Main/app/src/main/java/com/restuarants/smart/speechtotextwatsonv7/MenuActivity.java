@@ -5,12 +5,13 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import java.text.DecimalFormat;
 
 /**
  * The purpose of the MenuActivity is to allow users that do not wish to speak to watson to order
- * their food. These Class is mainly used for old school people just playing.
+ * their food. These Class is mainly used for old school people, just playing.
  * In this class the user can click on the buttons to order the items it wants and then it takes the
  * user @see ConfirmationActivity to confirm their order.
  * @author Oscar I. Ricaud
@@ -220,7 +221,7 @@ public class MenuActivity extends AppCompatActivity {
                 String receipt_price = String.valueOf(order.getItem_from_main_menu());
                 intent.putExtra("receipt_price", receipt_price); // YOUR key, variable you are passing
 
-                // Prints item in the center of the next activity
+                // Prints items in the center of the next activity
                 String receipt_item = String.valueOf(order.get_list_items());
                 intent.putExtra("receipt_item", receipt_item);
                 startActivity(intent);

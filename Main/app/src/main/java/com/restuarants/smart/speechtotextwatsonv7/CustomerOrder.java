@@ -13,7 +13,7 @@ import java.util.LinkedList;
  * @author Oscar Ricaud
  * @version 1.0 November 23 2016
  */
-class CustomerOrder  implements Serializable{
+class CustomerOrder implements Serializable{
 
     CustomerOrder() {}
     private int qty_from_main_menu = 0;

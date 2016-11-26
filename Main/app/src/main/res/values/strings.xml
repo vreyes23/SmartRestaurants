@@ -100,5 +100,6 @@
     <string name="etConfirmButton">Confirm</string>
     <string name="etticketID">Confirm</string>
     <string name="ticket_id">Ticket ID #</string>
+    <string name="firstname">""</string>
 
 </resources>
