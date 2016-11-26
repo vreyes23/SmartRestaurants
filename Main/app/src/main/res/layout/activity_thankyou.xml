@@ -2,10 +2,76 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <ProgressBar
+        android:id="@+id/progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="100"/>
 
     <TextView
-        android:text="ThankYou"
+        android:text="Thank You"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textView" />
+        android:id="@+id/textView"
+        android:textStyle="normal|bold"
+        android:fontFamily="serif"
+        android:textSize="36sp"
+        android:textAlignment="center"
+        android:layout_marginTop="20sp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:text="Order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2"
+                android:textSize="20sp"
+                android:fontFamily="serif"
+                android:textStyle="normal|bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView8"
+                android:hint="Ticket ID#"
+                android:textSize="20sp"
+                android:textStyle="normal|bold"
+                android:fontFamily="serif"
+                android:layout_marginStart="40dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView3"
+                android:textSize="20sp"
+                android:textStyle="normal|bold"
+                android:fontFamily="serif"
+                android:hint="Pending"
+                android:layout_marginStart="40dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </TableLayout>
 </LinearLayout>
