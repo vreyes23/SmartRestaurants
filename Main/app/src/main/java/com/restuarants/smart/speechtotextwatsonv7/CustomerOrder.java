@@ -1,8 +1,6 @@
 package com.restuarants.smart.speechtotextwatsonv7;
 
 import java.io.Serializable;
-import java.lang.reflect.Array;
-import java.util.ArrayList;
 import java.util.LinkedList;
 
 /**

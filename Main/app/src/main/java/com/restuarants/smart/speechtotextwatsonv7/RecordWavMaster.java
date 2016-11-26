@@ -21,7 +21,7 @@ import java.nio.ByteOrder;
  * This activity gets launched from the @see MainActivty it allows the user in the home page
  * to press a button and record their order and at the moment watson displays the order
  * in the consolde in a JSON format.
- * @author Oscar Ricaud
+ * @author Diego Aguirre
  * @version 1.0 November 23 2016
  */
 public class RecordWavMaster {
