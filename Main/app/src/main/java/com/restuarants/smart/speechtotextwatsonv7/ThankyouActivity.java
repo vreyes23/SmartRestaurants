@@ -13,7 +13,7 @@ public class ThankyouActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_confirmation);
+        setContentView(R.layout.activity_thankyou);
         // Create method to Retrieve data from the database
         // Create method to receive push notifications
     }

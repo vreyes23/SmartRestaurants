@@ -8,7 +8,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import java.util.Random;
-
 /**
  * This activity is the last activity before we send the data to the database, it is important to verify
  * the customers order and make sure the details are correct.
@@ -44,24 +43,18 @@ public class ConfirmationActivity extends AppCompatActivity {
         confirm_button.setOnClickListener(new View.OnClickListener() {
             // Get users name
             final EditText etFirstname = (EditText) findViewById(R.id.firstname);
-
             @Override
             public void onClick(View view) {
                 final String firstname = etFirstname.getText().toString();
+
                 ReceiptDatabase db = new ReceiptDatabase();
                 db.setName(firstname);
                 db.setTicketnumber(String.valueOf(n));
                 db.setFoodItems(receiptItem);
 
                 // Go to the final activity
-                Button confirmButton = (Button) findViewById(R.id.etConfirmButton);
-                confirmButton.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        Intent intent = new Intent(ConfirmationActivity.this, ThankyouActivity.class);
-                        ConfirmationActivity.this.startActivity(intent);
-                    }
-                });
+                Intent intent = new Intent(ConfirmationActivity.this, ThankyouActivity.class);
+                ConfirmationActivity.this.startActivity(intent);
             }
         });
     }
