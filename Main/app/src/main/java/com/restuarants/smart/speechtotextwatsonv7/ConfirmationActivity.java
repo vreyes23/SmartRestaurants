@@ -1,5 +1,6 @@
 package com.restuarants.smart.speechtotextwatsonv7;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -47,16 +48,20 @@ public class ConfirmationActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 final String firstname = etFirstname.getText().toString();
-/*      Send user to final activity, I will complete this later.
-                Intent intent = new Intent(ConfirmationActivity.this, ReceiptDatabase.class);
-                String final_receipt = "This is a test";
-                intent.putExtra("final_receipt", final_receipt);
-                startActivity(intent);
-*/
                 ReceiptDatabase db = new ReceiptDatabase();
                 db.setName(firstname);
                 db.setTicketnumber(String.valueOf(n));
                 db.setFoodItems(receiptItem);
+
+                // Go to the final activity
+                Button confirmButton = (Button) findViewById(R.id.etConfirmButton);
+                confirmButton.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent intent = new Intent(ConfirmationActivity.this, ThankyouActivity.class);
+                        ConfirmationActivity.this.startActivity(intent);
+                    }
+                });
             }
         });
     }

@@ -217,7 +217,7 @@ public class MenuActivity extends AppCompatActivity {
             public void onClick(View view) {
                 // Prints price bottom right corner on the next activity
                 Intent intent = new Intent(MenuActivity.this, ConfirmationActivity.class);
-                String receipt_price = String.valueOf(order.getItem_from_main_menu());
+                String receipt_price = String.valueOf(form.format(order.getItem_from_main_menu()));
                 intent.putExtra("receipt_price", receipt_price); // YOUR key, variable you are passing
 
                 // Prints items in the center of the next activity

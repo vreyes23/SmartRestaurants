@@ -57,7 +57,8 @@
 
         <TableLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp">
 
             <TableRow
                 android:layout_width="match_parent"
@@ -69,18 +70,24 @@
                     android:inputType="textPersonName"
                     android:ems="10"
                     android:id="@+id/firstname"
-                    android:hint="First Name" />
+                    android:hint="First Name"
+                    android:textStyle="normal|bold" />
             </TableRow>
 
             <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" >
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp">
 
                 <TextView
                     android:text="Ticket"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/textView7" />
+                    android:id="@+id/textView7"
+                    android:textStyle="normal|bold"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="4sp"
+                    android:layout_marginBottom="8sp" />
 
                 <TextView
                     android:id="@+id/etticketID"
@@ -88,7 +95,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:inputType="textPersonName"
-                    android:ems="10" />
+                    android:ems="10"
+                    android:textStyle="normal|bold"
+                    android:textSize="28sp" />
             </TableRow>
 
             <TableRow
@@ -102,7 +111,9 @@
 
         <TableLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="20dp">
 
             <TableRow
                 android:layout_width="match_parent"
@@ -112,20 +123,59 @@
                     android:text="Customers Order"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/textView5" />
+                    android:id="@+id/textView5"
+                    android:textStyle="normal|bold"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="4dp" />
             </TableRow>
+
+        </TableLayout>
+        <TextView
+            android:id="@+id/etPlaceHolderConfirmation"
+            android:text="@string/placeholder_order_items"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textSize="18sp"
+            android:fontFamily="monospace"
+            android:layout_weight="0.39"
+            android:height="350dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="normal|italic" />
+
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="0dp">
+
 
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" >
 
                 <TextView
-                android:id="@+id/etPlaceHolderConfirmation"
-                android:text="@string/placeholder_order_items"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginRight="260dp"
-                    android:hint="Customer's Order" />
+                    android:id="@+id/etTotalConfirmation"
+                    android:text="@string/totalConfirmation"
+                    android:layout_width="match_parent"
+
+                    android:textSize="36sp"
+                    android:fontFamily="serif"
+                    android:textStyle="normal|bold"
+
+
+                    android:layout_marginLeft="24dp"
+                    android:gravity="top"
+                    android:layout_marginTop="10dp" />
+
+                <Button
+                    android:id="@+id/etConfirmButton"
+                    android:text="@string/confirmButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="160dp" />
             </TableRow>
 
             <TableRow
@@ -137,29 +187,5 @@
                 android:layout_height="match_parent" />
         </TableLayout>
 
-        <TextView
-            android:id="@+id/etTotalConfirmation"
-            android:text="@string/totalConfirmation"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:textSize="36sp"
-            android:fontFamily="serif"
-            android:textStyle="normal|bold"
-            android:layout_weight="0.39"
-            android:height="350dp"
-            android:layout_marginRight="15dp"
-            android:layout_marginLeft="15dp"
-            android:gravity="bottom" />
-
-        <TableLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-                <Button
-                    android:id="@+id/etConfirmButton"
-                    android:text="@string/confirmButton"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="bottom|center_vertical|center_horizontal" />
-        </TableLayout>
     </LinearLayout>
 </ScrollView>

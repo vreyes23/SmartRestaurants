@@ -23,6 +23,8 @@
         </activity>
         <activity android:name=".ReceiptDatabase">
         </activity>
+        <activity android:name=".ThankyouActivity">
+        </activity>
     </application>
 
 </manifest>

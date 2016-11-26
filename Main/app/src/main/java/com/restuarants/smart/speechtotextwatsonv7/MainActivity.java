@@ -25,14 +25,10 @@ import java.io.IOException;
 public class MainActivity extends AppCompatActivity {
 
     private static final String LOG_TAG = "StT";
-
     private MediaPlayer mPlayer;
     private RecordWavMaster rwm;
-
     private String outputFilePath;
-
     private boolean isRecording = false;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,7 +36,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         rwm = new RecordWavMaster();
         setUpButtons();
-
     }
 
     private void setUpButtons() {
