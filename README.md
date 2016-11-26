@@ -21,9 +21,12 @@ Screenshots
 (https://github.com/vreyes23/SmartRestaurants/blob/master/Screenshots/Home.png "Home")
 
 (https://github.com/vreyes23/SmartRestaurants/blob/master/Screenshots/Order.png "Customers that do not want to use Speech To Text to order have to go through this Main Menu Activity")
+
 (https://github.com/vreyes23/SmartRestaurants/blob/master/Screenshots/Order-2.png "When you scroll")
 
 (https://github.com/vreyes23/SmartRestaurants/blob/master/Screenshots/Confirmation.png "Confirmation activity")
+
+(https://github.com/vreyes23/SmartRestaurants/blob/master/Screenshots/Database.png "Database")
 
 Video
 ======
