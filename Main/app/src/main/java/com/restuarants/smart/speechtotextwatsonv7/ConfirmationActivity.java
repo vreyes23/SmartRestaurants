@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import java.util.Random;
+
 /**
  * This activity is the last activity before we send the data to the database, it is important to verify
  * the customers order and make sure the details are correct.
@@ -39,6 +40,8 @@ public class ConfirmationActivity extends AppCompatActivity {
         final TextView ticketID = (TextView) findViewById(R.id.etticketID);
         ticketID.setText(String.valueOf(n));
 
+        // Get watson to say the total price
+        initialCall(receiptTotal, receiptItem);
         // Send data to the database @see ReceiptDatabase class.
         confirm_button.setOnClickListener(new View.OnClickListener() {
             // Get users name
@@ -57,5 +60,13 @@ public class ConfirmationActivity extends AppCompatActivity {
                 ConfirmationActivity.this.startActivity(intent);
             }
         });
+    }
+
+    private void initialCall(String receiptTotal, String receiptItem) {
+
+        String what_to_say = "Your order is " + receiptItem + " and your total is " + receiptTotal + " " +
+                "dollars. Would you like to pay" + "cash or credit.";
+        TextToSpeech tts = new TextToSpeech(getApplicationContext());
+        tts.execute(what_to_say);
     }
 }

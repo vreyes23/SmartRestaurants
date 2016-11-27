@@ -42,9 +42,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         rwm = new RecordWavMaster();
         setUpButtons();
-
-        // Call Watson to Welcome the customer
-        initialCall();
+        initialCall(); // Call Watson to Welcome the customer
     }
 
     public void initialCall(){
