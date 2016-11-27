@@ -1,6 +1,7 @@
 package com.restuarants.smart.speechtotextwatsonv7;
 
 import android.content.Context;
+import android.media.AudioFormat;
 import android.media.MediaPlayer;
 import android.os.AsyncTask;
 import android.os.Environment;
@@ -13,16 +14,18 @@ import java.io.FileOutputStream;
 import java.io.InputStream;
 
 public class TextToSpeech {
-    private final String WEBSERVICE_URL = "https://stream.watsonplatform.net/text-tospeech/api/v1/synthesize";
-    private final String USERNAME = "your username goes here";
-    private final String PASSWORD = "your password goes here";
+    private final String WEBSERVICE_URL = "https://stream.watsonplatform.net/text-to-speech/api";
+    private final String USERNAME = "82261aef-e939-46ec-8fcc-8709abc2fa52";
+    private final String PASSWORD = "OdToyCVteYMU";
     private String type = "POST";
     private Context appContext;
     private File convertedFile;
     private String inputText;
+
     public TextToSpeech(Context appContext) {
         this.appContext = appContext;
     }
+
     public void execute(String inputText) {
         this.inputText = inputText;
         new TheTask().execute(WEBSERVICE_URL);
@@ -37,10 +40,10 @@ public class TextToSpeech {
                 service.setUsernameAndPassword(USERNAME, PASSWORD);
                 try {
                     text = inputText;
-                    InputStream stream = service.synthesize(text, Voice.EN_ALLISON, "audio/wav");
+                    InputStream stream = service.synthesize(text, Voice.EN_ALLISON, "audio/ogg");
                     File downloadsFolder = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS);
                     convertedFile = new File(downloadsFolder, "test.ogg");
-                 //   File.createTempFile("convertedFile", ".ogg", downloadsFolder);
+                    File.createTempFile("convertedFile", ".ogg", downloadsFolder);
                     FileOutputStream out = new FileOutputStream(convertedFile);
                     byte[] buffer = new byte[1024];
                     int length;

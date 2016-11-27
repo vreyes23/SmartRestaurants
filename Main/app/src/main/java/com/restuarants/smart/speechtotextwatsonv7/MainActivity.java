@@ -43,6 +43,14 @@ public class MainActivity extends AppCompatActivity {
         rwm = new RecordWavMaster();
         setUpButtons();
 
+        // Call Watson to Welcome the customer
+        initialCall();
+    }
+
+    public void initialCall(){
+        String initialText = "Hello welcome to smart restaurants";
+        TextToSpeech tts = new TextToSpeech(getApplicationContext());
+        tts.execute(initialText);
     }
 
     private void setUpButtons() {
@@ -85,7 +93,6 @@ public class MainActivity extends AppCompatActivity {
 
         if (isRecording) {
             outputFilePath = rwm.recordWavStop();
-
             //stopRecording();
             recordButton.setText("Start Recording");
         } else {
@@ -138,7 +145,6 @@ public class MainActivity extends AppCompatActivity {
         }
 
         protected void onProgressUpdate(Integer... progress) {
-
         }
 
         protected void onPostExecute(String result) {
