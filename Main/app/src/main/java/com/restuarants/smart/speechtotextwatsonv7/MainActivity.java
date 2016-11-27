@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void initialCall(){
-        String initialText = "Hello welcome to smart restaurants";
+        String initialText = "Hello welcome to smart restaurants. You can press the top left button to manually order the food. Or you can press the top right button to tell me your order.";
         TextToSpeech tts = new TextToSpeech(getApplicationContext());
         tts.execute(initialText);
     }
@@ -69,14 +69,16 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button playButton = (Button) findViewById(R.id.playButton);
+       /* This is if you want to play the recorded file of the user, we don't need this.  */
+        /*
+       Button playButton = (Button) findViewById(R.id.playButton);
         playButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 playButtonPressed();
             }
         });
-
+         */
         Button speechToTextButton = (Button) findViewById(R.id.speechToTextButton);
         speechToTextButton.setOnClickListener(new View.OnClickListener() {
             @Override
