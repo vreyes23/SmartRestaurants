@@ -23,7 +23,7 @@
         android:id="@+id/textView4"
         android:layout_weight="1"
         android:gravity="center"
-        android:fontFamily="serif"
+        android:fontFamily="cursive"
         android:textSize="31sp"
         android:textStyle="normal|bold" />
 
@@ -45,18 +45,6 @@
             android:elevation="0dp"
             android:background="@android:drawable/toast_frame"
             android:textSize="10sp" />
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="@string/play_recorded_audio"
-            android:id="@+id/playButton"
-            android:textColor="#ffffff"
-            android:layout_weight="1"
-            android:elevation="0dp"
-            android:background="@android:drawable/toast_frame"
-            android:textSize="10sp"/>
 
         <Button
             android:layout_width="0dp"
