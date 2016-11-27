@@ -27,4 +27,5 @@ dependencies {
     compile group: 'com.squareup.okhttp', name: 'okhttp-urlconnection', version: '2.7.5'
     compile group: 'com.cloudant', name: 'cloudant-client', version: '2.6.0'
     compile 'com.google.code.gson:gson:2.2.4'
+    compile 'org.jbundle.util.osgi.wrapped:org.jbundle.util.osgi.wrapped.org.apache.http.client:4.1.2'
 }
