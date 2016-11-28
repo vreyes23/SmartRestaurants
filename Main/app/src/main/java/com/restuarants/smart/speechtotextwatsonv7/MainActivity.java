@@ -37,22 +37,25 @@ public class MainActivity extends AppCompatActivity {
     private RecordWavMaster rwm;
     private String outputFilePath;
     private boolean isRecording = false;
+    int counter = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         rwm = new RecordWavMaster();
-        setUpButtons();
         initialCall(); // Call Watson to Welcome the customer
+        setUpButtons();
     }
 
     public void initialCall(){
-        String initialText = "Hello welcome to smart restaurants. You can press the top left button to manually order the food. Or you can press the top right button to tell me your order.";
+        //String initialText = "Hello welcome to smart restaurants. You can press the top left button to manually order the food. Or you can press the top right button to tell me your order.";
+        String initialText = "test";
         TextToSpeech tts = new TextToSpeech(getApplicationContext());
         tts.execute(initialText);
     }
 
     private void setUpButtons() {
+
         // Left top button, order if you're old school.
         Button menuButton = (Button) findViewById(R.id.etMenu);
         menuButton.setOnClickListener(new View.OnClickListener() {
@@ -62,56 +65,67 @@ public class MainActivity extends AppCompatActivity {
                 MainActivity.this.startActivity(intent);
             }
         });
+
         // Right top button, order if you're ready for the future.
         final Button speakOrderButton = (Button) findViewById(R.id.etspeakOrder);
         speakOrderButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                recordButtonPressed(speakOrderButton); // Start listening.
-                new SpeechToTextTask().execute(""); // Do the magic and convert audio to a string.
-                getRawText(); // get customers order
-                // Convert from JSON to regular string.
-                String finalText =  convertRawTextFromJson(getRawText());
-                TextView placeHolderText = (TextView) findViewById(R.id.textView9);
-                placeHolderText.setText(finalText);
-                /* Intent intent = new Intent(MainActivity.this, SpeakOrder.class);
-                MainActivity.this.startActivity(intent); */
+                if(counter == 0) {
+                    System.out.println("counter == 0 ");
+                    rwm.recordWavStart();
+                    //startRecording();
+                    speakOrderButton.setText("Stop Recording...");
+                }
+                if (counter == 1) {
+                    System.out.println("counter == 1 ");
+                    speakOrderButton.setText("Speak Order");
+
+                    outputFilePath = rwm.recordWavStop();
+                    //stopRecording();
+                    new SpeechToTextTask().execute(""); // Do the magic and convert audio to a string.
+                    counter = 0;
+                }
+                else {
+                    counter++;
+                }
             }
         });
     }
-
     private String convertRawTextFromJson(String rawText) {
         return rawText;
     }
 
     private void recordButtonPressed(Button speakOrderButton) {
-            if (isRecording) {
-                outputFilePath = rwm.recordWavStop();
-                //stopRecording();
-                speakOrderButton.setText("Start Recording");
-            } else {
-                rwm.recordWavStart();
-                //startRecording();
-                speakOrderButton.setText("Stop Recording...");
-            }
+        if (isRecording) {
+            outputFilePath = rwm.recordWavStop();
+            //stopRecording();
+            speakOrderButton.setText("Recording...");
+        }
+        else {
+            rwm.recordWavStart();
+            //startRecording();
+            speakOrderButton.setText("Stop Recording...");
+        }
             isRecording = !isRecording;
     }
 
     private class SpeechToTextTask extends AsyncTask<String, Void, String> {
 
         protected String doInBackground(String... params) {
-            //String rawtext = "";
-            long totalSize = 0;
             SpeechToText service = new SpeechToText();
             service.setUsernameAndPassword("b535f60e-dae2-4783-9e89-5ecaf85a468c", "UqbobaXOFPLX");
             RecognizeOptions options = new RecognizeOptions().contentType("audio/wav");
             try {
+                System.out.println("in do in background"); // Sketchy here.
                 File sdcard = Environment.getExternalStorageDirectory();
 
                 File file = new File(outputFilePath);
                 SpeechResults speechResults = service.recognize(file, options);
+
                 setRawText(speechResults.toString());
-                Log.e(LOG_TAG, speechResults.toString());
+                Log.e(LOG_TAG, String.valueOf(speechResults.getResultIndex()));
+
 
             } catch (Exception e) {
                 e.printStackTrace();
@@ -120,8 +134,13 @@ public class MainActivity extends AppCompatActivity {
         }
         protected void onProgressUpdate(Integer... progress) {}
 
-        protected void onPostExecute(String result) {}
-
-
+        protected void onPostExecute(String result) {
+            System.out.println("On Post Execute");
+            getRawText(); // get customers order
+            // Convert from JSON to regular string.
+            String finalText = convertRawTextFromJson(getRawText());
+            TextView placeHolderText = (TextView) findViewById(R.id.textView9);
+            placeHolderText.setText(finalText);
+        }
     }
 }
