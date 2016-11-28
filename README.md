@@ -1,8 +1,6 @@
 Smart Restaurants
 ======
-SMART Restuarants is an Android Java application that facilates restaurant owners by allowing their customers to order  through a mobile application. Currently the food menu we are using is the In-n-Out menu.  
-
-The features the mobile application include are the following bluemix services. 
+SMART Restuarants is an Android Java application that facilates restaurant owners by allowing their customers to order  through a mobile application. Currently the food menu we are using is the In-n-Out menu. The features the mobile application include are the following bluemix services. 
 
 IBM Bluemix Services
 ======
