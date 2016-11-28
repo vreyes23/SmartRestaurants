@@ -13,6 +13,11 @@ import android.widget.TextView;
 import com.ibm.watson.developer_cloud.speech_to_text.v1.RecognizeOptions;
 import com.ibm.watson.developer_cloud.speech_to_text.v1.SpeechToText;
 import com.ibm.watson.developer_cloud.speech_to_text.v1.model.SpeechResults;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.io.File;
 /**
  * This is the first activity that gets launched when you run this program.
@@ -139,8 +144,32 @@ public class MainActivity extends AppCompatActivity {
             getRawText(); // get customers order
             // Convert from JSON to regular string.
             String finalText = convertRawTextFromJson(getRawText());
-            TextView placeHolderText = (TextView) findViewById(R.id.textView9);
-            placeHolderText.setText(finalText);
+
+            JSONObject jsonObj = null;
+            try {
+                JSONObject json = new JSONObject(finalText);
+                JSONArray results= json.getJSONArray("results");
+
+                for(int i = 0 ; i < results.length(); i++){
+                    JSONObject jsonas = results.getJSONObject(i);
+                    JSONArray results2 = jsonas.getJSONArray("alternatives");
+                    String alternatives = jsonas.getString("alternatives");
+                    System.out.println("alternatives " + alternatives);
+
+                    for(int j = 0 ; j < results2.length(); j++){
+                        JSONObject jsonasb = results2.getJSONObject(i);
+                        String transcript = jsonasb.getString("transcript");
+                        System.out.println("transcript " + transcript);
+                        TextView placeHolderText = (TextView) findViewById(R.id.textView9);
+                        placeHolderText.setText(transcript);
+                       // System.out.println("final text " + finalText); // PRINTS IN JSON format
+                    }
+                }
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+
+
         }
     }
 }

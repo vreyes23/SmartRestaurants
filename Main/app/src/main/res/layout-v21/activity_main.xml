@@ -53,12 +53,6 @@
         android:textAlignment="center"
         android:hint="You don't need a silver fork to eat good food." />
 
-    <Button
-        android:text="Button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/button"
-        android:textAlignment="center" />
     <!-- We need to move this to another activity.
         <LinearLayout
             android:layout_width="match_parent"
