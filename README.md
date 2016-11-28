@@ -6,8 +6,8 @@ IBM Bluemix Services
 ======
 
 ###### Watson
-   * Text To Speech (Complete) We use this service to allow Watson to repeat the order and total to the customer. 
    * Speech To Text (Complete) We use this service to allow Watson to listen to the customers order. 
+   * Text To Speech (Complete) We use this service to allow Watson to repeat the order and total to the customer. 
    * Conversation (Coming Soon) We use this service to have a conversation between the customer and Watson. 
    
 ###### Data & Analytics
@@ -20,13 +20,13 @@ Screenshots
 ======
 (https://github.com/vreyes23/SmartRestaurants/blob/master/Screenshots/Home.png "Home")
 
-(https://github.com/vreyes23/SmartRestaurants/blob/master/Screenshots/Coming-Soon "Speak to Order - Coming Soon")
+(https://github.com/vreyes23/SmartRestaurants/blob/master/Screenshots/Coming-Soon "Speak Order - Coming Soon")
 
-(https://github.com/vreyes23/SmartRestaurants/blob/master/Screenshots/Order.png "Order old fashion/tradional")
+(https://github.com/vreyes23/SmartRestaurants/blob/master/Screenshots/Order.png "View menu")
 
-(https://github.com/vreyes23/SmartRestaurants/blob/master/Screenshots/Order-2.png "When you scroll")
+(https://github.com/vreyes23/SmartRestaurants/blob/master/Screenshots/Order-2.png "When customer scrolls")
 
-(https://github.com/vreyes23/SmartRestaurants/blob/master/Screenshots/Confirmation.png "Confirmation activity")
+(https://github.com/vreyes23/SmartRestaurants/blob/master/Screenshots/Confirmation.png "When the customer places order")
 
 (https://github.com/vreyes23/SmartRestaurants/blob/master/Screenshots/Database.png "Send the ticket order to the database")
 
