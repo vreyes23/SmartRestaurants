@@ -53,14 +53,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void initialCall(){
-        //String initialText = "Hello welcome to smart restaurants. You can press the top left button to manually order the food. Or you can press the top right button to tell me your order.";
-        String initialText = "test";
+        String initialText = "Hello welcome to smart restaurants. You can press the top left button to manually order the food. Or you can press the top right button to tell me your order.";
         TextToSpeech tts = new TextToSpeech(getApplicationContext());
         tts.execute(initialText);
     }
-
     private void setUpButtons() {
-
         // Left top button, order if you're old school.
         Button menuButton = (Button) findViewById(R.id.etMenu);
         menuButton.setOnClickListener(new View.OnClickListener() {
@@ -145,7 +142,6 @@ public class MainActivity extends AppCompatActivity {
             // Convert from JSON to regular string.
             String finalText = convertRawTextFromJson(getRawText());
 
-            JSONObject jsonObj = null;
             try {
                 JSONObject json = new JSONObject(finalText);
                 JSONArray results= json.getJSONArray("results");
