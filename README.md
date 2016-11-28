@@ -1,21 +1,16 @@
 Smart Restaurants
 ======
-What is SMART Restuarants?
+SMART Restuarants is an Android Java application that facilates restaurant owners by allowing their customers to order  through a mobile application. Currently the food menu we are using is the In-n-Out menu.  
 
-The idea for this project is to develop SMART restaurants for our region. 
-We define SMART restaurants by automating repetitive tasks among employees. 
-The target audience are local and franchise restaurants that want to transition to a modern and technological environment. 
-An example of an automated task is the traditional way of ringing up a food order. 
-A SMART restaurant would give the opportunity to the customer to push their orders or use voice recognition to 
-send an order to the cook. 
+The features the mobile application include are the following bluemix services. 
 
 IBM Bluemix Services
 ======
 We are using the following s Android Studio to develop a mobile application that uses IBM's which include 
 ###### Watson
-   * Text To Speech (Complete)
-   * Speech To Text (Complete)
-   * Conversation (Coming Soon)
+   * Text To Speech (Complete) We use this service to allow Watson to repeat the order and total to the customer. 
+   * Speech To Text (Complete) We use this service to allow Watson to listen to the customers order. 
+   * Conversation (Coming Soon) We use this service to have a conversation between the customer and Watson. 
    
 ###### Data & Analytics
    * NoSql Bluemix Database (Complete)
@@ -37,5 +32,9 @@ Screenshots
 
 Video
 ======
-Coming very soon
+Coming very soon.
+
+What is Watson?
+======
+http://www.ibm.com/watson/
 
