@@ -151,7 +151,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="287c341626c4c9db2267b502a1040014a0670ebe">
+        sha1="8b22edcf9709a10f9454b17bda2c72bbcc7ea95b">
         <dex dex="/Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_5039a2dc3e072833d7c637292520cf19739dbfef/classes.dex" />
     </item>
     <item
@@ -241,7 +241,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="117cc4ed504d1b74bbb0237f98b36237e48c1111">
+        sha1="b87669f1b4ddde2c7b4feb084f02cc60cbd0b132">
         <dex dex="/Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_7a4f8fd997cf97409f58197af7b0147810cef892/classes.dex" />
     </item>
     <item

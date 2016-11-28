@@ -64,7 +64,7 @@ public class ConfirmationActivity extends AppCompatActivity {
 
     private void initialCall(String receiptTotal, String receiptItem) {
         String what_to_say = "Your order is " + receiptItem + " and your total is " + receiptTotal + " " +
-                "dollars. Would you like to pay" + "cash or credit.";
+                "dollars. Is this correct?";
         TextToSpeech tts = new TextToSpeech(getApplicationContext());
         tts.execute(what_to_say);
     }

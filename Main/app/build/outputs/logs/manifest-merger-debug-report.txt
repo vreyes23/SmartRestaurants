@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:2:1-30:12
+ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:2:1-33:12
 	package
 		ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:3:5-57
 		INJECTED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml
@@ -26,7 +26,7 @@ ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest
 	android:name
 		ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:6:22-64
 application
-ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:8:5-28:19
+ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:8:5-31:19
 MERGED from [com.android.support:appcompat-v7:25.0.0] /Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-v4:25.0.0] /Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.0/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-compat:25.0.0] /Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/AndroidManifest.xml:25:5-20
@@ -64,18 +64,22 @@ activity#com.restuarants.smart.speechtotextwatsonv7.MenuActivity
 ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:20:9-21:20
 	android:name
 		ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:20:19-47
-activity#com.restuarants.smart.speechtotextwatsonv7.ConfirmationActivity
+activity#com.restuarants.smart.speechtotextwatsonv7.SpeakOrder
 ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:22:9-23:20
 	android:name
-		ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:22:19-55
+		ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:22:19-45
+activity#com.restuarants.smart.speechtotextwatsonv7.ConfirmationActivity
+ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:25:9-26:20
+	android:name
+		ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:25:19-55
 activity#com.restuarants.smart.speechtotextwatsonv7.ReceiptDatabase
-ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:24:9-25:20
+ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:27:9-28:20
 	android:name
-		ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:24:19-50
+		ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:27:19-50
 activity#com.restuarants.smart.speechtotextwatsonv7.ThankyouActivity
-ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:26:9-27:20
+ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:29:9-30:20
 	android:name
-		ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:26:19-51
+		ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:29:19-51
 uses-sdk
 INJECTED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:25.0.0] /Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/AndroidManifest.xml:21:5-23:78

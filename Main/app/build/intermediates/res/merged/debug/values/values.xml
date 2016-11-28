@@ -387,7 +387,7 @@
     <string name="etQuantity">Quantity </string>
     <string name="etTotalConfirmation">Total</string>
     <string name="etreceipt">Receipt</string>
-    <string name="etspeakorder">speakOrder</string>
+    <string name="etspeakorder">Speak Order</string>
     <string name="etticketID">Confirm</string>
     <string name="firstname">""</string>
     <string name="french_fries_text">French Fries</string>
@@ -412,7 +412,7 @@
     <string name="quantity">Quantity</string>
     <string name="search_menu_title">Search</string>
     <string name="small">Small</string>
-    <string name="speakorder">speakOrder</string>
+    <string name="speakorder">Speak Order</string>
     <string name="start_recording">Start Recording</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="ticket_id">Ticket ID #</string>

@@ -101,7 +101,7 @@
     <string name="etticketID">Confirm</string>
     <string name="ticket_id">Ticket ID #</string>
     <string name="firstname">""</string>
-    <string name="speakorder">speakOrder</string>
-    <string name="etspeakorder">speakOrder</string>
+    <string name="speakorder">Speak Order</string>
+    <string name="etspeakorder">Speak Order</string>
 
 </resources>

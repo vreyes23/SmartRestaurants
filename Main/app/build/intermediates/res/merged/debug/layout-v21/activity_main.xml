@@ -9,33 +9,31 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical">
 
-    <TableLayout
-        android:layout_width="match_parent"
-        android:layout_height="38dp">
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" >
-
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="38dp"
+        android:layout_marginTop="10dp">
             <Button
                 android:id="@+id/etMenu"
                 android:text="@string/view_menu"
                 android:background="@drawable/mybutton"
                 android:layout_width="wrap_content"
-                android:layout_height="34dp"
-                android:textSize="10sp"/>
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:textSize="12sp"
+                android:layout_marginRight="0dp"
+                android:layout_marginLeft="0dp" />
 
             <Button
                 android:id="@+id/etspeakOrder"
                 android:text="@string/speakorder"
                 android:background="@drawable/mybutton"
                 android:layout_width="wrap_content"
-                android:layout_height="34dp"
-                android:textSize="10sp"
-                android:layout_marginStart="180dp" />
-        </TableRow>
-
-    </TableLayout>
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textSize="12sp"
+                android:elevation="0dp" />
+    </RelativeLayout>
 
     <TextView
         android:text="SMART Restuarant"
@@ -47,7 +45,7 @@
         android:fontFamily="cursive"
         android:textSize="47sp"
         android:textStyle="normal|bold" />
-
+<!-- We need to move this to another activity.
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -80,5 +78,5 @@
             android:background="@android:drawable/toast_frame" />
 
     </LinearLayout>
-
+-->
 </LinearLayout>

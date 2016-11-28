@@ -28,6 +28,8 @@
         </activity>
         <activity android:name="com.restuarants.smart.speechtotextwatsonv7.MenuActivity" >
         </activity>
+        <activity android:name="com.restuarants.smart.speechtotextwatsonv7.SpeakOrder" >
+        </activity>
         <activity android:name="com.restuarants.smart.speechtotextwatsonv7.ConfirmationActivity" >
         </activity>
         <activity android:name="com.restuarants.smart.speechtotextwatsonv7.ReceiptDatabase" >
