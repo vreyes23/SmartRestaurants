@@ -12,9 +12,11 @@ send an order to the cook.
 How it's getting done
 ======
 We are using Android Studio to develop a mobile application that uses IBM's which include 
-   * Text To Speech
-   * Speech To Text
-   * Push Notifications
+   * Text To Speech (Complete)
+   * Speech To Text (Complete)
+   * NoSql Bluemix Database (Complete)
+   * Push Notifications (Coming Soon)
+   * Conversational Tool (Coming Soon)
    
 Screenshots
 ======
