@@ -6,7 +6,7 @@ The features the mobile application include are the following bluemix services.
 
 IBM Bluemix Services
 ======
-We are using the following s Android Studio to develop a mobile application that uses IBM's which include 
+
 ###### Watson
    * Text To Speech (Complete) We use this service to allow Watson to repeat the order and total to the customer. 
    * Speech To Text (Complete) We use this service to allow Watson to listen to the customers order. 
