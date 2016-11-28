@@ -13,10 +13,10 @@ IBM Bluemix Services
    * Conversation (Coming Soon) We use this service to have a conversation between the customer and Watson. 
    
 ###### Data & Analytics
-   * NoSql Bluemix Database (Complete)
+   * NoSql Bluemix Database (Complete) We use this service to send/receive customers order to the database.                          
    
 ###### Mobile
-   * Push Notifications (Coming Soon)
+   * Push Notifications (Coming Soon) We use this service to notify the customer their order is complete. 
    
 Screenshots
 ======
@@ -34,7 +34,7 @@ Video
 ======
 Coming very soon.
 
-What is Watson?
+Useful links 
 ======
-http://www.ibm.com/watson/
+What is Watson? http://www.ibm.com/watson/
 
