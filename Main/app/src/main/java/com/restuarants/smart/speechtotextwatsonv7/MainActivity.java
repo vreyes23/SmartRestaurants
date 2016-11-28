@@ -8,6 +8,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
+
 import com.ibm.watson.developer_cloud.speech_to_text.v1.RecognizeOptions;
 import com.ibm.watson.developer_cloud.speech_to_text.v1.SpeechToText;
 import com.ibm.watson.developer_cloud.speech_to_text.v1.model.SpeechResults;
@@ -22,7 +24,14 @@ import java.io.File;
  * @version 1.0 November 23 2017
  */
 public class MainActivity extends AppCompatActivity {
+    private String rawText = "";
 
+    public String getRawText() {
+        return rawText;
+    }
+    public void setRawText(String rawText) {
+        this.rawText = rawText;
+    }
     private static final String LOG_TAG = "StT";
     private MediaPlayer mPlayer;
     private RecordWavMaster rwm;
@@ -53,7 +62,6 @@ public class MainActivity extends AppCompatActivity {
                 MainActivity.this.startActivity(intent);
             }
         });
-
         // Right top button, order if you're ready for the future.
         final Button speakOrderButton = (Button) findViewById(R.id.etspeakOrder);
         speakOrderButton.setOnClickListener(new View.OnClickListener() {
@@ -61,11 +69,19 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 recordButtonPressed(speakOrderButton); // Start listening.
                 new SpeechToTextTask().execute(""); // Do the magic and convert audio to a string.
-                /*
-                Intent intent = new Intent(MainActivity.this, SpeakOrder.class);
-                MainActivity.this.startActivity(intent);*/
+                getRawText(); // get customers order
+                // Convert from JSON to regular string.
+                String finalText =  convertRawTextFromJson(getRawText());
+                TextView placeHolderText = (TextView) findViewById(R.id.textView9);
+                placeHolderText.setText(finalText);
+                /* Intent intent = new Intent(MainActivity.this, SpeakOrder.class);
+                MainActivity.this.startActivity(intent); */
             }
         });
+    }
+
+    private String convertRawTextFromJson(String rawText) {
+        return rawText;
     }
 
     private void recordButtonPressed(Button speakOrderButton) {
@@ -82,20 +98,19 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private class SpeechToTextTask extends AsyncTask<String, Void, String> {
+
         protected String doInBackground(String... params) {
+            //String rawtext = "";
             long totalSize = 0;
             SpeechToText service = new SpeechToText();
             service.setUsernameAndPassword("b535f60e-dae2-4783-9e89-5ecaf85a468c", "UqbobaXOFPLX");
-
             RecognizeOptions options = new RecognizeOptions().contentType("audio/wav");
-
             try {
                 File sdcard = Environment.getExternalStorageDirectory();
 
                 File file = new File(outputFilePath);
-
                 SpeechResults speechResults = service.recognize(file, options);
-
+                setRawText(speechResults.toString());
                 Log.e(LOG_TAG, speechResults.toString());
 
             } catch (Exception e) {
@@ -106,5 +121,7 @@ public class MainActivity extends AppCompatActivity {
         protected void onProgressUpdate(Integer... progress) {}
 
         protected void onPostExecute(String result) {}
+
+
     }
 }

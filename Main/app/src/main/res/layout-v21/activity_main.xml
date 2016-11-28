@@ -45,38 +45,45 @@
         android:fontFamily="cursive"
         android:textSize="47sp"
         android:textStyle="normal|bold" />
-<!-- We need to move this to another activity.
-    <LinearLayout
+
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center|bottom"
-        android:layout_gravity="center"
-        android:baselineAligned="false">
-
-        <Button
-            android:layout_width="0dp"
+        android:id="@+id/textView9"
+        android:textAlignment="center"
+        android:hint="You don't need a silver fork to eat good food." />
+    <!-- We need to move this to another activity.
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="10dp"
-            android:text="@string/start_recording"
-            android:id="@+id/recordButton"
-            android:textColor="#ffffff"
-            android:layout_weight="1"
-            android:elevation="0dp"
-            android:background="@android:drawable/toast_frame"
-            android:textSize="10sp" />
+            android:gravity="center|bottom"
+            android:layout_gravity="center"
+            android:baselineAligned="false">
 
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="@string/call_speech_to_text_service"
-            android:id="@+id/speechToTextButton"
-            android:textColor="#ffffff"
-            android:layout_weight="1"
-            android:textSize="10sp"
-            android:background="@android:drawable/toast_frame" />
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:text="@string/start_recording"
+                android:id="@+id/recordButton"
+                android:textColor="#ffffff"
+                android:layout_weight="1"
+                android:elevation="0dp"
+                android:background="@android:drawable/toast_frame"
+                android:textSize="10sp" />
 
-    </LinearLayout>
--->
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/call_speech_to_text_service"
+                android:id="@+id/speechToTextButton"
+                android:textColor="#ffffff"
+                android:layout_weight="1"
+                android:textSize="10sp"
+                android:background="@android:drawable/toast_frame" />
+
+        </LinearLayout>
+    -->
 </LinearLayout>
