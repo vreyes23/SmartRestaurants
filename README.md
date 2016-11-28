@@ -9,14 +9,19 @@ An example of an automated task is the traditional way of ringing up a food orde
 A SMART restaurant would give the opportunity to the customer to push their orders or use voice recognition to 
 send an order to the cook. 
 
-How it's getting done
+IBM Bluemix Services
 ======
-We are using Android Studio to develop a mobile application that uses IBM's which include 
+We are using the following s Android Studio to develop a mobile application that uses IBM's which include 
+###### Watson
    * Text To Speech (Complete)
    * Speech To Text (Complete)
+   * Conversation (Coming Soon)
+   
+###### Data & Analytics
    * NoSql Bluemix Database (Complete)
+   
+###### Mobile
    * Push Notifications (Coming Soon)
-   * Conversational Tool (Coming Soon)
    
 Screenshots
 ======
