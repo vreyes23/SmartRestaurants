@@ -50,3 +50,6 @@ Useful links
 ======
 What is Watson? http://www.ibm.com/watson/
 
+How to fork this project
+======
+Go to the specific folder you want to contribute in i.e Website or Main. Then you can fork this folder and import through Android Studio.
