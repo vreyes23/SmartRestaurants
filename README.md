@@ -20,7 +20,9 @@ Screenshots
 ======
 (https://github.com/vreyes23/SmartRestaurants/blob/master/Screenshots/Home.png "Home")
 
-(https://github.com/vreyes23/SmartRestaurants/blob/master/Screenshots/Coming-Soon "Speak Order - Coming Soon")
+(https://github.com/vreyes23/SmartRestaurants/blob/master/Screenshots/Listen.png "Watson- Listen and take the food Order")
+
+(https://github.com/vreyes23/SmartRestaurants/blob/master/Screenshots/Waton-Repeat-Customers-Order.png "Watson- Repeat and verify the customers food order")
 
 (https://github.com/vreyes23/SmartRestaurants/blob/master/Screenshots/Order.png "View menu")
 
