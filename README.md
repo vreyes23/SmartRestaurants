@@ -28,7 +28,7 @@ Screenshots
 
 (https://github.com/vreyes23/SmartRestaurants/blob/master/Screenshots/Order-2.png "When customer scrolls")
 
-(https://github.com/vreyes23/SmartRestaurants/blob/master/Screenshots/Confirmation.png "When the customer places order")
+(https://github.com/vreyes23/SmartRestaurants/blob/master/Screenshots/Confirmation.png "Watson- Tell the customer the order and their total")
 
 (https://github.com/vreyes23/SmartRestaurants/blob/master/Screenshots/Database.png "Send the ticket order to the database")
 
