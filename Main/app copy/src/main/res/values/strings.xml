@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SpeechToTextWatsonV7</string>
+    <string name="view_menu">View menu</string>
+    <string name="welcome">Welcome</string>
+    <string name="start_recording">Start Recording</string>
+    <string name="play_recorded_audio">Play Recorded Audio</string>
+    <string name="call_speech_to_text_service">Call Speech to Text Service</string>
+</resources>
