@@ -28,4 +28,5 @@ dependencies {
     compile group: 'com.cloudant', name: 'cloudant-client', version: '2.6.0'
     compile 'com.google.code.gson:gson:2.2.4'
     compile 'org.jbundle.util.osgi.wrapped:org.jbundle.util.osgi.wrapped.org.apache.http.client:4.1.2'
+    compile 'junit:junit:4.12'
 }

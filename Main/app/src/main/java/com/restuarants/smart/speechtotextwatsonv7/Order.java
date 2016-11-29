@@ -7,8 +7,6 @@ import java.util.ArrayList;
  */
 
 public class Order {
-
-
     private String name;
     private double price;
     private ArrayList<String> ingredients;

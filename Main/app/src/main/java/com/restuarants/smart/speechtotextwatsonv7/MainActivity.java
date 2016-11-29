@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void initialCall(){
-        String initialText = "Hello welcome to smart restaurants. You can press the top left button to manually order the food. Or you can press the top right button to tell me your order.";
+        String initialText = "Hello welcome to smart restaurants!";
         TextToSpeech tts = new TextToSpeech(getApplicationContext());
         tts.execute(initialText);
     }
@@ -145,7 +145,10 @@ public class MainActivity extends AppCompatActivity {
                         TextView placeHolderText = (TextView) findViewById(R.id.textView9);
                         placeHolderText.setText(transcript);
                         findViewById(R.id.loadingPanel).setVisibility(View.INVISIBLE);
-                       // System.out.println("final text " + finalText); // PRINTS IN JSON format
+
+                        // System.out.println("final text " + finalText); // PRINTS IN JSON format
+                        TextToSpeech tts = new TextToSpeech(getApplicationContext());
+                        tts.execute("Did you say " + transcript);
                     }
                 }
             } catch (JSONException e) {
