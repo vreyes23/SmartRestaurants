@@ -33,6 +33,20 @@
                 android:layout_alignParentRight="true"
                 android:textSize="12sp"
                 android:elevation="0dp" />
+
+        <RelativeLayout
+            android:id="@+id/loadingPanel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true">
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminate="true" />
+        </RelativeLayout>
     </RelativeLayout>
 
     <TextView
@@ -40,7 +54,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:id="@+id/textView4"
-        android:layout_weight="1"
+        android:layout_weight="0.55"
         android:gravity="center"
         android:fontFamily="cursive"
         android:textSize="47sp"
@@ -51,7 +65,9 @@
         android:layout_height="wrap_content"
         android:id="@+id/textView9"
         android:textAlignment="center"
-        android:hint="You don't need a silver fork to eat good food." />
+        android:hint="You don't need a silver fork to eat good food."
+        android:layout_weight="0.27"
+        android:gravity="bottom" />
 
     <!-- We need to move this to another activity.
         <LinearLayout

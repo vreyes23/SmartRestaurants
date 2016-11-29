@@ -30,23 +30,25 @@ import java.io.File;
  */
 public class MainActivity extends AppCompatActivity {
     private String rawText = "";
-
     public String getRawText() {
         return rawText;
     }
     public void setRawText(String rawText) {
         this.rawText = rawText;
     }
+
     private static final String LOG_TAG = "StT";
     private MediaPlayer mPlayer;
     private RecordWavMaster rwm;
     private String outputFilePath;
     private boolean isRecording = false;
     int counter = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        findViewById(R.id.loadingPanel).setVisibility(View.INVISIBLE);
         rwm = new RecordWavMaster();
         initialCall(); // Call Watson to Welcome the customer
         setUpButtons();
@@ -73,6 +75,7 @@ public class MainActivity extends AppCompatActivity {
         speakOrderButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                findViewById(R.id.loadingPanel).setVisibility(View.VISIBLE);
                 if(counter == 0) {
                     System.out.println("counter == 0 ");
                     rwm.recordWavStart();
@@ -82,7 +85,6 @@ public class MainActivity extends AppCompatActivity {
                 if (counter == 1) {
                     System.out.println("counter == 1 ");
                     speakOrderButton.setText("Speak Order");
-
                     outputFilePath = rwm.recordWavStop();
                     //stopRecording();
                     new SpeechToTextTask().execute(""); // Do the magic and convert audio to a string.
@@ -96,20 +98,6 @@ public class MainActivity extends AppCompatActivity {
     }
     private String convertRawTextFromJson(String rawText) {
         return rawText;
-    }
-
-    private void recordButtonPressed(Button speakOrderButton) {
-        if (isRecording) {
-            outputFilePath = rwm.recordWavStop();
-            //stopRecording();
-            speakOrderButton.setText("Recording...");
-        }
-        else {
-            rwm.recordWavStart();
-            //startRecording();
-            speakOrderButton.setText("Stop Recording...");
-        }
-            isRecording = !isRecording;
     }
 
     private class SpeechToTextTask extends AsyncTask<String, Void, String> {
@@ -128,7 +116,6 @@ public class MainActivity extends AppCompatActivity {
                 setRawText(speechResults.toString());
                 Log.e(LOG_TAG, String.valueOf(speechResults.getResultIndex()));
 
-
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -141,7 +128,6 @@ public class MainActivity extends AppCompatActivity {
             getRawText(); // get customers order
             // Convert from JSON to regular string.
             String finalText = convertRawTextFromJson(getRawText());
-
             try {
                 JSONObject json = new JSONObject(finalText);
                 JSONArray results= json.getJSONArray("results");
@@ -158,14 +144,13 @@ public class MainActivity extends AppCompatActivity {
                         System.out.println("transcript " + transcript);
                         TextView placeHolderText = (TextView) findViewById(R.id.textView9);
                         placeHolderText.setText(transcript);
+                        findViewById(R.id.loadingPanel).setVisibility(View.INVISIBLE);
                        // System.out.println("final text " + finalText); // PRINTS IN JSON format
                     }
                 }
             } catch (JSONException e) {
                 e.printStackTrace();
             }
-
-
         }
     }
 }
