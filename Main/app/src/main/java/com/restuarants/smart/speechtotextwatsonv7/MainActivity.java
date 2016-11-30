@@ -10,7 +10,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.ibm.watson.developer_cloud.speech_to_text.v1.RecognizeOptions;
 import com.ibm.watson.developer_cloud.speech_to_text.v1.SpeechToText;
 import com.ibm.watson.developer_cloud.speech_to_text.v1.model.SpeechResults;
 
@@ -39,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
 
     private static final String LOG_TAG = "StT";
     private MediaPlayer mPlayer;
-    private RecordWavMaster rwm;
+    private RecordWavMaster mic;
     private String outputFilePath;
     private boolean isRecording = false;
     int counter = 0;
@@ -49,14 +48,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         findViewById(R.id.loadingPanel).setVisibility(View.INVISIBLE);
-        rwm = new RecordWavMaster();
+        mic = new RecordWavMaster();
         initialCall(); // Call Watson to Welcome the customer
         setUpButtons();
     }
 
     public void initialCall(){
         String initialText = "Hello welcome to smart restaurants!";
-        TextToSpeech tts = new TextToSpeech(getApplicationContext());
+        TextToSpeechActivity tts = new TextToSpeechActivity(getApplicationContext());
         tts.execute(initialText);
     }
     private void setUpButtons() {
@@ -78,14 +77,14 @@ public class MainActivity extends AppCompatActivity {
                 findViewById(R.id.loadingPanel).setVisibility(View.VISIBLE);
                 if(counter == 0) {
                     System.out.println("counter == 0 ");
-                    rwm.recordWavStart();
+                    mic.recordWavStart();
                     //startRecording();
                     speakOrderButton.setText("Stop Recording...");
                 }
                 if (counter == 1) {
                     System.out.println("counter == 1 ");
                     speakOrderButton.setText("Speak Order");
-                    outputFilePath = rwm.recordWavStop();
+                    outputFilePath = mic.recordWavStop();
                     //stopRecording();
                     new SpeechToTextTask().execute(""); // Do the magic and convert audio to a string.
                     counter = 0;
@@ -105,13 +104,14 @@ public class MainActivity extends AppCompatActivity {
         protected String doInBackground(String... params) {
             SpeechToText service = new SpeechToText();
             service.setUsernameAndPassword("b535f60e-dae2-4783-9e89-5ecaf85a468c", "UqbobaXOFPLX");
-            RecognizeOptions options = new RecognizeOptions().contentType("audio/wav");
+
+         //    RecognizeOptions options = new RecognizeOptions().contentType("audio/wav");
             try {
                 System.out.println("in do in background"); // Sketchy here.
                 File sdcard = Environment.getExternalStorageDirectory();
 
-                File file = new File(outputFilePath);
-                SpeechResults speechResults = service.recognize(file, options);
+               // File file = new File(outputFilePath);
+                SpeechResults speechResults = service.recognize(new File(outputFilePath)).execute();
 
                 setRawText(speechResults.toString());
                 Log.e(LOG_TAG, String.valueOf(speechResults.getResultIndex()));
@@ -147,7 +147,7 @@ public class MainActivity extends AppCompatActivity {
                         findViewById(R.id.loadingPanel).setVisibility(View.INVISIBLE);
 
                         // System.out.println("final text " + finalText); // PRINTS IN JSON format
-                        TextToSpeech tts = new TextToSpeech(getApplicationContext());
+                        TextToSpeechActivity tts = new TextToSpeechActivity(getApplicationContext());
                         tts.execute("Did you say " + transcript);
                     }
                 }

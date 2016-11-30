@@ -1,19 +1,24 @@
 package com.restuarants.smart.speechtotextwatsonv7;
 
 import android.content.Context;
-import android.media.AudioFormat;
+
 import android.media.MediaPlayer;
 import android.os.AsyncTask;
 import android.os.Environment;
 import android.util.Log;
 
+import com.ibm.watson.developer_cloud.text_to_speech.v1.TextToSpeech;
+import com.ibm.watson.developer_cloud.text_to_speech.v1.model.AudioFormat;
 import com.ibm.watson.developer_cloud.text_to_speech.v1.model.Voice;
+import com.ibm.watson.developer_cloud.text_to_speech.v1.util.WaveUtils;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.InputStream;
+import java.io.OutputStream;
 
-public class TextToSpeech {
+public class TextToSpeechActivity {
     private final String WEBSERVICE_URL = "https://stream.watsonplatform.net/text-to-speech/api";
     private final String USERNAME = "82261aef-e939-46ec-8fcc-8709abc2fa52";
     private final String PASSWORD = "OdToyCVteYMU";
@@ -22,7 +27,7 @@ public class TextToSpeech {
     private File convertedFile;
     private String inputText;
 
-    public TextToSpeech(Context appContext) {
+    public TextToSpeechActivity(Context appContext) {
         this.appContext = appContext;
     }
 
@@ -30,17 +35,18 @@ public class TextToSpeech {
         this.inputText = inputText;
         new TheTask().execute(WEBSERVICE_URL);
     }
+
     class TheTask extends AsyncTask<String, Void, String> {
         @Override
         protected String doInBackground(String... arg0) {
             String text = null;
             try {
-                com.ibm.watson.developer_cloud.text_to_speech.v1.TextToSpeech service = new
-                        com.ibm.watson.developer_cloud.text_to_speech.v1.TextToSpeech();
-                service.setUsernameAndPassword(USERNAME, PASSWORD);
+                TextToSpeech synthesizer = new TextToSpeech();
+                synthesizer.setUsernameAndPassword("username", "password");
+                synthesizer.setUsernameAndPassword(USERNAME, PASSWORD);
                 try {
                     text = inputText;
-                    InputStream stream = service.synthesize(text, Voice.EN_ALLISON, "audio/ogg");
+                    InputStream stream = synthesizer.synthesize(text, Voice.EN_ALLISON, AudioFormat.OGG).execute();
                     File downloadsFolder = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS);
                     convertedFile = new File(downloadsFolder, "test.ogg");
                     File.createTempFile("convertedFile", ".ogg", downloadsFolder);
@@ -52,6 +58,7 @@ public class TextToSpeech {
                     }
                     out.close();
                     stream.close();
+                 //   writeToFile(WaveUtils.reWriteWaveHeader(in), new File("output.wav"));
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
