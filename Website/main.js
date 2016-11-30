@@ -13,12 +13,12 @@ function readFromDB()
 	  async: false,
 	   
 	  headers: {
-	  //	"Access-Control-Allow-Origin: ": "*",
-      //"Access-Control-Allow-Methods: ": "GET",
-      //"Access-Control-Allow-Headers: ": "Authorization",
+	  	"Access-Control-Allow-Origin: ": "*",
+      "Access-Control-Allow-Methods: ": "GET",
+      "Access-Control-Allow-Headers: ": "Authorization",
 	    "Authorization": "Basic " + btoa("rryoupperarnotedgenerste" + ":" + "c91a8e3515d96e5eeb3319f80d7ef35733413516")
 	  },
-	  //data: '{ "comment" }',
+	  data: '{ "comment" }',
 	  success: function(data) { 
 	  
  
@@ -47,12 +47,12 @@ function readFromDoc(data)
 	  async: false,
 	   
 	  headers: {
-	  //	"Access-Control-Allow-Origin: ": "*",
-      //"Access-Control-Allow-Methods: ": "GET",
-      //"Access-Control-Allow-Headers: ": "Authorization",
+	  	"Access-Control-Allow-Origin: ": "*",
+      "Access-Control-Allow-Methods: ": "GET",
+      "Access-Control-Allow-Headers: ": "Authorization",
 	    "Authorization": "Basic " + btoa("rryoupperarnotedgenerste" + ":" + "c91a8e3515d96e5eeb3319f80d7ef35733413516")
 	  },
-	  //data: '{ "comment" }',
+	  data: '{ "comment" }',
 	  success: function(data) { 
 	  
  
