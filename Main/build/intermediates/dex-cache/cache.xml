@@ -57,6 +57,15 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="fef2b3e4b6b1b0e5fe7b69fa137a5fa55a3182ab">
+        <dex dex="/Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-base-8.4.0_a40d4986e84f816c28760eb709fb1e7962dfe7c2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -120,6 +129,24 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8e673cdfadd8f2d98fdb2fda2285c30f6e449782">
+        <dex dex="/Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-8.4.0_fbdf4a16d34bb9445708e541ea360da31773bec8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="65d086ee9daaf87b5af62ad24471edafa433354c">
+        <dex dex="/Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-appindexing-8.4.0_0164bb75e42a54bf7b42286fe1fef7d8e14fb620/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/jars/libs/internal_impl-25.0.0.jar"
         jumboMode="true"
         optimize="true"
@@ -160,7 +187,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="e7f687b5930493dc249291750feb9454ef856810">
+        sha1="6f5c55ecf6b6bc1ce125dfdbec4788724cd95976">
         <dex dex="/Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_5039a2dc3e072833d7c637292520cf19739dbfef/classes.dex" />
     </item>
     <item
@@ -268,7 +295,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="b294c104d65c9359337aedceda04f8c22c7cd5e4">
+        sha1="4537bdd3e05c85627112c92eba8b114bd13511d2">
         <dex dex="/Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_7a4f8fd997cf97409f58197af7b0147810cef892/classes.dex" />
     </item>
     <item

@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:2:1-33:12
+ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:2:1-37:12
 	package
 		ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:3:5-57
 		INJECTED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml
@@ -26,7 +26,7 @@ ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest
 	android:name
 		ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:6:22-64
 application
-ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:8:5-31:19
+ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:8:5-35:19
 MERGED from [com.android.support:appcompat-v7:25.0.0] /Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-v4:25.0.0] /Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.0/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-compat:25.0.0] /Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/AndroidManifest.xml:25:5-20
@@ -36,6 +36,8 @@ MERGED from [com.android.support:support-core-ui:25.0.0] /Users/oscarricaud/Smar
 MERGED from [com.android.support:support-fragment:25.0.0] /Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.0/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-vector-drawable:25.0.0] /Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.0/AndroidManifest.xml:23:5-20
 MERGED from [com.android.support:animated-vector-drawable:25.0.0] /Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] /Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/8.4.0/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/AndroidManifest.xml:20:5-24:19
 	android:label
 		ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:11:9-41
 	android:supportsRtl
@@ -80,6 +82,13 @@ activity#com.restuarants.smart.speechtotextwatsonv7.ThankyouActivity
 ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:29:9-30:20
 	android:name
 		ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:29:19-51
+meta-data#com.google.android.gms.version
+ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:32:9-34:69
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/AndroidManifest.xml:21:9-23:69
+	android:value
+		ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:34:13-66
+	android:name
+		ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:33:13-58
 uses-sdk
 INJECTED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:25.0.0] /Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/AndroidManifest.xml:21:5-23:78
@@ -91,6 +100,9 @@ MERGED from [com.android.support:support-core-ui:25.0.0] /Users/oscarricaud/Smar
 MERGED from [com.android.support:support-fragment:25.0.0] /Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.0/AndroidManifest.xml:21:5-23:60
 MERGED from [com.android.support:support-vector-drawable:25.0.0] /Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.0/AndroidManifest.xml:21:5-43
 MERGED from [com.android.support:animated-vector-drawable:25.0.0] /Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] /Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/8.4.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-base:8.4.0] /Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/AndroidManifest.xml:18:5-42
 	tools:overrideLibrary
 		ADDED from [com.android.support:appcompat-v7:25.0.0] /Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/AndroidManifest.xml:23:9-75
 	android:targetSdkVersion

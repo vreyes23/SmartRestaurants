@@ -103,5 +103,6 @@
     <string name="firstname">""</string>
     <string name="speakorder">Speak Order</string>
     <string name="etspeakorder">Speak Order</string>
+    <string name="loadingCircle"></string>
 
 </resources>
