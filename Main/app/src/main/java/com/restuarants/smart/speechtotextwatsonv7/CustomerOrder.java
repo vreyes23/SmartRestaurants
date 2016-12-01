@@ -1,8 +1,6 @@
 package com.restuarants.smart.speechtotextwatsonv7;
-
 import java.io.Serializable;
 import java.util.LinkedList;
-
 /**
  * This class gets called from @see MenuActivity, in other words this will be used as a pre-confirmation
  * of a receipt. It is common for the cashier to repeat what the customer order to minimize ambiguity
@@ -25,7 +23,6 @@ class CustomerOrder implements Serializable{
     void setQty_from_main_menu(int qty_from_main_menu) {
         this.qty_from_main_menu = qty_from_main_menu;
     }
-
     // Gets the total prices of the items and sends it to the @see Confirmation activity
     double getItem_from_main_menu() {
         return holder;
@@ -40,7 +37,10 @@ class CustomerOrder implements Serializable{
     void store_food_item(String currItem){
         food_items.add(currItem);
     }
+
     String get_list_items(){
-        return food_items.toString();
+        String temp = food_items.toString();
+        temp = temp.replaceAll("\\[", "").replaceAll("\\]",""); // Replaces the [] in the linked list list
+        return temp;
     }
 }
