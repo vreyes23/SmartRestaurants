@@ -19,8 +19,6 @@
         </activity>
         <activity android:name=".MenuActivity">
         </activity>
-        <activity android:name=".SpeakOrder">
-        </activity>
 
         <activity android:name=".ConfirmationActivity">
         </activity>
