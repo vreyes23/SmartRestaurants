@@ -27,12 +27,11 @@ import java.util.concurrent.ExecutionException;
 /**
  * This is the first activity that gets launched when you run this program.
  * MainActivity will be split into two different sections.
- * First section is for customers that do not wish to use the feature of Speech to Text aka Order
- * by speaking. Therefore the user's must navigate through the menu @see MenuActivity and order
- * through there.
- *
+ * First section, @see MenuActivity, this section is for customers that do not wish to use the
+ * feature of Speech to Text aka Order by speaking.
+ * Therefore the user's must navigate through the menu @see MenuActivity and manually order through there.
  * @author Oscar I. Ricaud
- * @version 1.0 November 23 2017
+ * @version 1.0 December 2nd 2017
  */
 public class MainActivity extends AppCompatActivity {
     private String rawText = "";
@@ -139,7 +138,6 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onStart() {
         super.onStart();
-
         // ATTENTION: This was auto-generated to implement the App Indexing API.
         // See https://g.co/AppIndexing/AndroidStudio for more information.
         client.connect();
@@ -196,7 +194,7 @@ public class MainActivity extends AppCompatActivity {
                         findViewById(R.id.loadingCircle).setVisibility(View.INVISIBLE);
                         findViewById(R.id.textView9).setVisibility(View.VISIBLE); // show text bottom
 
-                        // System.out.println("final text " + finalText); // PRINTS IN JSON format
+                        // System.out.println("final text " + finalText); // Debugging, prints Json format
                         TextToSpeechActivity tts = new TextToSpeechActivity(getApplicationContext());
                         tts.execute("Did you say " + transcript);
 
