@@ -1,6 +1,5 @@
 package com.restuarants.smart.speechtotextwatsonv7;
 import android.content.Intent;
-import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -22,7 +21,6 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.File;
-import java.util.concurrent.ExecutionException;
 
 /**
  * This is the first activity that gets launched when you run this program.
@@ -35,6 +33,10 @@ import java.util.concurrent.ExecutionException;
  */
 public class MainActivity extends AppCompatActivity {
     private String rawText = "";
+    private static final String LOG_TAG = "StT";
+    private RecordWavMaster mic;
+    private String outputFilePath;
+    int counter = 0;
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
      * See https://g.co/AppIndexing/AndroidStudio for more information.
@@ -49,28 +51,30 @@ public class MainActivity extends AppCompatActivity {
         this.rawText = rawText;
     }
 
-    private static final String LOG_TAG = "StT";
-    private MediaPlayer mPlayer;
-    private RecordWavMaster mic;
-    private String outputFilePath;
-    private boolean isRecording = false;
-    int counter = 0;
+    private String convertRawTextFromJson(String rawText) {
+        return rawText;
+    }
 
+    /** First method that is called when the user runs this app.
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         findViewById(R.id.loadingCircle).setVisibility(View.INVISIBLE); // Hide loading circle
         mic = new RecordWavMaster();
-        initialCall(); // Call Watson to Welcome the customer
+        initialCall();
         setUpButtons();
 
         // ATTENTION: This was auto-generated to implement the App Indexing API.
         // See https://g.co/AppIndexing/AndroidStudio for more information.
         client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
-
     }
 
+    /**
+     * In this method we tell Watson to speak to the customer
+     */
     public void initialCall() {
         String initialText = "Hello welcome to smart restaurants!";
         TextToSpeechActivity tts = new TextToSpeechActivity(getApplicationContext());
@@ -78,6 +82,9 @@ public class MainActivity extends AppCompatActivity {
     //    ConversationExample ce = new ConversationExample();
     }
 
+    /**
+     * This method sets up the buttons for the user including the the View Menu and Speak Order Button.
+     */
     private void setUpButtons() {
         // Left top button, order if you're old school.
         Button menuButton = (Button) findViewById(R.id.etMenu);
@@ -116,9 +123,6 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    private String convertRawTextFromJson(String rawText) {
-        return rawText;
-    }
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
      * See https://g.co/AppIndexing/AndroidStudio for more information.
@@ -167,8 +171,7 @@ public class MainActivity extends AppCompatActivity {
             }
             return "";
         }
-        protected void onProgressUpdate(Integer... progress) {
-        }
+        protected void onProgressUpdate(Integer... progress) {}
 
         protected void onPostExecute(String result) {
             System.out.println("On Post Execute");
@@ -197,31 +200,12 @@ public class MainActivity extends AppCompatActivity {
                         // System.out.println("final text " + finalText); // Debugging, prints Json format
                         TextToSpeechActivity tts = new TextToSpeechActivity(getApplicationContext());
                         tts.execute("Did you say " + transcript);
-
-                        //  Start having a conversation with Watson, if yes open activity.
-                        //  ConversationStart cs = new ConversationStart();
-                  /*     ConversationService service = new ConversationService("2016-11-29");
-                        service.setUsernameAndPassword("2cd79c69-afac-4288-973a-120db0f1efef", "ENFhhydOkd5q");
-                        MessageRequest newMessage = new MessageRequest.Builder().inputText("I am hungry.").build();
-                        String sillyWorkspaceID = "25dfa8a0-0263-471b-8980-317e68c30488";
-                        MessageResponse response = service.message(sillyWorkspaceID, newMessage).execute();
-                       System.out.println("here " + response); */
                     }
                 }
-                try { // Who is your father? Watson shall say I am the father.
-                    findIntent("");
-                } catch (ExecutionException | InterruptedException e) {
-                    System.out.println("not working");
-                    e.printStackTrace();
-                }
+
             } catch (JSONException e) {
                 e.printStackTrace();
             }
         }
-    }
-
-    private void findIntent(String transcript) throws ExecutionException, InterruptedException {
-        System.out.println("here");
-   //     ConversationStart cs = new ConversationStart();
     }
 }
