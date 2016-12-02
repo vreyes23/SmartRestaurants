@@ -18,12 +18,18 @@ IBM Bluemix Services
    
 Conversation 
 ======
-The approach we took was to split the In-n-Out menu into sub categories. In this case there are only two categories, Main-Menu and Drink-Size.In the Main-Menu the only items it contains are the following: Double-Double, Cheese Burger, Hamburger and Fries. The Drink-Size category only contains the size of the drinks: small, medium, large or x-lg. The reason we did this is because we are able assign a unique ID for the specific instance of interaction between Watson and the User. There is a process to order the food from IN-N-OUT. We first promt the user with the simple question, "What would you like to order from the Main Menu" we would look for relevent infomartion from the following intent:
+The approach we took was to split the In-n-Out menu into sub categories. In this case there are only two categories, Main-Menu and Drink-Size.In the Main-Menu the only items it contains are the following: Double-Double, Cheese Burger, Hamburger and Fries. The Drink-Size category only contains the size of the drinks: small, medium, large or x-lg. The reason we did this is because we are able assign a unique ID for the specific instance of interaction between Watson and the User. There is a process to order the food from In-n-Out. We first promt the user with the simple question, "What would you like to order from the Main Menu" we would look for relevent infomartion from the following intent:
 
 (https://github.com/vreyes23/SmartRestaurants/blob/master/Screenshots/Main-Menu.png "Main-Menu")
 
+In this specific category we have the main-menu as intents. And in each intent we have defined common statements a user may make for example #double-double:
 
-Coming soon.
+
+The user may say "I want a double double" or say "I want a number 1".
+
+(https://github.com/vreyes23/SmartRestaurants/blob/master/Screenshots/double-double.png "#double-double")
+
+Cont. soon
 
 Screenshots
 ======
