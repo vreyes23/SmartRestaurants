@@ -1,22 +1,19 @@
 package com.restuarants.smart.speechtotextwatsonv7;
 
-import android.content.Context;
-
 import android.media.MediaPlayer;
 import android.os.AsyncTask;
 import android.os.Environment;
 import android.util.Log;
+import android.content.Context;
 
 import com.ibm.watson.developer_cloud.text_to_speech.v1.TextToSpeech;
 import com.ibm.watson.developer_cloud.text_to_speech.v1.model.AudioFormat;
 import com.ibm.watson.developer_cloud.text_to_speech.v1.model.Voice;
-import com.ibm.watson.developer_cloud.text_to_speech.v1.util.WaveUtils;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.InputStream;
-import java.io.OutputStream;
 
 public class TextToSpeechActivity {
     private final String WEBSERVICE_URL = "https://stream.watsonplatform.net/text-to-speech/api";
@@ -58,7 +55,7 @@ public class TextToSpeechActivity {
                     }
                     out.close();
                     stream.close();
-                 //   writeToFile(WaveUtils.reWriteWaveHeader(in), new File("output.wav"));
+
                 } catch (Exception e) {
                     e.printStackTrace();
                 }

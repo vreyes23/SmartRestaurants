@@ -7,7 +7,6 @@ import com.cloudant.client.api.CloudantClient;
 import com.cloudant.client.api.Database;
 import org.json.JSONObject;
 import java.util.LinkedList;
-
 /**
  * This class connects to the NOSQL Database Bluemix Service
  * In this class the user can send data and receive data.
@@ -51,11 +50,11 @@ public class ReceiptDatabase extends AppCompatActivity {
         return final_name;
     }
 
-
     //This Class allows to write to the Cloudant Database
-    class WriteAsyncTask extends AsyncTask<Void, Void, Order> {
-        protected Order doInBackground(Void... arg0) {
-            Order order = null; // We don't need this. But it doesn't work without it.
+    class WriteAsyncTask extends AsyncTask<String, Void, String> {
+        @Override
+        protected String doInBackground(String... strings) {
+            // Order order = null; // We don't need this. But it doesn't work without it.
             try {
                 // Create a new CloudantClient instance for account endpoint <ACCOUNT>.cloudant.com
                 CloudantClient client = ClientBuilder.account(ACCOUNT)
@@ -64,30 +63,26 @@ public class ReceiptDatabase extends AppCompatActivity {
                         .build();
                 // Get a Database instance to interact with. Do not create it if it doesn't already exist
                 Database db = client.database(DB_NAME, false);
-                    // Retrieve data from @see ConfirmationActivity
-                    String name = getName();
-                    String ticketID = getTicketNumber();
-                    String foodList = getFoodItems().toString();
+                // Retrieve data from @see ConfirmationActivity
+                String name = getName();
+                String ticketID = getTicketNumber();
+                String foodList = getFoodItems().toString();
 
-                    // Convert string to JSON format
-                    JSONObject json = new JSONObject();
-                    json.put("Customers name", name);
-                    json.put("Ticket number", ticketID);
-                    json.put("Food list", foodList);
-                    // Send data to the database.
-                    db.save(json);
+                // Convert string to JSON format
+                JSONObject json = new JSONObject();
+                json.put("Customers name", name);
+                json.put("Ticket number", ticketID);
+                json.put("Food list", foodList);
+                // Send data to the database.
+                db.save(json);
             } catch (Exception e) {
                 e.printStackTrace();
             }
-            return order; // we don't need this, delete later, delete now it breaks lol.
-        }
-        @Override
-        protected void onPostExecute(Order order) {
-            super.onPostExecute(order);
+            return null;
         }
     }
 
-    //This Class allows to read from the Cloudant Database
+    /*This Class allows to read from the Cloudant Database
     class ReadAsyncTask extends AsyncTask<String, Void, Order>
     {
         @Override
@@ -110,4 +105,5 @@ public class ReceiptDatabase extends AppCompatActivity {
             return order;
         }
     }
+    */
 }

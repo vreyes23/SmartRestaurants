@@ -22,6 +22,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.File;
+import java.util.concurrent.ExecutionException;
 
 /**
  * This is the first activity that gets launched when you run this program.
@@ -55,7 +56,6 @@ public class MainActivity extends AppCompatActivity {
     private String outputFilePath;
     private boolean isRecording = false;
     int counter = 0;
-    int currentState = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,15 +65,18 @@ public class MainActivity extends AppCompatActivity {
         mic = new RecordWavMaster();
         initialCall(); // Call Watson to Welcome the customer
         setUpButtons();
+
         // ATTENTION: This was auto-generated to implement the App Indexing API.
         // See https://g.co/AppIndexing/AndroidStudio for more information.
         client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
+
     }
 
     public void initialCall() {
         String initialText = "Hello welcome to smart restaurants!";
         TextToSpeechActivity tts = new TextToSpeechActivity(getApplicationContext());
         tts.execute(initialText);
+    //    ConversationExample ce = new ConversationExample();
     }
 
     private void setUpButtons() {
@@ -207,9 +210,20 @@ public class MainActivity extends AppCompatActivity {
                        System.out.println("here " + response); */
                     }
                 }
+                try { // Who is your father? Watson shall say I am the father.
+                    findIntent("");
+                } catch (ExecutionException | InterruptedException e) {
+                    System.out.println("not working");
+                    e.printStackTrace();
+                }
             } catch (JSONException e) {
                 e.printStackTrace();
             }
         }
+    }
+
+    private void findIntent(String transcript) throws ExecutionException, InterruptedException {
+        System.out.println("here");
+   //     ConversationStart cs = new ConversationStart();
     }
 }

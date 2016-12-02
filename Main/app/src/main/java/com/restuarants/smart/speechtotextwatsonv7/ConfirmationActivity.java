@@ -8,7 +8,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import java.util.Random;
-
 /**
  * This activity is the last activity before we send the data to the database, it is important to verify
  * the customers order and make sure the details are correct.
