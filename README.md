@@ -16,8 +16,13 @@ IBM Bluemix Services
 ###### Mobile
    * Push Notifications (Coming Soon) We use this service to notify the customer their order is complete. 
    
-Conversation Tree
+Conversation 
 ======
+The approach we took was to split the In-n-Out menu into sub categories. In this case there are only two categories, Main-Menu and Drink-Size.In the Main-Menu the only items it contains are the following: Double-Double, Cheese Burger, Hamburger and Fries. The Drink-Size category only contains the size of the drinks: small, medium, large or x-lg. The reason we did this is because we are able assign a unique ID for the specific instance of interaction between Watson and the User. There is a process to order the food from IN-N-OUT. We first promt the user with the simple question, "What would you like to order from the Main Menu" we would look for relevent infomartion from the following intent:
+
+(https://github.com/vreyes23/SmartRestaurants/blob/master/Screenshots/Main-Menu.png "Main-Menu")
+
+
 Coming soon.
 
 Screenshots
