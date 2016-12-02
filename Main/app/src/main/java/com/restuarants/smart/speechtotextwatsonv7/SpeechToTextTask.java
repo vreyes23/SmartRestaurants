@@ -13,7 +13,7 @@ import java.util.Map;
 import java.util.concurrent.ExecutionException;
 
 import jersey.repackaged.jsr166e.CompletableFuture;
-
+/* This class is currently not being used. */
 public class SpeechToTextTask extends AppCompatActivity {
 
     @Override

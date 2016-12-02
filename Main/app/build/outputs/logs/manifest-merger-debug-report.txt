@@ -66,22 +66,22 @@ activity#com.restuarants.smart.speechtotextwatsonv7.MenuActivity
 ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:20:9-21:20
 	android:name
 		ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:20:19-47
-activity#com.restuarants.smart.speechtotextwatsonv7.SpeakOrder
-ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:22:9-23:20
-	android:name
-		ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:22:19-45
 activity#com.restuarants.smart.speechtotextwatsonv7.ConfirmationActivity
+ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:23:9-24:20
+	android:name
+		ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:23:19-55
+activity#com.restuarants.smart.speechtotextwatsonv7.ReceiptDatabase
 ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:25:9-26:20
 	android:name
-		ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:25:19-55
-activity#com.restuarants.smart.speechtotextwatsonv7.ReceiptDatabase
+		ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:25:19-50
+activity#com.restuarants.smart.speechtotextwatsonv7.ThankyouActivity
 ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:27:9-28:20
 	android:name
-		ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:27:19-50
-activity#com.restuarants.smart.speechtotextwatsonv7.ThankyouActivity
-ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:29:9-30:20
+		ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:27:19-51
+activity#com.restuarants.smart.speechtotextwatsonv7.ConversationActivity
+ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:30:9-31:20
 	android:name
-		ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:29:19-51
+		ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:30:19-55
 meta-data#com.google.android.gms.version
 ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:32:9-34:69
 MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/AndroidManifest.xml:21:9-23:69

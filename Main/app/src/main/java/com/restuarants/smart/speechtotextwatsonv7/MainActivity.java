@@ -200,6 +200,11 @@ public class MainActivity extends AppCompatActivity {
                         // System.out.println("final text " + finalText); // Debugging, prints Json format
                         TextToSpeechActivity tts = new TextToSpeechActivity(getApplicationContext());
                         tts.execute("Did you say " + transcript);
+                        // Send User input and launch @see ConversationActivity
+                        Intent convo_intent = new Intent(MainActivity.this, ConversationActivity.class);
+                        String user_input = transcript;
+                        convo_intent.putExtra("user_input", user_input); // YOUR key, variable you are passing
+                        startActivity(convo_intent);
                     }
                 }
 
