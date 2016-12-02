@@ -27,7 +27,7 @@ In this specific category we have the main-menu as intents. And in each intent w
 
 The user may say "I want a double double" or say "I want a number 1".
 
-(https://github.com/vreyes23/SmartRestaurants/blob/master/Screenshots/double-double.png "#double-double")
+(https://github.com/vreyes23/SmartRestaurants/blob/master/Screenshots/double-double.png "double-double")
 
 Cont. soon
 
