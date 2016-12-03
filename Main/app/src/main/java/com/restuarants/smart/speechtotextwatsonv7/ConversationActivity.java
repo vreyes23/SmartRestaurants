@@ -10,6 +10,9 @@ import com.ibm.watson.developer_cloud.conversation.v1.model.MessageRequest;
 import com.ibm.watson.developer_cloud.conversation.v1.model.MessageResponse;
 import com.ibm.watson.developer_cloud.http.ServiceCallback;
 
+import org.json.JSONArray;
+import org.json.JSONObject;
+
 import java.util.Map;
 import java.util.concurrent.ExecutionException;
 
@@ -47,22 +50,22 @@ public class ConversationActivity extends AppCompatActivity{
 
                 // sync
                 MessageRequest newMessage = new MessageRequest.Builder().inputText(getInput_from_user()).build();
-                String sillyWorkspaceID = "ce288cad-6cd5-450f-8225-01216386761e";
-                MessageResponse response = service.message(sillyWorkspaceID, newMessage).execute();
+                String orderWorkspaceID = "ce288cad-6cd5-450f-8225-01216386761e";
+                MessageResponse response = service.message(orderWorkspaceID, newMessage).execute();
                 System.out.println(response);
 
                 // async
-                service.message(sillyWorkspaceID, newMessage).enqueue(new ServiceCallback<MessageResponse>() {
+                service.message(orderWorkspaceID, newMessage).enqueue(new ServiceCallback<MessageResponse>() {
                     @Override
                     public void onResponse(MessageResponse response) {
-                        System.out.println("here " + response);
+                        System.out.println(response);
                     }
                     @Override
                     public void onFailure(Exception e) {}
                 });
 
                 // rx callback
-                service.message(sillyWorkspaceID, newMessage).rx()
+                service.message(orderWorkspaceID, newMessage).rx()
                         .thenApply(new CompletableFuture.Fun<MessageResponse, Map<String, Object>>() {
                             @Override
                             public Map<String, Object> apply(MessageResponse message) {
@@ -76,7 +79,7 @@ public class ConversationActivity extends AppCompatActivity{
                 });
 
                 // rx async callback
-                service.message(sillyWorkspaceID, newMessage).rx()
+                service.message(orderWorkspaceID, newMessage).rx()
                         .thenApplyAsync(new CompletableFuture.Fun<MessageResponse, Map<String, Object>>() {
                             @Override
                             public Map<String, Object> apply(MessageResponse message) {
@@ -85,14 +88,21 @@ public class ConversationActivity extends AppCompatActivity{
                         }).thenAccept(new CompletableFuture.Action<Map<String, Object>>() {
                     @Override
                     public void accept(Map<String, Object> output) {
-                        System.out.println(output);
+                        //System.out.println("here " + output);
+                        Map<String, Object> map = output;
+                        for (Map.Entry<String, Object> entry : map.entrySet())
+                        {
+                            if(entry.getKey().contains("text")) {
+                                System.out.println("what watson should say back" + entry.getKey() + "/" + entry.getValue());
+                            }
+                        }
                     }
                 });
 
                 // rx sync
                 MessageResponse rxMessageResponse = null;
                 try {
-                    rxMessageResponse = service.message(sillyWorkspaceID, newMessage).rx().get();
+                    rxMessageResponse = service.message(orderWorkspaceID, newMessage).rx().get();
                 } catch (InterruptedException | ExecutionException e) {
                     e.printStackTrace();
                 }
