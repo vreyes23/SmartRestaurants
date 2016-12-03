@@ -9,6 +9,7 @@ echo <<<_END
 <html lang="en">
 <head>
 <title>Smart Restaurant</title>
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -123,83 +124,7 @@ echo <<<_END
 			</div>
 
 			<!--  hidden menu items  -->
-			<div class="hidden_items">
-				<!--  left menu row  -->
-				<article class="lmenu">
-					<ul>
-						<li>
-							<div class="item_info">
-								<h3 class="item_name">Voluptate cillum fugiat.</h3>
-								<p class="item_desc">Cheese, tomato, mushrooms, onions.</p>
-							</div>
-							<h4 class="price">$5</h4>
-						<span class="separator"></span>
-						</li>
-						<li>
-							<div class="item_info">
-								<h3 class="item_name">Voluptate cillum fugiat.</h3>
-								<p class="item_desc">Cheese, tomato, mushrooms, onions.</p>
-							</div>
-							<h4 class="price">$5</h4>
-						<span class="separator"></span>
-						</li>
-						<li>
-							<div class="item_info">
-								<h3 class="item_name">Voluptate cillum fugiat.</h3>
-								<p class="item_desc">Cheese, tomato, mushrooms, onions.</p>
-							</div>
-							<h4 class="price">$5</h4>
-						<span class="separator"></span>
-						</li>
-						<li>
-							<div class="item_info">
-								<h3 class="item_name">Voluptate cillum fugiat.</h3>
-								<p class="item_desc">Cheese, tomato, mushrooms, onions.</p>
-							</div>
-							<h4 class="price">$5</h4>
-						<span class="separator"></span>
-						</li>
-					</ul>
-				</article>
-
-				<!--  right menu row  -->
-				<article class="rmenu">
-					<ul>
-						<li>
-							<div class="item_info">
-								<h3 class="item_name">Voluptate cillum fugiat.</h3>
-								<p class="item_desc">Cheese, tomato, mushrooms, onions.</p>
-							</div>
-							<h4 class="price">$5</h4>
-						<span class="separator"></span>
-						</li>
-						<li>
-							<div class="item_info">
-								<h3 class="item_name">Voluptate cillum fugiat.</h3>
-								<p class="item_desc">Cheese, tomato, mushrooms, onions.</p>
-							</div>
-							<h4 class="price">$5</h4>
-						<span class="separator"></span>
-						</li>
-						<li>
-							<div class="item_info">
-								<h3 class="item_name">Voluptate cillum fugiat.</h3>
-								<p class="item_desc">Cheese, tomato, mushrooms, onions.</p>
-							</div>
-							<h4 class="price">$5</h4>
-						<span class="separator"></span>
-						</li>
-						<li>
-							<div class="item_info">
-								<h3 class="item_name">Voluptate cillum fugiat.</h3>
-								<p class="item_desc">Cheese, tomato, mushrooms, onions.</p>
-							</div>
-							<h4 class="price">$5</h4>
-						<span class="separator"></span>
-						</li>
-					</ul>
-				</article>
-			</div>
+			
 			<div class="load-more">
 				<a href="#hidden_items" id="more_items">
 					show more
