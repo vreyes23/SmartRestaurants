@@ -29,6 +29,9 @@ The user may say "I want a double double" or say "I want a number 1".
 
 (https://github.com/vreyes23/SmartRestaurants/blob/master/Screenshots/double-double.png "double-double")
 
+Here is an example of the user ordering a double double. 
+(https://github.com/vreyes23/SmartRestaurants/blob/master/Screenshots/users-order-double-double.png "User orders double double")
+
 Cont. soon
 
 Screenshots
