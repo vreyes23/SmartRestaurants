@@ -23,11 +23,19 @@ import jersey.repackaged.jsr166e.CompletableFuture;
  */
 public class ConversationActivity extends AppCompatActivity{
     private String input_from_user = "";
+    private String whatToSay="";
     public String getInput_from_user() {
         return input_from_user;
     }
     public void setInput_from_user(String input_from_user) {
         this.input_from_user = input_from_user;
+    }
+    public void setWhatToSay(String whatToSay) {
+        this.whatToSay = whatToSay;
+    }
+
+    public String getWhatToSay() {
+        return whatToSay;
     }
         @Override
         protected void onCreate(Bundle savedInstanceState) {
@@ -40,8 +48,8 @@ public class ConversationActivity extends AppCompatActivity{
             userInputPlaceholder.setText(userInput);
             setInput_from_user(userInput);
             new ConversationTask().execute("");
-        }
 
+        }
     private class ConversationTask extends AsyncTask<String, Void, String> {
             protected String doInBackground(String... strings) {
                 System.out.println("do in background conversation start");
@@ -88,12 +96,14 @@ public class ConversationActivity extends AppCompatActivity{
                         }).thenAccept(new CompletableFuture.Action<Map<String, Object>>() {
                     @Override
                     public void accept(Map<String, Object> output) {
-                        //System.out.println("here " + output);
                         Map<String, Object> map = output;
                         for (Map.Entry<String, Object> entry : map.entrySet())
                         {
                             if(entry.getKey().contains("text")) {
                                 System.out.println("what watson should say back" + entry.getKey() + "/" + entry.getValue());
+                                setWhatToSay(entry.getKey());
+                                TextToSpeechActivity tts = new TextToSpeechActivity(getApplicationContext());
+                                tts.execute("" + entry.getValue());
                             }
                         }
                     }

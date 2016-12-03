@@ -198,8 +198,8 @@ public class MainActivity extends AppCompatActivity {
                         findViewById(R.id.textView9).setVisibility(View.VISIBLE); // show text bottom
 
                         // System.out.println("final text " + finalText); // Debugging, prints Json format
-                        TextToSpeechActivity tts = new TextToSpeechActivity(getApplicationContext());
-                        tts.execute("Did you say " + transcript);
+                       // TextToSpeechActivity tts = new TextToSpeechActivity(getApplicationContext());
+                       // tts.execute("Did you say " + transcript);
                         // Send User input and launch @see ConversationActivity
                         Intent convo_intent = new Intent(MainActivity.this, ConversationActivity.class);
                         String user_input = transcript;
