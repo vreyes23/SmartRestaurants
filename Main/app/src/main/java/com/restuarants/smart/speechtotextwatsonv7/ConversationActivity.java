@@ -20,6 +20,7 @@ import org.json.JSONObject;
 
 import java.io.File;
 import java.util.Map;
+import java.util.concurrent.ExecutionException;
 
 import jersey.repackaged.jsr166e.CompletableFuture;
 
@@ -32,8 +33,9 @@ public class ConversationActivity extends AppCompatActivity{
     int counter = 0;
     private String rawText = "";
     private static final String LOG_TAG = "StT";
-    private RecordWavMaster mic;
+    private RecordWavMaster mic2;
     private String outputFilePath;
+    private Map<String,Object> watsonContext;
     public String getRawText() {
         return rawText;
     }
@@ -63,7 +65,6 @@ public class ConversationActivity extends AppCompatActivity{
             userInputPlaceholder.setText(userInput);
             setInput_from_user(userInput);
             new ConversationTask().execute("");
-
         }
 
     private void setUpButton() {
@@ -74,17 +75,17 @@ public class ConversationActivity extends AppCompatActivity{
             public void onClick(View view) {
                 if (counter == 0) {
                     System.out.println("counter == 0 ");
-                    mic.recordWavStart();
+                    mic2.recordWavStart();
                     pressButton.setText("Stop Recording...");
                 }
                 if (counter == 1) {
                     System.out.println("counter == 1 ");
                     pressButton.setText("Speak Order");
-                    outputFilePath = mic.recordWavStop();
+                    outputFilePath = mic2.recordWavStop();
                     //stopRecording();
                     new SpeechToTextTask().execute(""); // Do the magic and convert audio to a string.
                     new ConversationTask().execute("");
-                    mic.releaseRecord();
+                    mic2.releaseRecord();
                     counter = 0;
                 } else {
                     counter++;
@@ -93,6 +94,7 @@ public class ConversationActivity extends AppCompatActivity{
         });
     }
 
+
     private class ConversationTask extends AsyncTask<String, Void, String> {
             protected String doInBackground(String... strings) {
                 System.out.println("do in background conversation start");
@@ -100,11 +102,23 @@ public class ConversationActivity extends AppCompatActivity{
                 service.setUsernameAndPassword("2cd79c69-afac-4288-973a-120db0f1efef", "ENFhhydOkd5q");
 
                 // sync
-                final MessageRequest newMessage = new MessageRequest.Builder().inputText(getInput_from_user()).build();
-                final String orderWorkspaceID = "ce288cad-6cd5-450f-8225-01216386761e";
+                MessageRequest newMessage = new MessageRequest.Builder().inputText(getInput_from_user()).build();
+                String orderWorkspaceID = "ce288cad-6cd5-450f-8225-01216386761e";
                 MessageResponse response = service.message(orderWorkspaceID, newMessage).execute();
-                System.out.println(response);
+                Map<String, Object> context = response.getContext();
+                System.out.println("context " + context);
 
+                MessageRequest newMessage2 = new MessageRequest.Builder().inputText("yes").context(context).build();
+                MessageResponse response2 = service.message(orderWorkspaceID, newMessage2).execute();
+                System.out.println("response2 " + response2);
+                Map<String, Object> context2 = response2.getContext();
+                System.out.println("context2 " + context2);
+
+/*
+                MessageRequest newMessage2 = new MessageRequest.Builder().inputText( "yes").build();
+                MessageResponse response2 = service.message(orderWorkspaceID, newMessage2).execute();
+                System.out.println("response2 " + response2);
+*/
                 // rx async callback
                 service.message(orderWorkspaceID, newMessage).rx().thenApplyAsync(new CompletableFuture.Fun<MessageResponse, Map<String, Object>>() {
                     @Override
@@ -120,10 +134,24 @@ public class ConversationActivity extends AppCompatActivity{
                                 System.out.println("what watson should say back" + entry.getKey() + "/" + entry.getValue());
                                 TextToSpeechActivity tts = new TextToSpeechActivity(getApplicationContext());
                                 tts.execute("" + entry.getValue());
+                                setInput_from_user("yes");
+                                //new ConversationTask().execute("");
+
                             }
                         }
+
                     }
                 });
+                MessageResponse rxMessageResponse = null;
+                try {
+                    rxMessageResponse = service.message(orderWorkspaceID, newMessage).rx().get();
+                    System.out.println("rxRESPONSE" + rxMessageResponse);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                } catch (ExecutionException e) {
+                    e.printStackTrace();
+                }
+
                 return null;
             }
         }
@@ -160,6 +188,7 @@ public class ConversationActivity extends AppCompatActivity{
                         String transcript = jsonasb.getString("transcript");
                         System.out.println("transcript " + transcript);
                         setInput_from_user(transcript);
+
                     }
                 }
             } catch (JSONException e) {
