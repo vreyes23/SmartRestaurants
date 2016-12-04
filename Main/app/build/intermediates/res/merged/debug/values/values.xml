@@ -463,6 +463,7 @@
     <string name="place_order">Place Order</string>
     <string name="placeholder_order_items">""</string>
     <string name="play_recorded_audio">Play Recorded Audio</string>
+    <string name="press_button_conversation"/>
     <string name="price">Price</string>
     <string name="price_1.15">1.15</string>
     <string name="price_1.19">1.19</string>

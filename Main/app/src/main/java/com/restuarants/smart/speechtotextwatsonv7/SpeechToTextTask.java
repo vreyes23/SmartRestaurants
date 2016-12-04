@@ -22,6 +22,10 @@ public class SpeechToTextTask extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         new ConversationTask().execute("");
     }
+
+    public void execute(String s) {
+    }
+
     private class ConversationTask extends AsyncTask<String, Void, String> {
         protected String doInBackground(String... strings) {
             System.out.println("do in background conversation start");
