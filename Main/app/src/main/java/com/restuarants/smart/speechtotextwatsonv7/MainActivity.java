@@ -13,14 +13,6 @@ import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.appindexing.Thing;
 import com.google.android.gms.common.api.GoogleApiClient;
-import com.ibm.watson.developer_cloud.speech_to_text.v1.SpeechToText;
-import com.ibm.watson.developer_cloud.speech_to_text.v1.model.SpeechResults;
-
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.io.File;
 
 /**
  * This is the first activity that gets launched when you run this program.
@@ -32,29 +24,11 @@ import java.io.File;
  * @version 1.0 December 2nd 2017
  */
 public class MainActivity extends AppCompatActivity {
-    private String rawText = "";
-    private static final String LOG_TAG = "StT";
-    private RecordWavMaster mic;
-    private String outputFilePath;
-    int counter = 0;
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
      * See https://g.co/AppIndexing/AndroidStudio for more information.
      */
     private GoogleApiClient client;
-
-    public String getRawText() {
-        return rawText;
-    }
-
-    public void setRawText(String rawText) {
-        this.rawText = rawText;
-    }
-
-    private String convertRawTextFromJson(String rawText) {
-        return rawText;
-    }
-
     /** First method that is called when the user runs this app.
      * @param savedInstanceState
      */
@@ -63,7 +37,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         findViewById(R.id.loadingCircle).setVisibility(View.INVISIBLE); // Hide loading circle
-        mic = new RecordWavMaster();
         initialCall();
         setUpButtons();
 
@@ -101,25 +74,8 @@ public class MainActivity extends AppCompatActivity {
         speakOrderButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (counter == 0) {
-                    System.out.println("counter == 0 ");
-                    mic.recordWavStart();
-                    //startRecording();
-                    findViewById(R.id.loadingCircle).setVisibility(View.VISIBLE);
-                    findViewById(R.id.textView9).setVisibility(View.INVISIBLE);
-                    speakOrderButton.setText("Stop Recording...");
-                }
-                if (counter == 1) {
-                    System.out.println("counter == 1 ");
-                    speakOrderButton.setText("Speak Order");
-                    outputFilePath = mic.recordWavStop();
-                    //stopRecording();
-                    new SpeechToTextTask().execute(""); // Do the magic and convert audio to a string.
-                    mic.releaseRecord();
-                    counter = 0;
-                } else {
-                    counter++;
-                }
+                Intent intent = new Intent(MainActivity.this, ConversationActivity.class);
+                MainActivity.this.startActivity(intent);
             }
         });
     }
@@ -156,59 +112,5 @@ public class MainActivity extends AppCompatActivity {
         // See https://g.co/AppIndexing/AndroidStudio for more information.
         AppIndex.AppIndexApi.end(client, getIndexApiAction());
         client.disconnect();
-    }
-
-    public class SpeechToTextTask extends AsyncTask<String, Void, String> {
-
-        protected String doInBackground(String... params) {
-            SpeechToText service = new SpeechToText();
-            service.setUsernameAndPassword("b535f60e-dae2-4783-9e89-5ecaf85a468c", "UqbobaXOFPLX");
-            try {
-                SpeechResults speechResults = service.recognize(new File(outputFilePath)).execute();
-                setRawText(speechResults.toString());
-                Log.e(LOG_TAG, String.valueOf(speechResults.getResultIndex()));
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-            return "";
-        }
-        protected void onProgressUpdate(Integer... progress) {}
-
-        protected void onPostExecute(String result) {
-            System.out.println("On Post Execute");
-            getRawText(); // get customers order
-            // Convert from JSON to regular string.
-            String finalText = convertRawTextFromJson(getRawText());
-            try {
-                JSONObject json = new JSONObject(finalText);
-                JSONArray results = json.getJSONArray("results");
-
-                for (int i = 0; i < results.length(); i++) {
-                    JSONObject jsonas = results.getJSONObject(i);
-                    JSONArray results2 = jsonas.getJSONArray("alternatives");
-                    String alternatives = jsonas.getString("alternatives");
-                    System.out.println("alternatives " + alternatives);
-
-                    for (int j = 0; j < results2.length(); j++) {
-                        JSONObject jsonasb = results2.getJSONObject(i);
-                        String transcript = jsonasb.getString("transcript");
-                        System.out.println("transcript " + transcript);
-                        TextView placeHolderText = (TextView) findViewById(R.id.textView9);
-                        placeHolderText.setText(transcript);
-                        findViewById(R.id.loadingCircle).setVisibility(View.INVISIBLE);
-                        findViewById(R.id.textView9).setVisibility(View.VISIBLE); // show text bottom
-                        // System.out.println("final text " + finalText); // Debugging, prints Json format
-                        // Send User input and launch @see ConversationActivity
-                        Intent convo_intent = new Intent(MainActivity.this, ConversationActivity.class);
-                        String user_input = transcript;
-                        convo_intent.putExtra("user_input", user_input); // YOUR key, variable you are passing
-                        startActivity(convo_intent);
-                    }
-                }
-
-            } catch (JSONException e) {
-                e.printStackTrace();
-            }
-        }
     }
 }

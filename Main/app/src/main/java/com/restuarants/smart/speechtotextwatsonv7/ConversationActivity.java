@@ -23,15 +23,12 @@ import java.util.Map;
 import java.util.concurrent.ExecutionException;
 
 import jersey.repackaged.jsr166e.CompletableFuture;
-
 /**
  * @author Oscar I. Ricaud
  */
 public class ConversationActivity extends AppCompatActivity{
     private String input_from_user = "";
-    private String whatToSay="";
     int counter = 0;
-    int counter_two = 0;
     private String rawText = "";
     private static final String LOG_TAG = "StT";
     private RecordWavMaster mic2;
@@ -63,10 +60,10 @@ public class ConversationActivity extends AppCompatActivity{
             mic2 = new RecordWavMaster();
             final TextView userInputPlaceholder = (TextView) findViewById(R.id.textView10); // prints user input
             // Receiving total price from @see MenuActivity2
-            Bundle extras = getIntent().getExtras();
+      /*      Bundle extras = getIntent().getExtras();
             String userInput = extras.getString("user_input"); // Look for YOUR KEY, variable you're receiving
             userInputPlaceholder.setText(userInput);
-            setInput_from_user(userInput);
+            setInput_from_user(userInput); */
             setUpButtons();
         }
 
