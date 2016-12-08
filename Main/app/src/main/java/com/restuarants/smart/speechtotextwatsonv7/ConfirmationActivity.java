@@ -25,6 +25,7 @@ public class ConfirmationActivity extends AppCompatActivity {
         final TextView totalPlaceholder = (TextView) findViewById(R.id.etTotalConfirmation);
         final TextView receiptItems = (TextView) findViewById(R.id.etPlaceHolderConfirmation);
         final Button confirm_button = (Button) findViewById(R.id.etConfirmButton);
+
         // Receiving total price from @see MenuActivity2
         Bundle extras = getIntent().getExtras();
         String receiptTotal = extras.getString("receipt_price"); // Look for YOUR KEY, variable you're receiving
@@ -60,10 +61,9 @@ public class ConfirmationActivity extends AppCompatActivity {
             }
         });
     }
-
     private void initialCall(String receiptTotal, String receiptItem) {
         String what_to_say = "Your order is " + receiptItem + " and your total is " + receiptTotal + " " +
-                "dollars. Is this correct?";
+                "dollars.";
         TextToSpeechActivity tts = new TextToSpeechActivity(getApplicationContext());
         tts.execute(what_to_say);
     }

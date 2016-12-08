@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:2:1-37:12
+ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:2:1-39:12
 	package
 		ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:3:5-57
 		INJECTED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml
@@ -26,7 +26,7 @@ ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest
 	android:name
 		ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:6:22-64
 application
-ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:8:5-35:19
+ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:8:5-37:19
 MERGED from [com.android.support:appcompat-v7:25.0.0] /Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-v4:25.0.0] /Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.0/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-compat:25.0.0] /Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/AndroidManifest.xml:25:5-20
@@ -82,13 +82,17 @@ activity#com.restuarants.smart.speechtotextwatsonv7.ConversationActivity
 ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:30:9-31:20
 	android:name
 		ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:30:19-55
+activity#com.restuarants.smart.speechtotextwatsonv7.ConversationDrinks
+ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:32:9-33:20
+	android:name
+		ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:32:19-53
 meta-data#com.google.android.gms.version
-ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:32:9-34:69
+ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:34:9-36:69
 MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/AndroidManifest.xml:21:9-23:69
 	android:value
-		ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:34:13-66
+		ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:36:13-66
 	android:name
-		ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:33:13-58
+		ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:35:13-58
 uses-sdk
 INJECTED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:25.0.0] /Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/AndroidManifest.xml:21:5-23:78

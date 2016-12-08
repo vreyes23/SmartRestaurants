@@ -1,5 +1,6 @@
 package com.restuarants.smart.speechtotextwatsonv7;
 
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -43,6 +44,7 @@ public class ConversationActivity extends AppCompatActivity{
     private String outputFilePath;
     private Map<String,Object> watsonContext;
     private MessageRequest WatsonMessageRequest;
+    private int nextCounter = 0;
     private LinkedList<String> customerOrder = new LinkedList<String>();
     public String getRawText() {
         return rawText;
@@ -72,6 +74,12 @@ public class ConversationActivity extends AppCompatActivity{
             findViewById(R.id.textView23).setVisibility(View.INVISIBLE); // Hide "Loading..."
             findViewById(R.id.button).setVisibility(View.INVISIBLE); // Hide next button
             mic2 = new RecordWavMaster();
+            // Welcome the user and let him/she know what they can order
+            TextToSpeechActivity tts = new TextToSpeechActivity(getApplicationContext());
+            tts.execute("This is the main menu, you can tell me commands such as, I want a double double," +
+                    "or I want a cheese burger. Perhaps you feel like ordering french fries. Just press the" +
+                    " microphone button to order!");
+
             // Receiving total price from @see MenuActivity2
       /*      Bundle extras = getIntent().getExtras();
             String userInput = extras.getString("user_input"); // Look for YOUR KEY, variable you're receiving
@@ -154,6 +162,7 @@ public class ConversationActivity extends AppCompatActivity{
     private class ConversationTask extends AsyncTask<String, Void, String> {
             protected String doInBackground(String... strings) {
                 System.out.println("do in background conversation start");
+                // Using the Drink menu tree
                 final ConversationService service = new ConversationService(ConversationService.VERSION_DATE_2016_07_11);
                 service.setUsernameAndPassword("2cd79c69-afac-4288-973a-120db0f1efef", "ENFhhydOkd5q");
                 String orderWorkspaceID = "ce288cad-6cd5-450f-8225-01216386761e";
@@ -215,8 +224,23 @@ public class ConversationActivity extends AppCompatActivity{
             String temp = customerOrder.toString();
             temp = temp.replaceAll("\\[", "").replaceAll("\\]",""); // Replaces the [] in the linked list list
             userInputPlaceholder.setText(temp);
-            findViewById(R.id.button).setVisibility(View.VISIBLE); // Show next button
-            findViewById(R.id.textView23).setVisibility(View.INVISIBLE); // Hide "Loading..."
+            if(getRawText().contains("yes") || (getRawText().contains("yeah") || (getRawText().contains("yep") || (getRawText().contains("cool"))))){
+                findViewById(R.id.button).setVisibility(View.VISIBLE); // Show next button
+                findViewById(R.id.textView23).setVisibility(View.INVISIBLE); // Hide "Loading..."
+            }
+            else {
+                findViewById(R.id.textView23).setVisibility(View.INVISIBLE); // Hide "Loading..."
+                // Go to next activity, Drinks
+                Button confirmButton = (Button) findViewById(R.id.button);
+                confirmButton.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        mic2.releaseRecord();
+                        Intent intent = new Intent(ConversationActivity.this, ConversationDrinks.class);
+                        ConversationActivity.this.startActivity(intent);
+                    }
+                });
+            }
         }
     }
     /**
