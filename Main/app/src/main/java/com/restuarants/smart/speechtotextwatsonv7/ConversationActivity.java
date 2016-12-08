@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.ibm.watson.developer_cloud.conversation.v1.ConversationService;
@@ -63,8 +64,10 @@ public class ConversationActivity extends AppCompatActivity{
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_conversation);
+            findViewById(R.id.loadingCircle).setVisibility(View.INVISIBLE); // Hide loading circle
+            findViewById(R.id.textView12).setVisibility(View.INVISIBLE); // Hide Recording...
+            findViewById(R.id.textView13).setVisibility(View.INVISIBLE); // Hide please wait...
             mic2 = new RecordWavMaster();
-            final TextView userInputPlaceholder = (TextView) findViewById(R.id.textView10); // prints user input
             // Receiving total price from @see MenuActivity2
       /*      Bundle extras = getIntent().getExtras();
             String userInput = extras.getString("user_input"); // Look for YOUR KEY, variable you're receiving
@@ -82,19 +85,24 @@ public class ConversationActivity extends AppCompatActivity{
      * allows for the user to keep interacting with watson.
      */
     private void setUpButtons() {
-        final Button pressButton = (Button) findViewById(R.id.press_button_conversation);
+        final ImageButton pressButton = (ImageButton) findViewById(R.id.press_button_conversation);
         pressButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if (counter == 0) {
                     System.out.println("Button pressed once");
                     mic2.recordWavStart();
-                    pressButton.setText("Stop Recording...");
+                    findViewById(R.id.loadingCircle).setVisibility(View.VISIBLE); // Hide loading circle
+                    findViewById(R.id.textView12).setVisibility(View.VISIBLE); // Hide recording...
+                   // pressButton.setText("Stop Recording...");
                 }
                 // Start convo with Watson
                 if (counter == 1) {
-                    pressButton.setText("Speak Order");
+                  //  pressButton.setText("Speak Order");
+                    findViewById(R.id.loadingCircle).setVisibility(View.INVISIBLE); // Hide loading circle
+                    findViewById(R.id.textView12).setVisibility(View.INVISIBLE); // Hide recording=
                     outputFilePath = mic2.recordWavStop();
+                    findViewById(R.id.textView13).setVisibility(View.INVISIBLE); // View please wait...
                     //stopRecording();
                     new SpeechToTextTask().execute(""); // Do the magic and convert audio to a string.
                     new ConversationTask().execute("");
@@ -140,7 +148,6 @@ public class ConversationActivity extends AppCompatActivity{
                 final ConversationService service = new ConversationService(ConversationService.VERSION_DATE_2016_07_11);
                 service.setUsernameAndPassword("2cd79c69-afac-4288-973a-120db0f1efef", "ENFhhydOkd5q");
                 String orderWorkspaceID = "ce288cad-6cd5-450f-8225-01216386761e";
-
                 // If context is empty, where context means if there has been an instance of the user
                 // interacting with Watson
                 if(getWatsonContext() == null){
@@ -177,7 +184,8 @@ public class ConversationActivity extends AppCompatActivity{
                                 System.out.println("what watson should say back" + entry.getKey() + "/" + entry.getValue());
                                 TextToSpeechActivity tts = new TextToSpeechActivity(getApplicationContext());
                                 tts.execute("" + entry.getValue());
-                                setInput_from_user("yes");
+                                findViewById(R.id.loadingCircle).setVisibility(View.INVISIBLE); // Hide loading circle
+                                findViewById(R.id.textView12).setVisibility(View.INVISIBLE); // Hide Recording...
                             }
                         }
                     }
@@ -193,7 +201,8 @@ public class ConversationActivity extends AppCompatActivity{
             }
         protected void onPostExecute(String result) {
             System.out.println("ON POST EXECUTE CONVO");
-
+            TextView userInputPlaceholder = (TextView) findViewById(R.id.textView10); // prints user input
+            userInputPlaceholder.setText(getInput_from_user());
         }
     }
     /**
