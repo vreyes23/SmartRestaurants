@@ -1,30 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:weightSum="1">
 
     <TextView
-        android:text="Conversation"
+        android:text="Menu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView11"
         android:textStyle="normal|bold"
         android:textAlignment="viewStart"
-        android:textSize="36sp"
-        android:fontFamily="serif"
-        android:layout_marginStart="15dp"
+        android:textSize="40dp"
+        android:fontFamily="sans-serif"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="10dp"
-        android:layout_marginBottom="15dp" />
+        android:layout_marginBottom="20dp" />
 
-    <TextView
-        android:text="user input"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="58dp"
-        android:id="@+id/textView10"
-        android:textAlignment="center"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp" />
+        android:layout_height="225dp">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:text="DOUBLE-DOUBLE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView14"
+                    android:fontFamily="sans-serif"
+                    android:textColor="?android:attr/colorActivatedHighlight"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="20dp "
+                    android:textAllCaps="false"
+                    android:textSize="36dp"
+                    android:textStyle="normal|bold" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:text="CHEESEBURGER"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:textColor="?android:attr/colorActivatedHighlight"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/textView16"
+                    android:layout_marginBottom="20dp"
+                    android:textSize="34dp"
+                    android:textStyle="normal|bold" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:text="HAMBURGER"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:textColor="?android:attr/colorActivatedHighlight"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/textView17"
+                    android:layout_marginBottom="20dp"
+                    android:textSize="32dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:text="FRENCH FRIES"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:textColor="?android:attr/colorActivatedHighlight"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/textView18"
+                    android:textSize="26dp" />
+            </TableRow>
+        </TableLayout>
+    </RelativeLayout>
 
     <RelativeLayout android:layout_width="fill_parent"
         android:layout_height="fill_parent" android:gravity="bottom">
@@ -67,5 +135,38 @@
             android:layout_marginBottom="21dp"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:id="@+id/textView10"
+            android:textAlignment="viewStart"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="16sp"
+            android:layout_above="@+id/loadingCircle"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:fontFamily="sans-serif" />
+
+        <Button
+            android:text="Confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button"
+            style="@style/Widget.AppCompat.Button"
+            android:background="@android:color/holo_red_light"
+            android:layout_alignBottom="@+id/textView13"
+            android:layout_alignEnd="@+id/textView10" />
+
+        <TextView
+            android:text="Loading..."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView12"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/textView23" />
     </RelativeLayout>
 </LinearLayout>

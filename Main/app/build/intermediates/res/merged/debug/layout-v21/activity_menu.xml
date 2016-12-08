@@ -32,17 +32,9 @@
         <TableLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" >
-
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" >
-
                 <TextView
                     android:id="@+id/etQuantity"
                     android:text="@string/quantity"
@@ -351,7 +343,6 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginBottom="0dp">
-
             <TextView
                 android:id="@+id/textView6"
                 android:text="@string/total"
@@ -374,10 +365,63 @@
                 android:textAlignment="textEnd"
                 android:layout_marginRight="20dp"
                 android:layout_marginTop="15dp" />
-
         </TableRow>
+<!--
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/container"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true">
 
+            <Button
+                android:id="@+id/testbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="Double Double"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp" />
+
+            <Button
+                android:id="@+id/cancelButton"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/testbutton"
+                android:text="-"
+                android:textStyle="normal|bold"
+                android:textSize="12sp"
+                android:background="@android:drawable/ic_delete"
+                android:layout_marginRight="15dp" />
+
+            <TextView
+                android:id="@+id/etQtyDouble"
+                android:text="@string/_1Double"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:textSize="20sp"
+                android:textStyle="normal|bold"
+                android:layout_marginRight="80dp" />
+
+            <TextView
+                android:id="@+id/price_2.95"
+                android:text="@string/_2_95_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:textSize="20sp"
+                android:textStyle="normal|bold" />
+        </LinearLayout>
+</RelativeLayout>
+-->
     </LinearLayout>
 
 </ScrollView>

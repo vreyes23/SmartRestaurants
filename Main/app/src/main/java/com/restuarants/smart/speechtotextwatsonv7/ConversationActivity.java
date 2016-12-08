@@ -20,6 +20,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.File;
+import java.util.LinkedList;
 import java.util.Map;
 import java.util.concurrent.ExecutionException;
 
@@ -42,6 +43,7 @@ public class ConversationActivity extends AppCompatActivity{
     private String outputFilePath;
     private Map<String,Object> watsonContext;
     private MessageRequest WatsonMessageRequest;
+    private LinkedList<String> customerOrder = new LinkedList<String>();
     public String getRawText() {
         return rawText;
     }
@@ -67,6 +69,8 @@ public class ConversationActivity extends AppCompatActivity{
             findViewById(R.id.loadingCircle).setVisibility(View.INVISIBLE); // Hide loading circle
             findViewById(R.id.textView12).setVisibility(View.INVISIBLE); // Hide Recording...
             findViewById(R.id.textView13).setVisibility(View.INVISIBLE); // Hide please wait...
+            findViewById(R.id.textView23).setVisibility(View.INVISIBLE); // Hide "Loading..."
+            findViewById(R.id.button).setVisibility(View.INVISIBLE); // Hide next button
             mic2 = new RecordWavMaster();
             // Receiving total price from @see MenuActivity2
       /*      Bundle extras = getIntent().getExtras();
@@ -100,13 +104,17 @@ public class ConversationActivity extends AppCompatActivity{
                 if (counter == 1) {
                   //  pressButton.setText("Speak Order");
                     findViewById(R.id.loadingCircle).setVisibility(View.INVISIBLE); // Hide loading circle
-                    findViewById(R.id.textView12).setVisibility(View.INVISIBLE); // Hide recording=
+                    findViewById(R.id.textView12).setVisibility(View.INVISIBLE); // Hide "Recording..."
                     outputFilePath = mic2.recordWavStop();
-                    findViewById(R.id.textView13).setVisibility(View.INVISIBLE); // View please wait...
+                    findViewById(R.id.textView13).setVisibility(View.INVISIBLE); // Hide "Please wait..."
+                    findViewById(R.id.textView23).setVisibility(View.VISIBLE); // Show "Loading..."
                     //stopRecording();
                     new SpeechToTextTask().execute(""); // Do the magic and convert audio to a string.
                     new ConversationTask().execute("");
                     counter = 0;
+                    if(!(customerOrder.isEmpty())){
+                        customerOrder.remove();
+                    }
                 }
                 else {
                     counter++;
@@ -130,6 +138,7 @@ public class ConversationActivity extends AppCompatActivity{
     public void setWatsonMessageRequest(MessageRequest watsonMessageRequest) {
         WatsonMessageRequest = watsonMessageRequest;
     }
+
     /**
      * This class calls the front end conversation tree I created on IBM's website. The conversation
      * starts at the root and waits for the user input to find the corresponding intent that has
@@ -184,6 +193,7 @@ public class ConversationActivity extends AppCompatActivity{
                                 System.out.println("what watson should say back" + entry.getKey() + "/" + entry.getValue());
                                 TextToSpeechActivity tts = new TextToSpeechActivity(getApplicationContext());
                                 tts.execute("" + entry.getValue());
+                                customerOrder.add(entry.getValue().toString());
                                 findViewById(R.id.loadingCircle).setVisibility(View.INVISIBLE); // Hide loading circle
                                 findViewById(R.id.textView12).setVisibility(View.INVISIBLE); // Hide Recording...
                             }
@@ -202,7 +212,11 @@ public class ConversationActivity extends AppCompatActivity{
         protected void onPostExecute(String result) {
             System.out.println("ON POST EXECUTE CONVO");
             TextView userInputPlaceholder = (TextView) findViewById(R.id.textView10); // prints user input
-            userInputPlaceholder.setText(getInput_from_user());
+            String temp = customerOrder.toString();
+            temp = temp.replaceAll("\\[", "").replaceAll("\\]",""); // Replaces the [] in the linked list list
+            userInputPlaceholder.setText(temp);
+            findViewById(R.id.button).setVisibility(View.VISIBLE); // Show next button
+            findViewById(R.id.textView23).setVisibility(View.INVISIBLE); // Hide "Loading..."
         }
     }
     /**
