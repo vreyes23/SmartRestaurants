@@ -49,8 +49,6 @@ Screenshots
 
 ![alt tag](Screenshots/Database.png "Send the ticket order to the database")
 
-![alt tag](Screenshots/Database.png "Send the ticket order to the database")
-
 ![alt tag](Screenshots/Cook.png "Cook retrieves the orders through the database")
 
 Video
