@@ -20,37 +20,38 @@ Conversation
 ======
 The approach we took was to split the In-n-Out menu into sub categories. In this case there are only two categories, Main-Menu and Drink-Size.In the Main-Menu the only items it contains are the following: Double-Double, Cheese Burger, Hamburger and Fries. The Drink-Size category only contains the size of the drinks: small, medium, large or x-lg. The reason we did this is because we are able assign a unique ID for the specific instance of interaction between Watson and the User. There is a process to order the food from In-n-Out. We first promt the user with the simple question, "What would you like to order from the Main Menu" we would look for relevent infomartion from the following intent:
 
-(https://github.com/vreyes23/SmartRestaurants/blob/master/Screenshots/Main-Menu.png "Main-Menu")
+![alt tag](Screenshots/Main-Menu.png "Main-Menu") 
 
 In this specific category we have the main-menu as intents. And in each intent we have defined common statements a user may make for example #double-double:
 
-
 The user may say "I want a double double" or say "I want a number 1".
 
-(https://github.com/vreyes23/SmartRestaurants/blob/master/Screenshots/double-double.png "double-double")
+![alt tag](Screenshots/double-double.png "double-double") 
 
 Here is an example of the user ordering a double double. 
-(https://github.com/vreyes23/SmartRestaurants/blob/master/Screenshots/users-order-double-double.png "User orders double double")
+![alt tag](Screenshots/users-order-double-double.png "User orders double double") 
 
 Cont. soon
 
 Screenshots
 ======
-(https://github.com/vreyes23/SmartRestaurants/blob/master/Screenshots/Home.png "Home")
+![alt tag](Screenshots/Home.png "Home") 
 
-(https://github.com/vreyes23/SmartRestaurants/blob/master/Screenshots/Listen.png "Watson- Listen and take the food Order")
+![alt tag](Screenshots/Listen.png "Watson- Listen and take the food Order")
 
-(https://github.com/vreyes23/SmartRestaurants/blob/master/Screenshots/Waton-Repeat-Customers-Order.png "Watson- Repeat and verify the customers food order")
+![alt tag](Screenshots/Waton-Repeat-Customers-Order.png "Watson- Repeat and verify the customers food order")
 
-(https://github.com/vreyes23/SmartRestaurants/blob/master/Screenshots/Order.png "View menu")
+![alt tag](Screenshots/Order.png "View menu")
 
-(https://github.com/vreyes23/SmartRestaurants/blob/master/Screenshots/Order-2.png "When customer scrolls")
+![alt tag](Screenshots/Order-2.png "When customer scrolls")
 
-(https://github.com/vreyes23/SmartRestaurants/blob/master/Screenshots/Confirmation.png "Watson- Tell the customer the order and their total")
+![alt tag](Screenshots/Confirmation.png "Watson- Tell the customer the order and their total")
 
-(https://github.com/vreyes23/SmartRestaurants/blob/master/Screenshots/Database.png "Send the ticket order to the database")
+![alt tag](Screenshots/Database.png "Send the ticket order to the database")
 
-(https://github.com/vreyes23/SmartRestaurants/blob/master/Screenshots/Cook.png "Cook retrieves the orders through the database")
+![alt tag](Screenshots/Database.png "Send the ticket order to the database")
+
+![alt tag](Screenshots/Cook.png "Cook retrieves the orders through the database")
 
 Video
 ======
