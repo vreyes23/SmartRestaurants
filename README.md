@@ -55,7 +55,7 @@ Screenshots
 
 Video
 ======
-Coming very soon.
+https://www.youtube.com/watch?v=8CZ30nZhz9k&feature=youtu.be
 
 Useful links 
 ======
