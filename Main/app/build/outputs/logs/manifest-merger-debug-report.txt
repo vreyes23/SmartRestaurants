@@ -1,117 +1,117 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:2:1-39:12
+ADDED from /Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/src/main/AndroidManifest.xml:2:1-39:12
 	package
-		ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:3:5-57
-		INJECTED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml
+		ADDED from /Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/src/main/AndroidManifest.xml:3:5-57
+		INJECTED from /Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from /Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/src/main/AndroidManifest.xml:2:11-69
 	android:versionCode
-		INJECTED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/src/main/AndroidManifest.xml
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:4:5-81
+ADDED from /Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/src/main/AndroidManifest.xml:4:5-81
 	android:name
-		ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:4:22-78
+		ADDED from /Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/src/main/AndroidManifest.xml:4:22-78
 uses-permission#android.permission.RECORD_AUDIO
-ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:5:5-71
+ADDED from /Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/src/main/AndroidManifest.xml:5:5-71
 	android:name
-		ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:5:22-68
+		ADDED from /Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/src/main/AndroidManifest.xml:5:22-68
 uses-permission#android.permission.INTERNET
-ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:6:5-67
+ADDED from /Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/src/main/AndroidManifest.xml:6:5-67
 	android:name
-		ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:6:22-64
+		ADDED from /Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/src/main/AndroidManifest.xml:6:22-64
 application
-ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:8:5-37:19
-MERGED from [com.android.support:appcompat-v7:25.0.0] /Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-v4:25.0.0] /Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:25.0.0] /Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-media-compat:25.0.0] /Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-utils:25.0.0] /Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-ui:25.0.0] /Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-fragment:25.0.0] /Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-vector-drawable:25.0.0] /Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.0/AndroidManifest.xml:23:5-20
-MERGED from [com.android.support:animated-vector-drawable:25.0.0] /Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.0/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] /Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/8.4.0/AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/AndroidManifest.xml:20:5-24:19
+ADDED from /Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/src/main/AndroidManifest.xml:8:5-37:19
+MERGED from [com.android.support:appcompat-v7:25.0.0] /Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.0.0] /Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:25.0.0] /Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.0/AndroidManifest.xml:23:5-20
+MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] /Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/8.4.0/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:25.0.0] /Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:25.0.0] /Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.0.0] /Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:25.0.0] /Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:25.0.0] /Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:25.0.0] /Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/AndroidManifest.xml:25:5-20
 	android:label
-		ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:11:9-41
+		ADDED from /Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/src/main/AndroidManifest.xml:11:9-41
 	android:supportsRtl
-		ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:12:9-35
+		ADDED from /Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/src/main/AndroidManifest.xml:12:9-35
 	android:allowBackup
-		ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:9:9-35
+		ADDED from /Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/src/main/AndroidManifest.xml:9:9-35
 	android:icon
-		ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:10:9-43
+		ADDED from /Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/src/main/AndroidManifest.xml:10:9-43
 	android:theme
-		ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:13:9-59
+		ADDED from /Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/src/main/AndroidManifest.xml:13:9-59
 activity#com.restuarants.smart.speechtotextwatsonv7.MainActivity
-ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:14:9-19:20
+ADDED from /Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/src/main/AndroidManifest.xml:14:9-19:20
 	android:name
-		ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:14:19-47
+		ADDED from /Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/src/main/AndroidManifest.xml:14:19-47
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:15:13-18:29
+ADDED from /Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/src/main/AndroidManifest.xml:15:13-18:29
 action#android.intent.action.MAIN
-ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:16:17-69
+ADDED from /Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/src/main/AndroidManifest.xml:16:17-69
 	android:name
-		ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:16:25-66
+		ADDED from /Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/src/main/AndroidManifest.xml:16:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:17:17-77
+ADDED from /Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/src/main/AndroidManifest.xml:17:17-77
 	android:name
-		ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:17:27-74
+		ADDED from /Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/src/main/AndroidManifest.xml:17:27-74
 activity#com.restuarants.smart.speechtotextwatsonv7.MenuActivity
-ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:20:9-21:20
+ADDED from /Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/src/main/AndroidManifest.xml:20:9-21:20
 	android:name
-		ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:20:19-47
+		ADDED from /Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/src/main/AndroidManifest.xml:20:19-47
 activity#com.restuarants.smart.speechtotextwatsonv7.ConfirmationActivity
-ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:23:9-24:20
+ADDED from /Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/src/main/AndroidManifest.xml:23:9-24:20
 	android:name
-		ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:23:19-55
+		ADDED from /Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/src/main/AndroidManifest.xml:23:19-55
 activity#com.restuarants.smart.speechtotextwatsonv7.ReceiptDatabase
-ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:25:9-26:20
+ADDED from /Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/src/main/AndroidManifest.xml:25:9-26:20
 	android:name
-		ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:25:19-50
+		ADDED from /Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/src/main/AndroidManifest.xml:25:19-50
 activity#com.restuarants.smart.speechtotextwatsonv7.ThankyouActivity
-ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:27:9-28:20
+ADDED from /Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/src/main/AndroidManifest.xml:27:9-28:20
 	android:name
-		ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:27:19-51
+		ADDED from /Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/src/main/AndroidManifest.xml:27:19-51
 activity#com.restuarants.smart.speechtotextwatsonv7.ConversationActivity
-ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:30:9-31:20
+ADDED from /Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/src/main/AndroidManifest.xml:30:9-31:20
 	android:name
-		ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:30:19-55
+		ADDED from /Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/src/main/AndroidManifest.xml:30:19-55
 activity#com.restuarants.smart.speechtotextwatsonv7.ConversationDrinks
-ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:32:9-33:20
+ADDED from /Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/src/main/AndroidManifest.xml:32:9-33:20
 	android:name
-		ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:32:19-53
+		ADDED from /Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/src/main/AndroidManifest.xml:32:19-53
 meta-data#com.google.android.gms.version
-ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:34:9-36:69
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/AndroidManifest.xml:21:9-23:69
+ADDED from /Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/src/main/AndroidManifest.xml:34:9-36:69
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/AndroidManifest.xml:21:9-23:69
 	android:value
-		ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:36:13-66
+		ADDED from /Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/src/main/AndroidManifest.xml:36:13-66
 	android:name
-		ADDED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml:35:13-58
+		ADDED from /Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/src/main/AndroidManifest.xml:35:13-58
 uses-sdk
-INJECTED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.android.support:appcompat-v7:25.0.0] /Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:support-v4:25.0.0] /Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.0/AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-compat:25.0.0] /Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-media-compat:25.0.0] /Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.0/AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-core-utils:25.0.0] /Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.0/AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-core-ui:25.0.0] /Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.0/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-fragment:25.0.0] /Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.0/AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-vector-drawable:25.0.0] /Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.0/AndroidManifest.xml:21:5-43
-MERGED from [com.android.support:animated-vector-drawable:25.0.0] /Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] /Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/8.4.0/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-base:8.4.0] /Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/AndroidManifest.xml:18:5-42
+INJECTED from /Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:appcompat-v7:25.0.0] /Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:25.0.0] /Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.0.0] /Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.0/AndroidManifest.xml:21:5-43
+MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] /Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/8.4.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-base:8.4.0] /Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:25.0.0] /Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.0/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.0.0] /Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.0/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.0.0] /Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.0/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.0.0] /Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.0/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.0.0] /Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.0/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:25.0.0] /Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/AndroidManifest.xml:21:5-23:58
 	tools:overrideLibrary
-		ADDED from [com.android.support:appcompat-v7:25.0.0] /Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/AndroidManifest.xml:23:9-75
+		ADDED from [com.android.support:appcompat-v7:25.0.0] /Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
-		INJECTED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/oscarricaud/SmartRestaurants/Main/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/src/main/AndroidManifest.xml

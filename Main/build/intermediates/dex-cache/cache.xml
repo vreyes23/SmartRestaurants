@@ -3,21 +3,12 @@
 
     <item
         is-multidex="true"
-        jar="/Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.0/jars/classes.jar"
+        jar="/Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="4ccbcda5c72027c7f7c14be9ff8640d9cb0d8da0">
-        <dex dex="/Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.0.0_5f3ced982f76afafd43fda605ff7b8ed81952fd6/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/jars/libs/internal_impl-25.0.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="f2e3b9bc1ec25f652e8007ce7774c991e38f6a00">
-        <dex dex="/Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_cad66b94744531ecdf791cfe193273684928a98e/classes.dex" />
+        sha1="07daa0b6e1d455c82a38422ffe287c18823d339a">
+        <dex dex="/Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.0.0_d55230a58b3580c88158bc3a4497fe11dd597692/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -26,7 +17,7 @@
         optimize="true"
         revision="25.0.0"
         sha1="751f548c85fa49f330cecbb1875893f971b33c4e">
-        <dex dex="/Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/transforms/dex/debug/folders/1000/10/gson-2.7_16d1762e5f4af151a2dd30a9ee3dac711f5ffb58/classes.dex" />
+        <dex dex="/Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/build/intermediates/transforms/dex/debug/folders/1000/10/gson-2.7_16d1762e5f4af151a2dd30a9ee3dac711f5ffb58/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -35,43 +26,25 @@
         optimize="true"
         revision="25.0.0"
         sha1="fd5fda944e343894d8449aa993364e6cb9c666be">
-        <dex dex="/Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/transforms/dex/debug/folders/1000/10/cloudant-http-2.6.0_49f4f771af3d1bcc974a5756bbf0f508aa264df9/classes.dex" />
+        <dex dex="/Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/build/intermediates/transforms/dex/debug/folders/1000/10/cloudant-http-2.6.0_49f4f771af3d1bcc974a5756bbf0f508aa264df9/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/jars/classes.jar"
+        jar="/Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.0/jars/libs/internal_impl-25.0.0.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="8bc45ce1f63d1a391fd38b32a201be5a42f9c95d">
-        <dex dex="/Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.0.0_1511854d4627491faec061324b4ac0af30fa1a84/classes.dex" />
+        sha1="665d21a8a069c96b4d9e8b434f5096d865b4e261">
+        <dex dex="/Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_1b077d8e333633b10ef312193470186208359027/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jar="/Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="ee5faf4dee5b6a4364bf51587871047dde7c703a">
-        <dex dex="/Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_2bd4a960f906510cb538bbdd49d3b706cc9d78e7/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="76fb65a4b41ea42dab8a1310ed772a2420c96b52">
-        <dex dex="/Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.0.0_22c9d49ae5777a775b79f376371267d6a50cb7dc/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="a2de9b55e2f7f78164e1ae9a9cf4c1617fffb6bd">
-        <dex dex="/Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_5039a2dc3e072833d7c637292520cf19739dbfef/classes.dex" />
+        sha1="4ccbcda5c72027c7f7c14be9ff8640d9cb0d8da0">
+        <dex dex="/Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.0.0_95bcd40f976330cb1ed94be4aca4474d3cab4a5b/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -80,16 +53,7 @@
         optimize="true"
         revision="25.0.0"
         sha1="a22d2cc94da87b254451fa8ed28afc30b4653773">
-        <dex dex="/Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.0.0_c5ff0952e7b832b98ebd5718e68003b19b9079b9/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="07daa0b6e1d455c82a38422ffe287c18823d339a">
-        <dex dex="/Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.0.0_09741ddc4bfaadd035587fa53c27630d096d8cad/classes.dex" />
+        <dex dex="/Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.0.0_c5ff0952e7b832b98ebd5718e68003b19b9079b9/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -98,97 +62,7 @@
         optimize="true"
         revision="25.0.0"
         sha1="3ef9c67a5bea4d914a45bd54f3405fa29a368f7a">
-        <dex dex="/Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/transforms/dex/debug/folders/1000/10/jersey-jsr166e-2.22.2_40af6ce97c52985a784c7a6f309825d9239a5616/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Applications/Android Studio.app/Contents/gradle/m2repository/commons-io/commons-io/2.4/commons-io-2.4.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="b1b6ea3b7e4aa4f492509a4952029cd8e48019ad">
-        <dex dex="/Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/transforms/dex/debug/folders/1000/10/commons-io-2.4_db9d9c7f5dc9abc44c05f9a56b43532b2a4af315/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="53a420cd4f49274db6bd43475f8006ba67ef6bbd">
-        <dex dex="/Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.0.0_7a1bfd9be9ce5fb4d2adcf803aade721ef6509ba/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.0/jars/libs/internal_impl-25.0.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="665d21a8a069c96b4d9e8b434f5096d865b4e261">
-        <dex dex="/Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_27879c7510eca80485142026ce5b945a0b295377/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.0/jars/libs/internal_impl-25.0.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
-        <dex dex="/Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_5fd363369007992b34e4e2db0baf085d3411b750/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/oscarricaud/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/3.3.1/14e70f2069fb98dc60346dd24cb7b6a2e321580d/okhttp-urlconnection-3.3.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="14e70f2069fb98dc60346dd24cb7b6a2e321580d">
-        <dex dex="/Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-urlconnection-3.3.1_cf002cf3f328cd32f1ada02a9dab59ccb66e0a8d/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="fef2b3e4b6b1b0e5fe7b69fa137a5fa55a3182ab">
-        <dex dex="/Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-base-8.4.0_a40d4986e84f816c28760eb709fb1e7962dfe7c2/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/oscarricaud/.gradle/caches/modules-2/files-2.1/com.cloudant/cloudant-client/2.6.0/5b0b179054cee2a1a39b92b2ffd2e1a359f597b6/cloudant-client-2.6.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="5b0b179054cee2a1a39b92b2ffd2e1a359f597b6">
-        <dex dex="/Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/transforms/dex/debug/folders/1000/10/cloudant-client-2.6.0_db0d6cefbfe09878124843faa60ec3e2453e18d6/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/oscarricaud/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-ws/3.3.1/ebca9fdfbef870042a19aec6a5b7a21d72639310/okhttp-ws-3.3.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="ebca9fdfbef870042a19aec6a5b7a21d72639310">
-        <dex dex="/Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-ws-3.3.1_008eb54bf1192bf05d0bdcd7c22b370012e11d83/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.0.0_b7c1d9f3a3af8004c5abffe3fcad539936714649/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="26674000177e45447a0326a6ad84612761199a13">
-        <dex dex="/Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.0.0_8a677739ed864085d19268918a8dfbe46a69d141/classes.dex" />
+        <dex dex="/Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/build/intermediates/transforms/dex/debug/folders/1000/10/jersey-jsr166e-2.22.2_40af6ce97c52985a784c7a6f309825d9239a5616/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -197,16 +71,7 @@
         optimize="true"
         revision="25.0.0"
         sha1="19047bdb6a4fc00a44124f64ca98e88fc204e7e3">
-        <dex dex="/Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-3.3.1_dc78dc660d955e23d73f9dc16111a5ece788fc85/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/oscarricaud/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.6/b7f0fc8f61ecadeb3695f0b9464755eee44374d4/commons-codec-1.6.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="b7f0fc8f61ecadeb3695f0b9464755eee44374d4">
-        <dex dex="/Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/transforms/dex/debug/folders/1000/10/commons-codec-1.6_d552763efd4cc6227a6291c141ec35cf5159073d/classes.dex" />
+        <dex dex="/Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-3.3.1_dc78dc660d955e23d73f9dc16111a5ece788fc85/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -215,7 +80,7 @@
         optimize="true"
         revision="25.0.0"
         sha1="dce8eed9cb740d2370d1bcd5bf56f4f0bca1ca04">
-        <dex dex="/Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/transforms/dex/debug/folders/1000/10/java-sdk-3.3.1_624a229ae58906b0513c83d6b71f536e700b3413/classes.dex" />
+        <dex dex="/Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/build/intermediates/transforms/dex/debug/folders/1000/10/java-sdk-3.3.1_624a229ae58906b0513c83d6b71f536e700b3413/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -224,61 +89,34 @@
         optimize="true"
         revision="25.0.0"
         sha1="7a15a7db50f86c4b64aa3367424a60e3a325b8f1">
-        <dex dex="/Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-2.7.5_0b83fa317e3321af1f24fcf4ae0eac07c8400b4b/classes.dex" />
+        <dex dex="/Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-2.7.5_0b83fa317e3321af1f24fcf4ae0eac07c8400b4b/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jar="/Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="3b61a70884adaf0be3fc06c70c801e3e6df13133">
-        <dex dex="/Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_66f470ebc671cecae16b0b616498282889ca0c5d/classes.dex" />
+        sha1="76fb65a4b41ea42dab8a1310ed772a2420c96b52">
+        <dex dex="/Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.0.0_78b1557d90ceefb41b9bb87370a0ea820705ff2e/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/oscarricaud/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.8.0/5ea7af56cc7c567ed9856d99efb30740e9b17ff/okio-1.8.0.jar"
+        jar="/Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="05ea7af56cc7c567ed9856d99efb30740e9b17ff">
-        <dex dex="/Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/transforms/dex/debug/folders/1000/10/okio-1.8.0_e801de346bd8c7cb37bee0b608deb4846a623531/classes.dex" />
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.0.0_b0aa04d155850ba061f3854025f2a94fb6941fd4/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/oscarricaud/.gradle/caches/modules-2/files-2.1/org.jbundle.util.osgi.wrapped/org.jbundle.util.osgi.wrapped.org.apache.http.client/4.1.2/98c86e42679fe7ac066f6c242e0d14f0bce0bb7c/org.jbundle.util.osgi.wrapped.org.apache.http.client-4.1.2.jar"
+        jar="/Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.0/jars/libs/internal_impl-25.0.0.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="98c86e42679fe7ac066f6c242e0d14f0bce0bb7c">
-        <dex dex="/Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/transforms/dex/debug/folders/1000/10/org.jbundle.util.osgi.wrapped.org.apache.http.client-4.1.2_cbaab15d50203999405f4cc67283b2cd301ebd22/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/oscarricaud/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp/okhttp-urlconnection/2.7.5/b3ae78e05ff9fdb1788db2056b583281ef684277/okhttp-urlconnection-2.7.5.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="b3ae78e05ff9fdb1788db2056b583281ef684277">
-        <dex dex="/Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-urlconnection-2.7.5_fb7b9efac72c1e7245ccc63708be3da3cb216afe/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="dc07b8b0f555e4762d3763ac8009880732dd5968">
-        <dex dex="/Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_7a4f8fd997cf97409f58197af7b0147810cef892/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="75b1f366ff0bbc78f8b1f7cf0dc82e7c53afef6a">
-        <dex dex="/Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.0.0_2f66383c406342f900126081d403ad8b512b4fcb/classes.dex" />
+        sha1="ee5faf4dee5b6a4364bf51587871047dde7c703a">
+        <dex dex="/Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_fb60b7c28c489f9354992492089fb796501c44b9/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -287,25 +125,196 @@
         optimize="true"
         revision="25.0.0"
         sha1="42a25dc3219429f0e5d060061f71acb49bf010a0">
-        <dex dex="/Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/transforms/dex/debug/folders/1000/10/hamcrest-core-1.3_7032739ad1faa99054c2b24254b004848dedd28c/classes.dex" />
+        <dex dex="/Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/build/intermediates/transforms/dex/debug/folders/1000/10/hamcrest-core-1.3_7032739ad1faa99054c2b24254b004848dedd28c/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.0/jars/classes.jar"
+        jar="/Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1cdc74b1abdba18329e484284d45140228fbbe57">
+        <dex dex="/Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_6de18eb4a035fef1a91ff2b6321f10b221048fa0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="fef2b3e4b6b1b0e5fe7b69fa137a5fa55a3182ab">
+        <dex dex="/Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-base-8.4.0_a191120d02906aa568e6295dd9d110b01c697631/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="75b1f366ff0bbc78f8b1f7cf0dc82e7c53afef6a">
+        <dex dex="/Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.0.0_d84b3a5e0826463e7fa68fcdc2e587d4b559818c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="d29714cc76b38157e3cbd034c66e1ec808eb4c19">
-        <dex dex="/Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-25.0.0_d65cfa1a87120a254e30e2f516a3371a9a8c2b15/classes.dex" />
+        <dex dex="/Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-25.0.0_817867355d346dcb25207e9b07df3a52b808ab0d/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/jars/classes.jar"
+        jar="/Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f2e3b9bc1ec25f652e8007ce7774c991e38f6a00">
+        <dex dex="/Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_892b476a287e82342978caacf862d669695e9779/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="26674000177e45447a0326a6ad84612761199a13">
+        <dex dex="/Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.0.0_1b9d10c0f837319cc8a01a76a608252b53066e40/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c9b4bdd25cd4bf3a9f13ed0822482f146f79c536">
+        <dex dex="/Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_cf2b974d38de0357b1d0e94035613dc1cec6bc1d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="8e673cdfadd8f2d98fdb2fda2285c30f6e449782">
-        <dex dex="/Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-8.4.0_fbdf4a16d34bb9445708e541ea360da31773bec8/classes.dex" />
+        <dex dex="/Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-8.4.0_d9babedd242f7e1430bd1763beba4fb280dcf015/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="65d086ee9daaf87b5af62ad24471edafa433354c">
+        <dex dex="/Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-appindexing-8.4.0_e00fab8b00b849fe10daf1bdc70f84cfb6286f07/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/oscarricaud/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/3.3.1/14e70f2069fb98dc60346dd24cb7b6a2e321580d/okhttp-urlconnection-3.3.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="14e70f2069fb98dc60346dd24cb7b6a2e321580d">
+        <dex dex="/Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-urlconnection-3.3.1_cf002cf3f328cd32f1ada02a9dab59ccb66e0a8d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/oscarricaud/.gradle/caches/modules-2/files-2.1/com.cloudant/cloudant-client/2.6.0/5b0b179054cee2a1a39b92b2ffd2e1a359f597b6/cloudant-client-2.6.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5b0b179054cee2a1a39b92b2ffd2e1a359f597b6">
+        <dex dex="/Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/build/intermediates/transforms/dex/debug/folders/1000/10/cloudant-client-2.6.0_db0d6cefbfe09878124843faa60ec3e2453e18d6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/oscarricaud/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-ws/3.3.1/ebca9fdfbef870042a19aec6a5b7a21d72639310/okhttp-ws-3.3.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ebca9fdfbef870042a19aec6a5b7a21d72639310">
+        <dex dex="/Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-ws-3.3.1_008eb54bf1192bf05d0bdcd7c22b370012e11d83/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/oscarricaud/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.6/b7f0fc8f61ecadeb3695f0b9464755eee44374d4/commons-codec-1.6.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b7f0fc8f61ecadeb3695f0b9464755eee44374d4">
+        <dex dex="/Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/build/intermediates/transforms/dex/debug/folders/1000/10/commons-codec-1.6_d552763efd4cc6227a6291c141ec35cf5159073d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/oscarricaud/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.8.0/5ea7af56cc7c567ed9856d99efb30740e9b17ff/okio-1.8.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="05ea7af56cc7c567ed9856d99efb30740e9b17ff">
+        <dex dex="/Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/build/intermediates/transforms/dex/debug/folders/1000/10/okio-1.8.0_e801de346bd8c7cb37bee0b608deb4846a623531/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3b61a70884adaf0be3fc06c70c801e3e6df13133">
+        <dex dex="/Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_ceb476e5020dcd8efaee2f6c77060e7a7f45be85/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/oscarricaud/.gradle/caches/modules-2/files-2.1/org.jbundle.util.osgi.wrapped/org.jbundle.util.osgi.wrapped.org.apache.http.client/4.1.2/98c86e42679fe7ac066f6c242e0d14f0bce0bb7c/org.jbundle.util.osgi.wrapped.org.apache.http.client-4.1.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="98c86e42679fe7ac066f6c242e0d14f0bce0bb7c">
+        <dex dex="/Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/build/intermediates/transforms/dex/debug/folders/1000/10/org.jbundle.util.osgi.wrapped.org.apache.http.client-4.1.2_cbaab15d50203999405f4cc67283b2cd301ebd22/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/oscarricaud/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.4/b1b6ea3b7e4aa4f492509a4952029cd8e48019ad/commons-io-2.4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b1b6ea3b7e4aa4f492509a4952029cd8e48019ad">
+        <dex dex="/Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/build/intermediates/transforms/dex/debug/folders/1000/10/commons-io-2.4_7306b2bffdde073e363357a76160e568028efde2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/oscarricaud/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp/okhttp-urlconnection/2.7.5/b3ae78e05ff9fdb1788db2056b583281ef684277/okhttp-urlconnection-2.7.5.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b3ae78e05ff9fdb1788db2056b583281ef684277">
+        <dex dex="/Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-urlconnection-2.7.5_fb7b9efac72c1e7245ccc63708be3da3cb216afe/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8bc45ce1f63d1a391fd38b32a201be5a42f9c95d">
+        <dex dex="/Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.0.0_3eafd6c71946afeb1d63e8884669ebc05badf293/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="/Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_1a03433493639e8c29ee86f7d9966df6dc241834/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="53a420cd4f49274db6bd43475f8006ba67ef6bbd">
+        <dex dex="/Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.0.0_b1eea9dc3aed31940658c4084e68eab755700205/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -314,7 +323,7 @@
         optimize="true"
         revision="25.0.0"
         sha1="2973d150c0dc1fefe998f834810d68f278ea58ec">
-        <dex dex="/Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/transforms/dex/debug/folders/1000/10/junit-4.12_1f92a601c87f9823a689ad3803d787a2281d8c4d/classes.dex" />
+        <dex dex="/Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/build/intermediates/transforms/dex/debug/folders/1000/10/junit-4.12_1f92a601c87f9823a689ad3803d787a2281d8c4d/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -323,16 +332,7 @@
         optimize="true"
         revision="25.0.0"
         sha1="99ce730034c6f5aaed710d1e0e9df95e8714ed5f">
-        <dex dex="/Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/transforms/dex/debug/folders/1000/10/logging-interceptor-3.3.1_fafadfcb7944dd6de2e2959519aebc8e7a0af699/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/8.4.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="65d086ee9daaf87b5af62ad24471edafa433354c">
-        <dex dex="/Users/oscarricaud/SmartRestaurants/Main/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-appindexing-8.4.0_0164bb75e42a54bf7b42286fe1fef7d8e14fb620/classes.dex" />
+        <dex dex="/Users/oscarricaud/SmartRestaurantsVictorV2/Main/app/build/intermediates/transforms/dex/debug/folders/1000/10/logging-interceptor-3.3.1_fafadfcb7944dd6de2e2959519aebc8e7a0af699/classes.dex" />
     </item>
 
 </items>
