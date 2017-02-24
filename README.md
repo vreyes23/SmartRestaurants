@@ -8,7 +8,7 @@ IBM Bluemix Services
 ###### Watson
    * Speech To Text (Complete) We use this service to allow Watson to listen to the customers order. 
    * Text To Speech (Complete) We use this service to allow Watson to repeat the order and total to the customer. 
-   * Conversation (Coming Soon) We use this service to have a conversation between the customer and Watson. 
+   * Conversation (Complete) We use this service to have a conversation between the customer and Watson. 
    
 ###### Data & Analytics
    * NoSql Bluemix Database (Complete) We use this service to send/receive customers order to the database.                          
